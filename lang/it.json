@@ -2231,10 +2231,308 @@
           "Hint": "La maggior parte delle divinità ha una sola abilità divina, ma alcune offrono la scelta tra due.",
           "Label": "Abilità Divina"
         },
+        "Domain": {
+          "Abomination": {
+            "Description": "Cerchi di instillare avversione e orrore in coloro che ti circondano.",
+            "Label": "Abomini"
+          },
+          "Air": {
+            "Description": "Sai controllare i venti e il tempo atmosferico.",
+            "Label": "Aria"
+          },
+          "AirApocryphal": {
+            "Description": "Sai controllare i venti e il tempo atmosferico. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Aria (apocrifo)"
+          },
+          "Ambition": {
+            "Description": "Ti sforzi di stare al passo e di sbaragliare i tuoi concorrenti.",
+            "Label": "Ambizione"
+          },
+          "AmbitionApocryphal": {
+            "Description": "Ti sforzi di stare al passo e di sbaragliare i tuoi concorrenti. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Ambizione (apocrifo)"
+          },
+          "Change": {
+            "Description": "Sei in grado di ristrutturare sia il mondo fisico che quello metafisico.",
+            "Label": "Cambiamento"
+          },
+          "Cities": {
+            "Description": "Controlli gli ambienti urbani e i loro abitanti.",
+            "Label": "Città"
+          },
+          "Cold": {
+            "Description": "Controlli ghiaccio, neve e temperature congelanti.",
+            "Label": "Freddo"
+          },
+          "Confidence": {
+            "Description": "Superi le tue paure ed emani sicurezza.",
+            "Label": "Fiducia"
+          },
+          "ConfidenceApocryphal": {
+            "Description": "Superi le tue paure ed emani sicurezza. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Fiducia (apocrifo)"
+          },
+          "Creation": {
+            "Description": "Possiedi capacità divine connesse all'artigianato e alle arti.",
+            "Label": "Creazione"
+          },
+          "Darkness": {
+            "Description": "Agisci nelle tenebre e oscuri ogni luce.",
+            "Label": "Oscurità"
+          },
+          "DarknessApocryphal": {
+            "Description": "Agisci nelle tenebre e oscuri ogni luce. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Oscurità (apocrifo)"
+          },
+          "Death": {
+            "Description": "Hai il potere di porre fine alla vita e di distruggere i non morti.",
+            "Label": "Morte"
+          },
+          "DeathApocryphal": {
+            "Description": "Hai il potere di porre fine alla vita e di distruggere i non morti. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Morte (apocrifo)"
+          },
+          "Decay": {
+            "Description": "Hai il potere di guastare e deteriorare la materia.",
+            "Label": "Decomposizione"
+          },
+          "Delirium": {
+            "Description": "Sei in grado di creare allucinazioni e inquietudine.",
+            "Label": "Disorientamento"
+          },
+          "Destruction": {
+            "Description": "Incanali la devastazione divina.",
+            "Label": "Distruzione"
+          },
+          "Dreams": {
+            "Description": "Hai il potere di entrare nei sogni e di manipolarli.",
+            "Label": "Sogni"
+          },
+          "Dust": {
+            "Description": "Hai il potere di essiccare e sgretolare chi si oppone.",
+            "Label": "Polvere"
+          },
+          "Duty": {
+            "Description": "Difendi i giuramenti ed esegui le tue missioni divine con grande dedizione.",
+            "Label": "Dovere"
+          },
+          "Earth": {
+            "Description": "Controlli il terreno e la pietra.",
+            "Label": "Terra"
+          },
+          "Family": {
+            "Description": "Aiuti e proteggi con più efficacia la tua famiglia e la tua comunità.",
+            "Label": "Famiglia"
+          },
+          "Fate": {
+            "Description": "Vedi e comprendi l'ineluttabilità celata del fato.",
+            "Label": "Fato"
+          },
+          "FateApocryphal": {
+            "Description": "Vedi e comprendi l'ineluttabilità celata del fato. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Fato (apocrifo)"
+          },
+          "Fire": {
+            "Description": "Controlli le fiamme.",
+            "Label": "Fuoco"
+          },
+          "FireApocryphal": {
+            "Description": "Controlli le fiamme. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Fuoco (apocrifo)"
+          },
+          "Freedom": {
+            "Description": "Liberi te stesso e gli altri dalle catene e dalle costrizioni.",
+            "Label": "Libertà"
+          },
+          "Glyph": {
+            "Description": "Eserciti potere su parole scritte e simboli.",
+            "Label": "Glifi"
+          },
+          "Healing": {
+            "Description": "La tua magia curativa è particolarmente potente.",
+            "Label": "Guarigione"
+          },
+          "Indulgence": {
+            "Description": "Ti godi la vita e sei capace di ignorare gli effetti dei gozzovigli.",
+            "Label": "Voluttà"
+          },
+          "IndulgenceApocryphal": {
+            "Description": "Ti godi la vita e sei capace di ignorare gli effetti dei gozzovigli. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Voluttà (apocrifo)"
+          },
+          "Introspection": {
+            "Description": "Guidi gli altri a esaminare la loro vita, le loro emozioni e le loro motivazioni per diventare una versione più vera di sé stessi, un processo difficile e spesso doloroso.",
+            "Label": "Introspezione"
+          },
+          "Knowledge": {
+            "Description": "Ricevi intuizioni divine.",
+            "Label": "Conoscenza"
+          },
+          "KnowledgeApocryphal": {
+            "Description": "Ricevi intuizioni divine. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Conoscenza (apocrifo)"
+          },
+          "Lightning": {
+            "Description": "Controlli elettricità, tuoni e tempeste.",
+            "Label": "Fulmine"
+          },
+          "Luck": {
+            "Description": "Sei incredibilmente fortunato e scansi ogni pericolo.",
+            "Label": "Fortuna"
+          },
+          "Magic": {
+            "Description": "Compi imprese inaspettate e inspiegabili.",
+            "Label": "Magia"
+          },
+          "Metal": {
+            "Description": "Manipoli il metallo nella sua forma più flessibile e mutevole.",
+            "Label": "Metallo"
+          },
+          "Might": {
+            "Description": "La tua possanza fisica è sostenuta da una forza divina.",
+            "Label": "Potenza"
+          },
+          "MightApocryphal": {
+            "Description": "La tua possanza fisica è sostenuta da una forza divina. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Potenza (apocrifo)"
+          },
+          "Moon": {
+            "Description": "Hai dei poteri legati alla luna.",
+            "Label": "Luna"
+          },
+          "Naga": {
+            "Description": "Come i serpentini naga, sei in sintonia con le forze cosmiche che erano controllate da Ravithra.",
+            "Label": "Naga"
+          },
+          "Nature": {
+            "Description": "Eserciti potere su animali e vegetali.",
+            "Label": "Natura"
+          },
+          "Nightmares": {
+            "Description": "Riempi le menti di orrore e terrore.",
+            "Label": "Incubi"
+          },
+          "Pain": {
+            "Description": "Punisci chi non esegue i tuoi comandi, infliggendo loro ogni sorta di dolore.",
+            "Label": "Dolore"
+          },
+          "Passion": {
+            "Description": "Susciti passioni, che si tratti di amore o lussuria.",
+            "Label": "Passione"
+          },
+          "Perfection": {
+            "Description": "Punti a perfezionare la tua mente, il tuo corpo e il tuo spirito.",
+            "Label": "Perfezione"
+          },
+          "Plague": {
+            "Description": "Brandisci malattie e pestilenze come fossero un'arma.",
+            "Label": "Piaga"
+          },
+          "Protection": {
+            "Description": "Custodisci te stesso e gli altri.",
+            "Label": "Protezione"
+          },
+          "Repose": {
+            "Description": "Allevi i fardelli mentali.",
+            "Label": "Riposo"
+          },
+          "Secrecy": {
+            "Description": "Proteggi i segreti e li mantieni nascosti.",
+            "Label": "Segretezza"
+          },
+          "SecrecyApocryphal": {
+            "Description": "Proteggi i segreti e li mantieni nascosti. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Segretezza (apocrifo)"
+          },
+          "Sorrow": {
+            "Description": "Hai una dolorosa connessione alla malinconia e alla tristezza.",
+            "Label": "Sofferenza"
+          },
+          "Soul": {
+            "Description": "Eserciti potere sul mondo spirituale.",
+            "Label": "Anima"
+          },
+          "Star": {
+            "Description": "Comandi i poteri delle stelle.",
+            "Label": "Stelle"
+          },
+          "Sun": {
+            "Description": "Incanali il potere del sole e delle altre fonti di luce, e punisci i non morti.",
+            "Label": "Sole"
+          },
+          "Swarm": {
+            "Description": "Eserciti il controllo su masse di creature.",
+            "Label": "Sciame"
+          },
+          "Time": {
+            "Description": "Regni sul fluire del tempo.",
+            "Label": "Tempo"
+          },
+          "Toil": {
+            "Description": "Lavori continuamente e rifiuti qualsiasi cosa ti faccia desistere.",
+            "Label": "Fatica"
+          },
+          "Travel": {
+            "Description": "Controlli ogni forma di movimento e di viaggio.",
+            "Label": "Viaggio"
+          },
+          "TravelApocryphal": {
+            "Description": "Controlli ogni forma di movimento e di viaggio. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Viaggio (apocrifo)"
+          },
+          "Trickery": {
+            "Description": "Inganni gli altri e crei mille raggiri.",
+            "Label": "Raggiro"
+          },
+          "Truth": {
+            "Description": "Sveli ogni menzogna e scopri la verità.",
+            "Label": "Verità"
+          },
+          "Tyranny": {
+            "Description": "Brandisci il potere necessario a comandare e schiavizzare gli altri.",
+            "Label": "Tirannia"
+          },
+          "Undeath": {
+            "Description": "La tua magia ha forti legami con i non morti.",
+            "Label": "Non Morte"
+          },
+          "Vigil": {
+            "Description": "Vegli su coloro che sono deceduti da tempo e ne custodisci i segreti.",
+            "Label": "Veglia"
+          },
+          "Void": {
+            "Description": "Trai potere dal vuoto.",
+            "Label": "Vuoto"
+          },
+          "Water": {
+            "Description": "Controlli le acque e ogni massa d'acqua.",
+            "Label": "Acqua"
+          },
+          "WaterApocryphal": {
+            "Description": "Controlli le acque e ogni massa d'acqua. Non tutte le tradizioni clericali sono insegnate tra l'ortodossia. Alcune sono sussurrate in segreto, tramandate da un sacerdote a fidati accoliti o trascritte in tomi abbandonati da fazioni scismatiche.",
+            "Label": "Acqua (apocrifo)"
+          },
+          "Wealth": {
+            "Description": "Possiedi il potere sulle ricchezze, sui commerci e sui tesori.",
+            "Label": "Ricchezza"
+          },
+          "Wood": {
+            "Description": "Comandate l'indomabile potere del legno.",
+            "Label": "Legno"
+          },
+          "Wyrmkin": {
+            "Description": "Attingi al potere di draghi, linnorm ed altre potenti creature rettili.",
+            "Label": "Dragoni"
+          },
+          "Zeal": {
+            "Description": "Il tuo ardore interiore potenzia la tua prodezza in combattimento.",
+            "Label": "Zelo"
+          }
+        },
         "Domains": {
           "Alternate": {
-            "Hint": "Un chierico può prendere il talento Iniziato nel Dominio Espanso (Expanded Domain Initiate) per ottenere accesso ad uno dei domini alternivi della sua divinità.",
-            "Label": "Domini Alternivi"
+            "Hint": "Un chierico può prendere il talento Iniziato nel Dominio Espanso (Expanded Domain Initiate) per ottenere accesso ad uno dei domini alternativi della sua divinità.",
+            "Label": "Domini Alternativi"
           },
           "Primary": "Domini Primari"
         },
