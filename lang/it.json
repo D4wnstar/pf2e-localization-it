@@ -66,6 +66,17 @@
     "AbilityStr": "Forza",
     "AbilityTitle": "Attributo",
     "AbilityWis": "Saggezza",
+    "AccessoryPropertyRuneCalled": "Richiamabile",
+    "AccessoryPropertyRuneDragonsBreath": "Respiro del Drago",
+    "AccessoryPropertyRuneGreaterPaired": "Abbinate Superiori",
+    "AccessoryPropertyRuneGreaterWindCatcher": "Acchiappante Superiore",
+    "AccessoryPropertyRuneMajorPaired": "Abbinate Maggiori",
+    "AccessoryPropertyRunePaired": "Paired",
+    "AccessoryPropertyRunePresentable": "Presentabile",
+    "AccessoryPropertyRuneSnagging": "Acchiappante",
+    "AccessoryPropertyRuneSoftLanding": "Atterraggio Morbido",
+    "AccessoryPropertyRuneSpellBastion": "Bastione Incantato",
+    "AccessoryPropertyRuneWindCatcher": "Acchiappavento",
     "Action": {
       "RestForTheNight": {
         "Label": "Riposa per la Notte",
@@ -865,6 +876,65 @@
     "ArmorPotencyRune2": "Potenza Armatura (+2)",
     "ArmorPotencyRune3": "Potenza Armatura (+3)",
     "ArmorPotencyRune4": "Potenza Armatura (+4)",
+    "ArmorPropertyRuneAcidResistant": "Resistente all'Acido",
+    "ArmorPropertyRuneAdvancing": "Avanzante",
+    "ArmorPropertyRuneAimAiding": "Automirante",
+    "ArmorPropertyRuneAntimagic": "Antimagia",
+    "ArmorPropertyRuneAssisting": "Ausiliante",
+    "ArmorPropertyRuneBitter": "Fiele",
+    "ArmorPropertyRuneColdResistant": "Resistente al Freddo",
+    "ArmorPropertyRuneDeathless": "Senza Morte",
+    "ArmorPropertyRuneElectricityResistant": "Resistente all'Elettricità",
+    "ArmorPropertyRuneEnergyAdaptive": "Adattabile all'Energia",
+    "ArmorPropertyRuneEthereal": "Eterea",
+    "ArmorPropertyRuneFireResistant": "Resistente al Fuoco",
+    "ArmorPropertyRuneFortification": "Fortificazione",
+    "ArmorPropertyRuneGlamered": "Mascheramento",
+    "ArmorPropertyRuneGliding": "Planante",
+    "ArmorPropertyRuneGreaterAcidResistant": "Resistente Superiore al Fuoco",
+    "ArmorPropertyRuneGreaterAdvancing": "Advancing Superiore",
+    "ArmorPropertyRuneGreaterColdResistant": "Resistente Superiore al Ghiaccio",
+    "ArmorPropertyRuneGreaterDread": "Terrorizzante Superiore",
+    "ArmorPropertyRuneGreaterElectricityResistant": "Resistante Superiore all'Elettricità",
+    "ArmorPropertyRuneGreaterFireResistant": "Resistente Superiore al Fuoco",
+    "ArmorPropertyRuneGreaterFortification": "Fortificazione Superiore",
+    "ArmorPropertyRuneGreaterInvisibility": "Invisibilità Superiore",
+    "ArmorPropertyRuneGreaterQuenching": "Estinguente Superiore",
+    "ArmorPropertyRuneGreaterReady": "Prontezza Superiore",
+    "ArmorPropertyRuneGreaterShadow": "Ombra Superiore",
+    "ArmorPropertyRuneGreaterSlick": "Scivolosa Superiore",
+    "ArmorPropertyRuneGreaterStanching": "Rimarginante Superiore",
+    "ArmorPropertyRuneGreaterSwallowSpike": "Mangiaspine Superiore",
+    "ArmorPropertyRuneGreaterWinged": "Alata Superiore",
+    "ArmorPropertyRuneImmovable": "Inamovibile",
+    "ArmorPropertyRuneImplacable": "Implacabile",
+    "ArmorPropertyRuneInvisibility": "Invisibilità",
+    "ArmorPropertyRuneLesserDread": "Terrorizzante Inferiore",
+    "ArmorPropertyRuneMagnetizing": "Magnetizzante",
+    "ArmorPropertyRuneMajorQuenching": "Estinguente Maggiore",
+    "ArmorPropertyRuneMajorShadow": "Ombra Maggiore",
+    "ArmorPropertyRuneMajorSlick": "Scivolosa Maggiore",
+    "ArmorPropertyRuneMajorStanching": "Rimarginante Maggiore",
+    "ArmorPropertyRuneMajorSwallowSpike": "Mangiaspine Maggiore",
+    "ArmorPropertyRuneMalleable": "Malleabile",
+    "ArmorPropertyRuneMisleading": "Fuorviante",
+    "ArmorPropertyRuneModerateDread": "Moderate Terrorizzante",
+    "ArmorPropertyRunePortable": "Portabile",
+    "ArmorPropertyRuneQuenching": "Estinguente",
+    "ArmorPropertyRuneRaiment": "Abbigliamento",
+    "ArmorPropertyRuneReady": "Prontezza",
+    "ArmorPropertyRuneRockBraced": "Granitica",
+    "ArmorPropertyRuneShadow": "Ombra",
+    "ArmorPropertyRuneSinisterKnight": "Cavaliere Inquietante",
+    "ArmorPropertyRuneSizeChanging": "Cambiataglia",
+    "ArmorPropertyRuneSlick": "Scivolosa",
+    "ArmorPropertyRuneSoaring": "Fluttuante",
+    "ArmorPropertyRuneSpellwatch": "Guardiaincantesimo",
+    "ArmorPropertyRuneStanching": "Rimarginante",
+    "ArmorPropertyRuneSwallowSpike": "Mangiaspine",
+    "ArmorPropertyRuneTrueQuenching": "Estinguente Pura",
+    "ArmorPropertyRuneTrueStanching": "Rimarginante Pura",
+    "ArmorPropertyRuneWinged": "Alata",
     "ArmorResilientRune": "Resiliente",
     "ArmorSpeedLabel": "Penalità Velocità",
     "ArmorStrengthLabel": "Forza Richiesta",
@@ -880,7 +950,7 @@
     "AttackEffectImprovedPush": "Spinta Migliorata",
     "AttackEffectKnockdown": "Atterramento",
     "AttackEffectPush": "Spinta",
-    "AttackEffectTrip": "Inciampo",
+    "AttackEffectTrip": "Sbilanciamento",
     "AttackLabel": "Attacca",
     "AttitudeLabel": "Atteggiamento",
     "Attitudes": {
@@ -1350,7 +1420,7 @@
           "swarm-attacks": "attacchi di sciami",
           "swarm-mind": "mente di sciame",
           "time": "tempo",
-          "trip": "inciampo",
+          "trip": "sbilanciamento",
           "unarmed-attacks": "attacchi senz'armi",
           "unconscious": "svenuto",
           "unholy": "sacrilego",
@@ -2312,42 +2382,42 @@
           "Wand": "Bacchetta di {name} (Rango {level})"
         },
         "GeneratedName": {
-          "FourProperties": "{property1} {property2} {property3} {property4} {base}",
-          "FourPropertiesMaterial": "{property1} {property2} {property3} {property4} {material} {base}",
-          "Fundamental2": "{fundamental2} {base}",
-          "Fundamental2Material": "{fundamental2} {material} {base}",
+          "FourProperties": "{base} {property1} {property2} {property3} {property4}",
+          "FourPropertiesMaterial": "{base} di {material} {property1} {property2} {property3} {property4}",
+          "Fundamental2": "{base} {fundamental2}",
+          "Fundamental2Material": "{base} di {material} {fundamental2}",
           "Hint": "Questo è il nome dell'arma base. Per la maggior parte delle armi, la base è usata per generare un nome più completo, considerando anche la composizione materiale e/o le rune. Dare un nome specifico a quest'arma o segnarla come \"specifica\" impedirà al nome generato di comparire.",
-          "Material": "{material} {base}",
-          "OneProperty": "{property1} {base}",
-          "OnePropertyMaterial": "{property1} {material} {base}",
-          "Grade": "{grade} {base}",
-          "GradeMaterial": "{grade} {material} {base}",
-          "Potency": "+{potency} {base}",
-          "PotencyFourProperties": "+{potency} {property1} {property2} {property3} {property4} {base}",
-          "PotencyFourPropertiesMaterial": "+{potency} {property1} {property2} {property3} {property4} {material} {base}",
-          "PotencyFundamental2": "+{potency} {fundamental2} {base}",
-          "PotencyFundamental2FourProperties": "+{potency} {fundamental2} {property1} {property2} {property3} {property4} {base}",
-          "PotencyFundamental2FourPropertiesMaterial": "+{potency} {fundamental2} {property1} {property2} {property3} {property4} {material} {base}",
-          "PotencyFundamental2Material": "+{potency} {fundamental2} {material} {base}",
-          "PotencyFundamental2OneProperty": "+{potency} {fundamental2} {property1} {base}",
-          "PotencyFundamental2OnePropertyMaterial": "+{potency} {fundamental2} {property1} {material} {base}",
-          "PotencyFundamental2ThreeProperties": "+{potency} {fundamental2} {property1} {property2} {property3} {base}",
-          "PotencyFundamental2ThreePropertiesMaterial": "+{potency} {fundamental2} {property1} {property2} {property3} {material} {base}",
-          "PotencyFundamental2TwoProperties": "+{potency} {fundamental2} {property1} {property2} {base}",
-          "PotencyFundamental2TwoPropertiesMaterial": "+{potency} {fundamental2} {property1} {property2} {material} {base}",
-          "PotencyMaterial": "+{potency} {material} {base}",
-          "PotencyOneProperty": "+{potency} {property1} {base}",
-          "PotencyOnePropertyMaterial": "+{potency} {property1} {material} {base}",
-          "PotencyThreeProperties": "+{potency} {property1} {property2} {property3} {base}",
-          "PotencyThreePropertiesMaterial": "+{potency} {property1} {property2} {property3} {material} {base}",
-          "PotencyTwoProperties": "+{potency} {property1} {property2} {base}",
-          "PotencyTwoPropertiesMaterial": "+{potency} {property1} {property2} {material} {base}",
-          "Reinforcing": "{reinforcing} {base}",
-          "ReinforcingMaterial": "{reinforcing} {material} {base}",
-          "ThreeProperties": "{property1} {property2} {property3} {base}",
-          "ThreePropertiesMaterial": "{property1} {property2} {property3} {material} {base}",
-          "TwoProperties": "{property1} {property2} {base}",
-          "TwoPropertiesMaterial": "{property1} {property2} {material} {base}"
+          "Material": "{base} di {material}",
+          "OneProperty": "{base} {property1}",
+          "OnePropertyMaterial": "{base} di {material} {property1}",
+          "Grade": "{base} {grade}",
+          "GradeMaterial": "{base} {grade} di {material}",
+          "Potency": "{base} +{potency}",
+          "PotencyFourProperties": "{base} +{potency} {property1} {property2} {property3} {property4}",
+          "PotencyFourPropertiesMaterial": "{base} di {material} +{potency} {property1} {property2} {property3} {property4}",
+          "PotencyFundamental2": "{base} +{potency} {fundamental2}",
+          "PotencyFundamental2FourProperties": "{base} +{potency} {fundamental2} {property1} {property2} {property3} {property4}",
+          "PotencyFundamental2FourPropertiesMaterial": "{base} di {material} +{potency} {fundamental2} {property1} {property2} {property3} {property4}",
+          "PotencyFundamental2Material": "{base} di {material} +{potency} {fundamental2}",
+          "PotencyFundamental2OneProperty": "{base} +{potency} {fundamental2} {property1}",
+          "PotencyFundamental2OnePropertyMaterial": "{base} di {material} +{potency} {fundamental2} {property1}",
+          "PotencyFundamental2ThreeProperties": "{base} +{potency} {fundamental2} {property1} {property2} {property3}",
+          "PotencyFundamental2ThreePropertiesMaterial": "{base} di {material} +{potency} {fundamental2} {property1} {property2} {property3}",
+          "PotencyFundamental2TwoProperties": "{base} +{potency} {fundamental2} {property1} {property2}",
+          "PotencyFundamental2TwoPropertiesMaterial": "{base} di {material} +{potency} {fundamental2} {property1} {property2}",
+          "PotencyMaterial": "{base} di {material} +{potency}",
+          "PotencyOneProperty": "{base} +{potency} {property1}",
+          "PotencyOnePropertyMaterial": "{base} di {material} +{potency} {property1}",
+          "PotencyThreeProperties": "{base} +{potency} {property1} {property2} {property3}",
+          "PotencyThreePropertiesMaterial": "{base} di {materiale} +{potency} {property1} {property2} {property3}",
+          "PotencyTwoProperties": "{base} +{potency} {property1} {property2}",
+          "PotencyTwoPropertiesMaterial": "{base} di {material} +{potency} {property1} {property2}",
+          "Reinforcing": "{base} {reinforcing}",
+          "ReinforcingMaterial": "{base} di {material} {reinforcing}",
+          "ThreeProperties": "{base} {property1} {property2} {property3}",
+          "ThreePropertiesMaterial": "{base} di {material} {property1} {property2} {property3}",
+          "TwoProperties": "{base} {property1} {property2}",
+          "TwoPropertiesMaterial": "{base} di {material} {property1} {property2}"
         },
         "Grade": {
           "commercial": "Commerciale",
@@ -2582,8 +2652,8 @@
         },
         "ExpendN": "Consuma {n}",
         "Forceful": {
-          "Second": "2° Attacco Energico",
-          "Third": "3°+ Attacco Energico"
+          "Second": "Impeto (2° Attacco)",
+          "Third": "Impeto (3°+ Attacco)"
         },
         "FromABP": "La progressione automatica dei bonus ha regolato il {property} di quest'arma a {value}.",
         "FromMaterialAndRunes": "I materiali preziosi e le rune di quest'arma hanno regolato il {property} a {value}.",
@@ -2779,7 +2849,7 @@
     },
     "MaxHitPointsBaseLabel": "PF Max Base {base}",
     "MaxHitPointsShortLabel": "PF Max",
-    "MaxStaminaPointsShortLabel": "SP Max",
+    "MaxStaminaPointsShortLabel": "PT Max",
     "Migrations": {
       "Finished": "Migrazione del Sistema PF2e alla versione {version} completata!",
       "OnlyGMCanUse": "Solo un gamemaster può usare questo strumento.",
@@ -4480,7 +4550,7 @@
     "TraitRakshasa": "Rakshasa",
     "TraitRange": "Portata",
     "TraitRangedShove": "Spingere a Distanza",
-    "TraitRangedTrip": "Inciampare a Distanza",
+    "TraitRangedTrip": "Sbilanciare a Distanza",
     "TraitRanger": "Ranger",
     "TraitRare": "Raro",
     "TraitRatajin": "Ratajin",
@@ -4634,7 +4704,7 @@
     "TraitTransfer": "Trasferimento",
     "TraitTrap": "Trappola",
     "TraitTrial": "Prova",
-    "TraitTrip": "Inciampare",
+    "TraitTrip": "Sbilanciare",
     "TraitTripkee": "Tripkee",
     "TraitTroll": "Troll",
     "TraitTroop": "Truppa",
@@ -5189,6 +5259,421 @@
     "WeaponPotencyRune2": "Potenziamento Arma (+2)",
     "WeaponPotencyRune3": "Potenziamento Arma (+3)",
     "WeaponPotencyRune4": "Potenziamento Arma (+4)",
+    "WeaponPropertyRune": {
+      "ancestralEchoing": {
+        "Name": "Eco Ancestrale"
+      },
+      "anchoring": {
+        "Name": "Ancorante",
+        "Note": {
+          "criticalSuccess": "Se metti a segno un colpo critico contro un bersaglio con un'arma ancorante, quest'ultima lancia @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Ancora Dimensionale} sul bersaglio ((@Check[will|dc:27|name:Runa Ancorante], modificatore di contrasto [[/r 1d20+17 # Prova di Contrasto Runa Ancorante]]{+17}))."
+        }
+      },
+      "ashen": {
+        "Name": "Cinerea",
+        "Note": {
+          "success": "Questa polvere annebbia i sensi, @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confondendo} la creatura per 1 round a meno che non superi un TS su @Check[will|dc:25]."
+        }
+      },
+      "astral": {
+        "Name": "Astrale",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico contro una creatura che sta possedendo un'altra creatura, la creatura possedente deve superare un TS in @Check[will|dc:26] o essere espulso e incapace di possedere una creatura per [[/gmr 1d4 #round]]{1d4 round}.",
+          "Note": "Questa runa ha lo stesso effetto della runa @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Tocco Fantasma}. Se usata per attaccare una creatura che sta possedendo un'altra creatura, quest'arma non infligge danni alla creatura posseduta."
+        }
+      },
+      "authorized": {
+        "Name": "Autorizzata"
+      },
+      "bane": {
+        "Name": "Anatema"
+      },
+      "bloodbane": {
+        "Name": "Tormento"
+      },
+      "bloodthirsty": {
+        "Name": "Sanguinaria",
+        "Note": {
+          "criticalSuccess": "Quandi metti a segno un colpo critico contro una creatura che sta subendo @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Danni Persistenti da Sanguinamento}, il tuo bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Prosciugato 1}."
+        }
+      },
+      "bolkasBlessing": {
+        "Name": "Benedizione di Bolka"
+      },
+      "brilliant": {
+        "Name": "Fulgida",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, il bersaglio deve superare un TS su @Check[fortitude|dc:29|name:Runa Fulgida] o essere @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Accecato} per 1 round."
+        }
+      },
+      "called": {
+        "Name": "Richiamabile"
+      },
+      "coating": {
+        "Name": "Ricoprente"
+      },
+      "conducting": {
+        "Name": "Conduttiva"
+      },
+      "corrosive": {
+        "Name": "Corrosiva",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, l'eventuale armatura del bersaglio subisce danni da @Damage[3d6[acid]] (prima di applicare la Durezza); se il bersaglio ha uno scudo alzata, è lo scudo a prendere il danno anziché l'armatura."
+        }
+      },
+      "crushing": {
+        "Name": "Opprimente",
+        "Note": {
+          "criticalSuccess": "Quando ottieni un colpo critico con quest'arma, il tuo bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Maldestro 1} e @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Indebolito 1} fino alla fine del tuo prossimo turno. @UUID[Compendium.pf2e.equipment-effects.Item.zNHvhwHsC8ckhKVp]{Effetto: Opprimente}"
+        }
+      },
+      "cunning": {
+        "Name": "Scaltra"
+      },
+      "dancing": {
+        "Name": "Animata"
+      },
+      "decaying": {
+        "Name": "Marcescente",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, il bersaglio subisce 2d4 danni persistenti da vuoto; se il bersaglio ha uno scudo alzato, lo scudo subisce la stessa quantità di danni persistenti (colui che lo impugna compie una prova semplice per vedere se i danni persistenti finiscono, o la tira il GM se se lo scudo non è più in possesso di qualcuno). A differenza dei danni da vuoto normali, i danni da vuoto di una runa marcescente danneggiano oggetti, costrutti e simili erodendoli."
+        }
+      },
+      "deathdrinking": {
+        "Name": "Necrofaga"
+      },
+      "demolishing": {
+        "Name": "Demolitrice"
+      },
+      "earthbinding": {
+        "Name": "Legante a Terra"
+      },
+      "energizing": {
+        "Name": "Energizzante"
+      },
+      "extending": {
+        "Name": "Estendente"
+      },
+      "fanged": {
+        "Name": "Zannuta"
+      },
+      "fearsome": {
+        "Name": "Spaventosa",
+        "Note": {
+          "criticalSuccess": "Quando ottieni un colpo critico con quest'arma, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Spavento 1}."
+        }
+      },
+      "flaming": {
+        "Name": "Infuocata",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, infliggi 1d10 danni da fuoco persistenti aggiuntivi."
+        }
+      },
+      "flickering": {
+        "Name": "Lampeggiante",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, l'arma lampeggia con colori sgargianti, @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Abbagliando} la creatura per 1 round (questo effetto ha il tratto visivo)."
+        }
+      },
+      "flurrying": {
+        "Name": "Turbinante"
+      },
+      "frost": {
+        "Name": "Gelida",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, il bersaglio è anche @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Rallentato 1} fino alla fine del tuo prossimo turno a meno che non superi un TS su @Check[fortitude|dc:24|name:Runa Gelida]."
+        }
+      },
+      "ghostTouch": {
+        "Name": "Tocco Fantasma",
+        "Note": "L'arma può ferire le creature senza una forma fisica. Un'arma tocco fantasma è particolarmente efficace contro le creature incorporee, che quasi sempre hanno una debolezza specifica a un'arma tocco fantasma. Le creature incorporee possono toccare, tenere e impugnare le armi tocco fantasma (a differenza della maggior parte degli oggetti fisici)."
+      },
+      "giantKilling": {
+        "Name": "Giganticida",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico con quest'arma, il gigante è anche @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Indebolito 1} fino alla fine del tuo prossimo turno."
+        }
+      },
+      "greaterAnchoring": {
+        "Name": "Ancorante Superiore",
+        "Note": {
+          "criticalSuccess": "Quando metti a segno un colpo critico con un'arma ancorante contro un bersaglio, l'arma lancia su di esso @UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Ancora Dimensionale} di 8° rango (@Check[will|dc:38|name:Runa Ancorante Superiore], modificatore di contrasto [[/r 1d20+28 #Prova di Contrasto Runa Ancorante Superiore]]{+28}), tranne che se il bersaglio ottiene un successo critico nel TS su Volontà, l'ancora dimensionale dura 1 round anziché non avere effetto.",
+          "success": "Quando metti a segno un colpo con l'arma contro un bersaglio ma non ottieni un colpo critico, il bersaglio è influenzato da un'@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{Ancora Dimensionale} di 4° rango per 1 round senza tiro salvezza (modificatore di contrasto [[/r 1d20+28 #Prova di Contrasto Runa Ancorante Superiore]]{+28})."
+        }
+      },
+      "greaterAshen": {
+        "Name": "Cinerea Superiore",
+        "Note": {
+          "success": "Questa polvere annebbia i sensi, @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confondendo} la creatura per 1 round a meno che non superi un TS su @Check[will|dc:35]."
+        }
+      },
+      "greaterAstral": {
+        "Name": "Astrale Superiore",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico contro una creatura che sta possedendo un'altra creatura, la creatura possedente deve superare un TS in @Check[will|dc:36] o essere espulso e incapace di possedere una creatura per [[/gmr 1d4 #round]]{1d4 round}.",
+          "Note": "Questa runa ha lo stesso effetto della runa @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Tocco Fantasma}. Se usata per attaccare una creatura che sta possedendo un'altra creatura, quest'arma non infligge danni alla creatura posseduta."
+        }
+      },
+      "greaterBloodbane": {
+        "Name": "Tormento Superiore"
+      },
+      "greaterBolkasBlessing": {
+        "Name": "Benedizione di Bolka Superiore"
+      },
+      "greaterBrilliant": {
+        "Name": "Fulgida Superiore",
+        "Note": {
+          "criticalSuccess": "I danni inflitti da quest'arma ignorano la resistenza al fuoco, spirito e vitalità del bersaglio. In caso di colpo critico, il bersaglio deve superare un TS su @Check[fortitude|dc:41|name:Runa Fulgida Superiore] o essere @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Accecato} per 1 round.",
+          "success": "I danni inflitti da quest'arma ignorano la resistenza al fuoco, spirito e vitalità del bersaglio."
+        }
+      },
+      "greaterCorrosive": {
+        "Name": "Corrosiva Superiore",
+        "Note": {
+          "criticalSuccess": "I danni inflitti da quest'arma ignorano la resistenza all'acido del bersaglio. In caso di colpo critico, l'eventuale armatura del bersaglio subisce danni da @Damage[6d6[acid]] (prima di applicare la Durezza); se il bersaglio ha uno scudo alzata, è lo scudo a prendere il danno anziché l'armatura.",
+          "success": "I danni inflitti da quest'arma ignorano la resistenza all'acido del bersaglio."
+        }
+      },
+      "greaterCrushing": {
+        "Name": "Opprimente Superiore",
+        "Note": {
+          "criticalSuccess": "I tuoi colpi critici fanno diventare il bersaglio @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Maldestro 2} e @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Indebolito 2} fino alla fine del tuo prossimo turno. @UUID[Compendium.pf2e.equipment-effects.Item.zNHvhwHsC8ckhKVp]{Effetto: Opprimente (Superiore)}   Your critical hits leave the target @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of your next turn. @UUID[Compendium.pf2e.equipment-effects.Item.czdEHtLsrUcZxSDx]{Effect: Crushing (Greater)}"
+        }
+      },
+      "greaterDecaying": {
+        "Name": "Marcescente Superiore"
+      },
+      "greaterDisrupting": {
+        "Name": "Vitalizzante Superiore",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, la creatura non morta è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Indebolita 1} e @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Sbigottita 1} fintantoché subisce danni persistenti da questa runa."
+        }
+      },
+      "greaterExtending": {
+        "Name": "Estendente Superiore"
+      },
+      "greaterFanged": {
+        "Name": "Zannuta Superiore"
+      },
+      "greaterFearsome": {
+        "Name": "Spaventosa Superiore",
+        "Note": {
+          "criticalSuccess": "Quando ottieni un colpo critico con quest'arma, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Spavento 2}."
+        }
+      },
+      "greaterFlaming": {
+        "Name": "Flaming Superiore",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, infliggi 2d10 danni da fuoco persistenti aggiuntivi. I danni da fuoco inflitti da quest'arma (inclusi i danni da fuoco persistenti) ignorano la resistenza al fuoco del bersaglio.",
+          "success": "I danni da fuoco inflitti da quest'arma ignorano la resistenza al fuoco del bersaglio"
+        }
+      },
+      "greaterFrost": {
+        "Name": "Gelida Superiore",
+        "Note": {
+          "criticalSuccess": "I danni inflitti da quest'arma ignorano la resistenza al freddo del bersaglio. On a critical hit, the target is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of your next turn unless it succeeds at a @Check[fortitude|dc:34|name:Frost Rune Superiore] save.",
+          "success": "I danni inflitti da quest'arma ignorano la resistenza al freddo del bersaglio."
+        }
+      },
+      "greaterGiantKilling": {
+        "Name": "Giganticida Superiore",
+        "Note": {
+          "success": "I danni inflitti da quest'arma ignorano la resistenza ai danni mentali del bersaglio.",
+          "criticalSuccess": "In caso di colpo critico, il gigante deve effettuare un TS su @Check[fortitude|dc:34] con i seguenti effetti.<br /><strong>Successo Critico</strong> Il gigante è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Indebolito 1} fino alla fine del tuo prossimo turno.</strong><br/ ><strong>Successo</strong> Il gigante è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Indebolito 2} fino alla fine del tuo prossimo turno e subisce @Damage[1d10[mental]] aggiuntivi.<br /><strong>Fallimento</strong> Il gigante è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Indebolito 2} per il minuto successivo e subisce @Damage[2d10[mental]] aggiuntivi.<br /><strong>Fallimento Critico</strong> Il gigante è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Indebolito 4} per il prossimo minuto e subisce @Damage[4d10[mental]] aggiuntivi."
+        }
+      },
+      "greaterHauling": {
+        "Name": "Trascinante Superiore"
+      },
+      "greaterImpactful": {
+        "Name": "A Impatto Superiore",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, puoi decidere che il bersaglio debba superare un tiro salvezza su @Check[fortitude|dc:37|name:Runa A Impatto Superiore] o essere spinto lontano da te di 3 metri."
+        }
+      },
+      "greaterKolssOath": {
+        "Name": "Giuramento di Kols Superiore"
+      },
+      "greaterRooting": {
+        "Name": "Radicante Superiore",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico con l'arma, dal bersaglio spuntano delle radici. È @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} per 1 round ([[/act escape dc=28]]) e @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Maldestro 1} finché dura l'immobilizzazione."
+        }
+      },
+      "greaterShock": {
+        "Name": "Folgorante Superiore",
+        "Note": {
+          "criticalSuccess": "I danni da elettricità inflitti da quest'arma ignorano la resistenza all'elettricità del bersaglio (e quella di altre creature con un colpo critico). In caso di colpo critico, archi elettrici fuoriescono per infliggere una quantità uguale di danno da elettricità fino a due ulteriori creature, a tua scelta, che si trovano entro 3 metri dal bersaglio.",
+          "success": "I danni da elettricità inflitti da quest'arma ignorano la resistenza all'elettricità del bersaglio."
+        }
+      },
+      "greaterThundering": {
+        "Name": "Tonante Superiore",
+        "Note": {
+          "criticalSuccess": "I danni sonici inflitti da quest'arma ignorano la resistenza ai danni sonici del bersaglio. In caso di colpo critico, il bersaglio deve superare un TS su @Check[fortitude|dc:34|name:Runa Tonante Superiore] o sarà @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Assordato} permanentemente.",
+          "success": "I danni sonici inflitti da quest'arma ignorano la resistenza ai danni sonici del bersaglio."
+        }
+      },
+      "greaterTruddsStrength": {
+        "Name": "Forza di Trudd Superiore"
+      },
+      "grievous": {
+        "Name": "Atroce",
+        "Note": {
+          "Axe": "Puoi danneggiare una terza creatura, con le stesse restrizioni.",
+          "Bow": "La prova di Atletica per liberare il proiettile ha CD 20.",
+          "Brawling": "Il bersaglio subisce penalità di status -4 al suo TS.",
+          "Club": "Puoi scagliare il bersaglio lontano fino a 4,5 metri.",
+          "Crossbow": "If the target of the critical hit is adjacent to a surface, it gets stuck to that surface by the missile, as the bow critical specialization.",
+          "Dart": "Il danno base persistente da sanguinamento aumenta a @Damage[2d6[persistent,bleed]].",
+          "Firearm": "The target takes a –4 circumstance penalty to its save.",
+          "Flail": "Sposti il bersaglio di 1,5 metri. Non puoi allontanarlo da te, ma puoi spostarlo in un'altra direzione a tua scelta.",
+          "Hammer": "Puoi anche scagliare il bersaglio lontano da te di 1,5 metri.",
+          "Knife": "Il bersaglio subisce penalità di status di -1,5 metri alla sua Velocità mentre subisce @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Danni da Sanguinamento Persistenti}.",
+          "Pick": "Il danno extra dell'effetto di specializzazione del critico aumenta a 4 per dado di danno dell'arma.",
+          "Polearm": "Puoi spostare il bersaglio fino a 3 metri.",
+          "Shield": "Puoi scagliare il bersaglio lontano fino a 3 metri.",
+          "Sling": "Il bersaglio subisce anche penalità di status di -3 metri alla sua Velocità per 1 round se fallisce il tiro salvezza.",
+          "Spear": "La condizione maldestro dura per 2 round.",
+          "Sword": "Il bersaglio è impreparato fino alla fine del tuo prossimo turno."
+        }
+      },
+      "hauling": {
+        "Name": "Trascinante"
+      },
+      "holy": {
+        "Name": "Sacra",
+        "Note": {
+          "criticalSuccess": "Guarigione Sacra <span class=\"action-glyph\">R</span> (concentrazione, guarigione, vitalità)</p><p><strong>Frequenza</strong> una volta al giorno</p><p><strong>Innesco</strong> Ottieni un successo critico in un Colpo con l'arma contro una creatura sacrilega</p><hr /><p><strong>Effetto</strong> Recuperi PF pari al doppio del livello della creatura sacrilega."
+        }
+      },
+      "hopeful": {
+        "Name": "Speranzosa",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico con quest'arma, diventi un esempio per i tuoi compagni, spronandoli a combattere più duramente per la vostra causa. Gli alleati entro 9 metri che condividono con te almeno un componente di allineamento ottengono bonus di status +1 ai tiri per colpire fino alla fine del tuo turno successivo."
+        }
+      },
+      "hooked": {
+        "Name": "Uncinata",
+        "Note": {
+          "criticalSuccess": "Se un'arma uncinata ha già di suo il tratto sbilanciare, puoi provare a sbilanciare un nemico come reazione quando metti a segno un colpo critico contro di esso con l'arma uncinata."
+        }
+      },
+      "impactful": {
+        "Name": "A Impatto",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, puoi decidere che il bersaglio debba superare un tiro salvezza su @Check[fortitude|dc:27|name:Runa A Impatto] o essere spinto lontano da te di 1,5 metri."
+        }
+      },
+      "impossible": {
+        "Name": "Impossibile"
+      },
+      "keen": {
+        "Name": "Affilata"
+      },
+      "kinWarding": {
+        "Name": "Consanguinea"
+      },
+      "kolssOath": {
+        "Name": "Giuramento di Kols"
+      },
+      "majorRooting": {
+        "Name": "Radicante Maggiore",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico con l'arma, dal bersaglio spuntano delle radici. È @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} per 1 round ([[/act escape dc=34]]) e @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Maldestro 1} finché dura l'immobilizzazione."
+        }
+      },
+      "merciful": {
+        "Name": "Pietosa"
+      },
+      "majorFanged": {
+        "Name": "Zannuta Maggiore"
+      },
+      "nightmare": {
+        "Name": "Incubo",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Sbigottito 1} da visioni sovrastanti nella loro mente di orrori persistenti. Se ottieni un colpo critico contro una creatura già sbigottita, diventa anche @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Spaventata 2}. Questi effetti di colpo critico hanno i tratti emozione, paura e mentale."
+        }
+      },
+      "pacifying": {
+        "Name": "Pacificante"
+      },
+      "speed": {
+        "Name": "Colpo Lesto",
+        "Note": "Mentre stai impugnando un'arma colpo lesto, ottieni la condizione @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Accelerato}, ma puoi usare l'azione aggiuntiva concessa solo per Colpire con l'arma incisa."
+      },
+      "returning": {
+        "Name": "Ritornante",
+        "Note": "Quando fai un Colpo da lancio con questa arma, essa vola indietro verso la tua mano dopo che il Colpo è completato. Se le tue mani sono piene quando l'arma ritorna, essa cade a terra nel tuo spazio."
+      },
+      "rooting": {
+        "Name": "Radicante",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico con l'arma, dal bersaglio spuntano delle radici. È @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} per 1 round ([[/act escape dc=23]]) e @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Maldestro 1} finché dura l'immobilizzazione."
+        }
+      },
+      "serrating": {
+        "Name": "Seghettata"
+      },
+      "shifting": {
+        "Name": "Mutamento"
+      },
+      "shock": {
+        "Name": "Folgorante",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, archi elettrici fuoriescono per infliggere una quantità uguale di danno da elettricità fino a due ulteriori creature, a tua scelta, che si trovano entro 3 metri dal bersaglio."
+        }
+      },
+      "shockwave": {
+        "Name": "Onda d'Urto",
+        "Note": "L'attaccante è immune al danno radiale."
+      },
+      "spellStoring": {
+        "Name": "Accumula Incantesimi"
+      },
+      "swarming": {
+        "Name": "Sciamante"
+      },
+      "thundering": {
+        "Name": "Tonante",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, il bersaglio deve superare un TS su @Check[fortitude|dc:24|name:Runa Tonante] o sarà @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Assordato} per 1 minuto (o 1 ora in caso di fallimento critico)."
+        }
+      },
+      "truddsStrength": {
+        "Name": "Forza di Trudd"
+      },
+      "trueRooting": {
+        "Name": "Radicante Pura",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico con l'arma, dal bersaglio spuntano delle radici. È @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilizzato} per 1 round ([[/act escape dc=41]]) e @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Maldestro 1} finché dura l'immobilizzazione."
+        }
+      },
+      "underwater": {
+        "Name": "Subacquea"
+      },
+      "unholy": {
+        "Name": "Sacrilega",
+        "Note": {
+          "criticalSuccess": "Eccidio Sacrilego <span class='pf2-icon'>R</span> (concentrazione)</p><p><strong>Frequenza</strong> una volta al giorno</p><p><strong>Innesco</strong> Ottieni un successo critico a un tiro per colpire con l'arma contro una creatura sacra</p><hr /><p><strong>Effetot</strong> Il bersaglio subisce danni da sanguinamento persistenti pari a 1d8 per dado di danno dell'arma incisa."
+        }
+      },
+      "disrupting": {
+        "Name": "Vitalizzante",
+        "Note": {
+          "criticalSuccess": "In caso di colpo critico, la creatura non morta è @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Indebolita 1} fino alla fine del tuo prossimo turno."
+        }
+      },
+      "vorpal": {
+        "Name": "Vorpal",
+        "Note": {
+          "criticalSuccess": "Snic-Snac <span class=\"action-glyph\">R</span> (concentrazione, morte, incapacitazione)</p><p><strong>Innesco</strong> Ottieni un 20 naturale Colpendo con l'arma, hai un successo critico e infliggi danni taglienti. Il bersaglio deve possedere una testa; </p><hr /><p><strong>Effetto</strong> II bersaglio deve superare un TS su @Check[fortitude|dc:37|traits:death,incapacitation|name:Runa Vorpal] o verrà decapitato. Questo uccide qualsiasi creatura eccetto quelle che non necessitano di una testa per vivere. Per le creature con più teste, questo di solito uccide la creatura solo se recidi la sua ultima testa."
+        }
+      },
+      "wounding": {
+        "Name": "Ferimento"
+      }
+    },
     "WeaponRange10": "10 piedi",
     "WeaponRange100": "100 piedi",
     "WeaponRange120": "120 piedi",
@@ -5467,8 +5952,8 @@
       },
       "restrained": {
         "name": "Trattenuto",
-        "note": "Non puoi usare azioni di attacco o maneggiare se non per provare a Fuggire da o Forzare i tuoi vincoli.",
-        "rules": "<p>Sei legato in modo da poterti a malapena muovere, oppure una creatura ti ha bloccato. Hai le condizioni immobilizzato e impreparato, e non puoi fare nulla che abbia i tratti attacco o maneggiare a parte sfuggire o forzare ciò che ti trattiene. Trattenuto prevale su afferrato.</p>",
+        "note": "Non puoi usare azioni di attacco o maneggiare se non per provare a Sfuggire da o Forzare i tuoi vincoli.",
+        "rules": "<p>Sei legato in modo da poterti a malapena muovere, oppure una creatura ti ha bloccato. Hai le condizioni immobilizzato e impreparato, e non puoi fare nulla che abbia i tratti attacco o maneggiare a parte Sfuggire o Forzare ciò che ti trattiene. Trattenuto prevale su afferrato.</p>",
         "summary": "Sei legato in modo da poterti a malapena muovere, oppure una creatura ti ha bloccato."
       },
       "sickened": {
