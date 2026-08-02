@@ -1,11 +1,11 @@
 {
-  "id": "pf2e-localization",
-  "title": "PF2e Localization",
+  "id": "pf2e-localization-it",
+  "title": "PF2e Localization (Italian)",
   "version": "0.1.0",
   "compatibility": {
     "verified": "14"
   },
-  "description": "<p>Localization files for Pathfinder 2e.</p>",
+  "description": "<p>Italian localization files for Pathfinder 2e.</p>",
   "authors": [
     {
       "name": "Dawnstar",
