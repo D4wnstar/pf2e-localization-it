@@ -1,0 +1,54 @@
+{
+  "PF2E": {
+    "Action": {
+      "ApplyEffect": "Applica Effetto",
+      "ExpandDescription": "Espandi Descrizione",
+      "Range": {
+        "IncrementN": "Incremento di Portata {n} piedi",
+        "MaxN": "Portata {n} piedi"
+      },
+      "Use": "Usa"
+    },
+    "Actions": {},
+    "ActionsCheck": {
+      "acrobatics": "Prova di Acrobazia",
+      "arcana": "Prova di Arcano",
+      "athletics": "Prova di Atletica",
+      "computers": "Prova di Informatica",
+      "crafting": "Prova di Artigianato",
+      "deception": "Prova di Inganno",
+      "diplomacy": "Prova di Diplomazia",
+      "fortitude": "Tiro Salvezza su Tempra",
+      "intimidation": "Prova di Intimidazione",
+      "medicine": "Prova di Medicina",
+      "nature": "Prova di Natura",
+      "occultism": "Prova di Occultismo",
+      "perception": "Prova di Percezione",
+      "performance": "Prova di Esibizione",
+      "piloting": "Prova di Pilotaggio",
+      "reflex": "Tiro Salvezza su Riflessi",
+      "religion": "Prova di Religione",
+      "society": "Prova di Società",
+      "spell": "Attacco con Incantesimo {type}",
+      "stealth": "Prova di Furtività",
+      "survival": "Prova di Sopravvivenza",
+      "thievery": "Prova di Furto",
+      "unarmed": "Tiro per Colpire Senz'armi",
+      "will": "Tiro Salvezza su Volontà",
+      "x-attack-roll": "Tiro per Colpire {type}",
+      "x": "Prova di {type}"
+    },
+    "ActionsSampleTasks": {
+      "Title": "Esempi di Compiti di {action}"
+    },
+    "ActionsWarning": {
+      "NoActor": "Seleziona almeno un tokne prima di tirare, o assegna un personaggio di default.",
+      "NoStatistic": "L'attore {name} ({id}) non ha una statistica per {statistic}.",
+      "Variants": {
+        "None": "L'azione '{action}' non ha varianti, ma la variante '{variant}' è stata richiesta.",
+        "Multiple": "L'azione '{action}' ha più varianti, ma nessuna variante è stata richiesta.",
+        "Nonexistent": "La variante scelta '{variant}' non esiste per l'azione '{action}'"
+      }
+    }
+  }
+}

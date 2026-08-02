@@ -12,7 +12,14 @@
       "flags": {}
     }
   ],
-  "languages": [{ "lang": "it", "name": "Italian", "path": "lang/it.json" }],
+  "languages": [
+    { "lang": "it", "name": "Main (Italian)", "path": "lang/it.json" },
+    {
+      "lang": "it",
+      "name": "Actions (Italian)",
+      "path": "lang/action-it.json"
+    }
+  ],
   "flags": {
     "canUpload": true
   }
