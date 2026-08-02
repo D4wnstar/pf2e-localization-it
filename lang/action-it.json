@@ -9,7 +9,1074 @@
       },
       "Use": "Usa"
     },
-    "Actions": {},
+    "Actions": {
+      "AdministerFirstAid": {
+        "Description": "<p><strong>Requisiti</strong> Indossi o tieni in mano uno @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]{Strumento da Guaritore}.</p><hr /><p>Presti il primo soccorso a una creatura adiacente che è @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Morente} o @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Sanguinante}. Se una creatura è sia morente che sanguinante, scegli quale condizione stai cercando di curare prima di tirare. Puoi Prestare Primo Soccorso di nuovo per tentare di rimediare all'altro effetto.</p><ul><li><strong>Stabilizzare</strong> Effettua una prova di [[/act administer-first-aid variant=stabilize]]{Medicina} su una creatura che ha 0 Punti Ferita e la condizione morente. La CD è pari a 5 + la CD del tiro per il recupero di quella creatura (in genere 15 + il suo valore di morente).</li><li><strong>Fermare il Sanguinamento</strong> Effettua una prova di [[/act administer-first-aid variant=stop-bleeding]]{Medicina} su una creatura che sta subendo danni persistenti da sanguinamento. La CD è di solito la CD dell'effetto che ha causato il sanguinamento.</li></ul><hr /><p><strong>Successo</strong> Se stai cercando di stabilizzare, il bersaglio perde la condizione morente (ma rimane @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Svenuto}). Se stai cercando di fermare il sanguinamento, il bersaglio beneficia di un recupero assistito con la CD ridotta per un aiuto particolarmente appropriato.</p><p><strong>Fallimento Critico</strong> Se stavi cercando di stabilizzare, il valore di morente del bersaglio aumenta di 1. Se stavi cercando di fermare il sanguinamento, il bersaglio subisce immediatamente una quantità di danni pari al suo danno persistente da sanguinamento.</p>",
+        "Stabilize": {
+          "Description": "<p>Effettua una prova di [[/act administer-first-aid variant=stabilize]]{Medicina} su una creatura che ha 0 Punti Ferita e la condizione morente. La CD è pari a 5 + la CD del tiro per il recupero di quella creatura (in genere 15 + il suo valore di morente).</p><p><strong>Successo</strong> Il bersaglio perde la condizione morente (ma rimane @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Svenuto}).<br><strong>Fallimento Critico</strong> Il valore di morente del bersaglio aumenta di 1.</p>",
+          "DifficultyClass": {
+            "Label": "CD di Prestare Primo Soccorso"
+          },
+          "Notes": {
+            "criticalFailure": "<strong>Fallimento Critico</strong> Il valore di morente del bersaglio aumenta di 1.",
+            "success": "<strong>Successo</strong> Il bersaglio perde la condizione morente (ma rimane svenuto)."
+          },
+          "Title": "Stabilizzare"
+        },
+        "StopBleeding": {
+          "Description": "<p>Effettua una prova di [[/act administer-first-aid variant=stop-bleeding]]{Medicina} su una creatura che sta subendo danni persistenti da sanguinamento. La CD è di solito la CD dell'effetto che ha causato il sanguinamento.</p><p><strong>Successo</strong> Il bersaglio beneficia di un recupero assistito con la CD ridotta per un aiuto particolarmente appropriato.<br><strong>Fallimento Critico</strong> Il bersaglio subisce immediatamente una quantità di danni pari al suo danno persistente da sanguinamento.</p>",
+          "Notes": {
+            "criticalFailure": "<strong>Fallimento Critico</strong> Il bersaglio subisce immediatamente una quantità di danni pari al suo danno persistente da sanguinamento.",
+            "success": "<strong>Successo</strong> Il bersaglio beneficia di un recupero assistito con la CD ridotta per un aiuto particolarmente appropriato."
+          },
+          "Title": "Fermare il Sanguinamento"
+        },
+        "Title": "Prestare Primo Soccorso",
+        "Warning": {
+          "TargetNotDying": "La creatura bersaglio non è morente.",
+          "UnknownVariant": "Variante sconosciuta {variant} usata per Prestare Primo Soccorso; usa una di queste: {variants}."
+        }
+      },
+      "Aid": {
+        "Description": "<p><strong>Innesco</strong> Un alleato sta per usare un'azione che richiede una prova di abilità o un tiro per colpire.</p><p><strong>Requisiti</strong> L'alleato accetta il tuo aiuto e sei preparato ad aiutare (vedi sotto).</p><hr /><p>Cerchi di aiutare il tuo alleato in un compito. Per usare questa reazione, devi per prima cosa prepararti per aiutare, in genere usando un'azione nel tuo turno. Devi spiegare al GM esattamente come cerchi di aiutare, ed egli determina se puoi Aiutare il tuo alleato.</p><p>Quando usi la tua reazione Aiutare, tenta una prova di abilità o un tiro per colpire di un tipo deciso dal GM. La CD tipica è 15, ma il GM potrebbe modificarla per compiti particolarmente difficili o facili. Il GM può aggiungere tratti pertinenti alla tua azione preparatoria o alla tua reazione Aiutare a seconda della situazione, o persino permetterti di Aiutare in prove che non siano di abilità o tiri per colpire.</p><hr /><p><strong>Successo Critico</strong> Concedi al tuo alleato un bonus di circostanza +2 alla prova innescante. Se sei un maestro nella prova che hai tentato, il bonus è +3, e se sei leggendario, è +4.</p><p><strong>Successo</strong> Concedi al tuo alleato un bonus di circostanza +1 alla prova innescante.</p><p><strong>Fallimento Critico</strong> Il tuo alleato subisce una penalità di circostanza –1 alla prova innescante.</p><p>@UUID[Compendium.pf2e.other-effects.Item.AHMUpMbaVkZ5A1KX]{Effetto: Aiutare}</p>",
+        "Notes": {
+          "criticalFailure": "Il tuo alleato subisce una penalità di circostanza –1 alla prova innescante.",
+          "criticalSuccess": "Concedi al tuo alleato un bonus di circostanza +2 alla prova innescante. Se sei un maestro nella prova che hai tentato, il bonus è +3, e se sei leggendario, è +4.",
+          "success": "Concedi al tuo alleato un bonus di circostanza +1 alla prova innescante."
+        },
+        "Title": "Aiutare",
+        "Warning": {
+          "NoStatistic": "L'azione Aiutare può essere usata con statistiche diverse e non è stata specificata alcuna statistica."
+        }
+      },
+      "ArcaneSlam": {
+        "Modifier": {
+          "SizeDifference": "Differenza di Taglia"
+        },
+        "Notes": {
+          "NoTarget": "<strong>Differenza di Taglia</strong> Subisci una penalità di circostanza -2 alla tua prova se il bersaglio è di una taglia più grande di te e una penalità di circostanza -4 se è ancora più grande. Ottieni un bonus di circostanza +2 alla tua prova se il bersaglio è di una taglia più piccolo di te e un bonus di circostanza +4 se è ancora più piccolo.",
+          "criticalFailure": "<strong>Fallimento Critico</strong> La creatura si libera e non è più @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Afferrata} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Trattenuta} da te.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Sbatti il nemico a terra e l'energia magica lo travolge. La creatura viene gettata @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prona}, diventa @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Abbagliata} per 1 round e subisce danni pari a [[/r 2d6 + @abilities.str.mod # Damage: Arcane Slam]]{2d6 più il tuo modificatore di Forza}. Il nemico non è più @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Trattenuto} da te.",
+          "failure": "<strong>Fallimento</strong> Non riesci a sbattere a terra la creatura, ma la tua presa su di essa rimane.",
+          "success": "<strong>Successo</strong> Sbatti il nemico a terra. La creatura viene gettata @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prona} e subisce danni pari al tuo [[/r @abilities.str.mod # Damage: Arcane Slam]]{modificatore di Forza}. Il nemico non è più @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Trattenuto} da te."
+        },
+        "Title": "Schianto Arcano"
+      },
+      "ArrestAFall": {
+        "Description": "<p><strong>Innesco</strong> Cadi.</p><p><strong>Requisiti</strong> Hai una Velocità di Volare.</p><hr /><p>Tenti una prova di Acrobazia o un tiro salvezza su Riflessi per rallentare la tua caduta. La CD è in genere 15, ma potrebbe essere più alta a causa di turbolenze dell'aria o altre circostanze.</p><hr /><p><strong>Successo</strong> Non subisci danni dalla caduta.</p>",
+        "Notes": {
+          "success": "<strong>Successo</strong> Non subisci danni dalla caduta."
+        },
+        "Title": "Arrestare una Caduta"
+      },
+      "AvertGaze": {
+        "Description": "<p>Distogli lo sguardo dal pericolo, come lo sguardo di una medusa. Ottieni un bonus di circostanza +2 ai tiri salvezza contro capacità visive che richiedono di guardare una creatura o un oggetto, come lo sguardo pietrificante di una medusa. Il tuo sguardo resta distolto fino all'inizio del tuo prossimo turno.</p>",
+        "Title": "Evitare lo Sguardo"
+      },
+      "AvoidNotice": {
+        "Description": "<p>Tenti una prova di [[/act avoid-notice]]{Furtività} per passare inosservato mentre viaggi a metà velocità. Se stai Passando Inosservato all'inizio di un incontro, di solito effettui una prova di Furtività invece di una prova di Percezione sia per determinare la tua iniziativa sia per vedere se i nemici ti notano (in base alle loro CD di Percezione, come di consueto per @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sgattaiolare}, a prescindere dai risultati delle loro prove di iniziativa).</p>",
+        "Notes": {
+          "criticalSuccess": "<strong>Successo Critico</strong> Sei @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Inosservato} dalla creatura durante il tuo movimento e rimani inosservato da essa alla sua fine.<br/>Consulta l'azione @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sgattaiolare} per i dettagli.",
+          "success": "<strong>Successo</strong> Sei @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Inosservato} dalla creatura durante il tuo movimento e rimani inosservato da essa alla sua fine.<br/>Consulta l'azione @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sgattaiolare} per i dettagli."
+        },
+        "Title": "Passare Inosservato"
+      },
+      "Balance": {
+        "Description": "<p><strong>Requisiti</strong> Ti trovi in un quadretto che contiene una superficie stretta, un terreno irregolare o un'altra caratteristica simile.</p><hr /><p>Attraversi una superficie stretta o un terreno irregolare, effettuando una prova di [[/act balance]]{Acrobazia} contro la sua CD di Bilanciarsi. Sei @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Impreparato} mentre ti trovi su una superficie stretta o su un terreno irregolare.</p><hr /><p><strong>Successo Critico</strong> Ti muovi fino alla tua Velocità.</p><p><strong>Successo</strong> Ti muovi fino alla tua Velocità, trattandolo come terreno difficile (ogni 1,5 metri costano 3 metri di movimento).</p><p><strong>Fallimento</strong> Devi rimanere fermo per mantenere l'equilibrio (sprecando l'azione) oppure cadi. Se cadi, il tuo turno termina.</p><p><strong>Fallimento Critico</strong> Cadi e il tuo turno termina.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Cadi e il tuo turno termina.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Ti muovi fino alla tua Velocità.",
+          "failure": "<strong>Fallimento</strong> Devi rimanere fermo per mantenere l'equilibrio (sprecando l'azione) oppure cadi. Se cadi, il tuo turno termina.",
+          "success": "<strong>Successo</strong> Ti muovi fino alla tua Velocità, trattandolo come terreno difficile (ogni 1,5 metri costano 3 metri di movimento)."
+        },
+        "SampleTasks": {
+          "Untrained": "radici intrecciate, ciottoli irregolari",
+          "Trained": "asse di legno",
+          "Expert": "ghiaia profonda e sciolta",
+          "Master": "corda da funambolo, sottile lastra di ghiaccio",
+          "Legendary": "filo del rasoio, pezzi di pavimento in caduta libera"
+        },
+        "Title": "Bilanciarsi"
+      },
+      "BonMot": {
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> La tua battuta è atroce. Subisci la stessa penalità che subirebbe un nemico se tu avessi successo. L'effetto finisce dopo 1 minuto o se pronunci un'altra Facezia e hai successo. @UUID[Compendium.pf2e.feat-effects.Item.GoSls6SKCFmSoDxT]{Effect: Bon Mot}",
+          "criticalSuccess": "<strong>Successo Critico</strong> Il bersaglio è distratto e subisce penalità di status -3 a Percezione e ai tiri salvezza su Volontà per 1 minuto. Il bersaglio può porre fine all'effetto in anticipo con una replica alla tua Facezia. Questa può essere una azione singola che ha il tratto concentrazione o un'azione di abilità appropriata per imbastire una replica. Il GM determina quali azioni di abilità si possono utilizzare, anche se è necessario compiere almeno 1 azione. In genere, la replica deve utilizzare un'azione di abilità linguistica e basata sul Carisma. @UUID[Compendium.pf2e.feat-effects.Item.GoSls6SKCFmSoDxT]{Effect: Bon Mot}",
+          "success": "<strong>Successo</strong> Il bersaglio è distratto e subisce penalità di status -2 a Percezione e ai tiri salvezza su Volontà per 1 minuto. Il bersaglio può porre fine all'effetto in anticipo con una replica alla tua Facezia. Questa può essere una azione singola che ha il tratto concentrazione o un'azione di abilità appropriata per imbastire una replica. Il GM determina quali azioni di abilità si possono utilizzare, anche se è necessario compiere almeno 1 azione. In genere, la replica deve utilizzare un'azione di abilità linguistica e basata sul Carisma. @UUID[Compendium.pf2e.feat-effects.Item.GoSls6SKCFmSoDxT]{Effect: Bon Mot}"
+        },
+        "Title": "Facezia"
+      },
+      "Burrow": {
+        "Description": "<p><strong>Requisiti</strong> Hai una Velocità di Scavare.</p><hr /><p>Ti fai strada scavando attraverso terra, sabbia o un simile materiale friabile, muovendoti fino alla tua Velocità di Scavare. Non puoi scavare nella roccia o in altre sostanze più dense della terra, a meno che non possieda una capacità che te lo permetta.</p>",
+        "Title": "Scavare"
+      },
+      "Climb": {
+        "Description": "<p><strong>Requisiti</strong> Hai entrambe le mani libere.</p><hr /><p>Effettui una prova di [[/act climb]]{Atletica} per muoverti di una distanza massima di 1,5 metri verso l'alto, verso il basso o in diagonale lungo un pendio (o in orizzontale, se il GM lo permette). Se non hai una Velocità di Scalare, sei @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Impreparato} mentre scali. Il GM determina la CD in base alla natura del pendio e alle circostanze ambientali; potresti ottenere un successo critico automatico su un pendio banale da scalare. Se la tua Velocità sul Terreno è di 12 metri o più, la distanza massima aumenta di 1,5 metri per ogni 6 metri di Velocità oltre i 6 metri.</p><hr /><p><strong>Successo Critico</strong> Ti muovi lungo il pendio, incrementando la distanza massima di 1,5 metri.</p><p><strong>Successo</strong> Ti muovi lungo il pendio.</p><p><strong>Fallimento Critico</strong> Cadi. Se hai iniziato la scalata su un terreno stabile, cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.</p>",
+        "Modifier": {
+          "ClimbSpeed": "Velocità di Scalare"
+        },
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Cadi. Se hai iniziato la scalata su un terreno stabile, cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Ti muovi lungo il pendio, incrementando la distanza massima di 1,5 metri.",
+          "success": "<strong>Successo</strong> Ti muovi lungo il pendio."
+        },
+        "SampleTasks": {
+          "Untrained": "scala, pendio scosceso, albero con rami bassi",
+          "Trained": "sartiame, corda, albero tipico",
+          "Expert": "muro con piccoli appigli per mani e piedi",
+          "Master": "soffitto con appigli per mani e piedi, parete di roccia",
+          "Legendary": "superficie liscia"
+        },
+        "Title": "Scalare"
+      },
+      "Coerce": {
+        "Description": "<p>Con minacce palesi o velate, tenti di intimidire una creatura affinché faccia ciò che vuoi. Devi trascorrere almeno 1 minuto di conversazione con la creatura. Alla fine della conversazione, effettua una prova di [[/act coerce]]{Intimidazione} contro la CD di Volontà del bersaglio, modificata da qualsiasi circostanza che il GM determini.</p><hr /><p><strong>Successo Critico</strong> Il bersaglio ti dà le informazioni che cerchi o accetta di seguire le tue direttive, purché non rischino di danneggiarlo in alcun modo. Il bersaglio continua a ottemperare per un periodo di tempo determinato dal GM, ma non superiore a 1 giorno, dopodiché diventa maldisposto (se non era già maldisposto o ostile). Tuttavia, il bersaglio ha troppa paura di te per vendicarsi, almeno a breve termine.</p><p><strong>Successo</strong> Come il successo critico, ma quando il bersaglio diventa maldisposto potrebbe decidere di agire contro di te, per esempio denunciandoti alle autorità o aiutando i tuoi nemici.</p><p><strong>Fallimento</strong> Il bersaglio non fa ciò che dici e, se non era già maldisposto o ostile, diventa maldisposto.</p><p><strong>Fallimento Critico</strong> Il bersaglio rifiuta di ottemperare, diventa ostile se non lo era già ed è temporaneamente immune alle tue Costrizioni per almeno 1 settimana.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Il bersaglio rifiuta di ottemperare, diventa ostile se non lo era già ed è temporaneamente immune alle tue Costrizioni per almeno 1 settimana.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Il bersaglio ti dà le informazioni che cerchi o accetta di seguire le tue direttive, purché non rischino di danneggiarlo in alcun modo. Il bersaglio continua a ottemperare per un periodo di tempo determinato dal GM, ma non superiore a 1 giorno, dopodiché diventa maldisposto (se non era già maldisposto o ostile). Tuttavia, il bersaglio ha troppa paura di te per vendicarsi, almeno a breve termine.",
+          "failure": "<strong>Fallimento</strong> Il bersaglio non fa ciò che dici e, se non era già maldisposto o ostile, diventa maldisposto.",
+          "success": "<strong>Successo</strong> Come il successo critico, ma quando il bersaglio diventa maldisposto potrebbe decidere di agire contro di te, per esempio denunciandoti alle autorità o aiutando i tuoi nemici."
+        },
+        "Title": "Costringere"
+      },
+      "CommandAnAnimal": {
+        "Description": "<p>Dai un ordine a un animale. Effettua una prova di [[/act command-an-animal]]{Natura} contro la CD di Volontà dell'animale. Il GM potrebbe modificare la CD se l'animale ha un buon atteggiamento nei tuoi confronti, se suggerisci una linea d'azione verso cui era predisposto o se gli offri un premio.</p><p>Fallisci automaticamente se l'animale è ostile o maldisposto nei tuoi confronti. Se l'animale è collaborativo verso di te, aumenta il tuo grado di successo di un passo. Potresti riuscire a Comandare un Animale più facilmente con un talento come @UUID[Compendium.pf2e.feats-srd.Item.Rq5wkA8DtsmbzoGV]{Cavalcare}.</p><p>La maggior parte degli animali conosce le azioni base @UUID[Compendium.pf2e.actionspf2e.Item.HYNhdaPtF1QmQbR3]{Cadere a Terra}, @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Saltare}, @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Cercare}, @UUID[Compendium.pf2e.actionspf2e.Item.OdIUybJ3ddfL7wzj]{Alzarsi}, @UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]{Avanzare} e @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Colpire}. Se un animale conosce un'attività, come il Galoppo di un cavallo, puoi Comandare l'Animale per fargli svolgere l'attività, ma devi spendere lo stesso numero di azioni di Comandare un Animale pari al numero di azioni dell'attività. Puoi anche spendere più azioni per Comandare all'Animale di compiere quel numero di azioni base nel suo prossimo turno; per esempio, potresti spendere 3 azioni per Comandare a un Animale di Avanzare tre volte, o di Avanzare due volte e poi effettuare un Colpire.</p><hr /><p><strong>Successo</strong> L'animale fa come comandi nel suo prossimo turno.</p><p><strong>Fallimento</strong> L'animale è esitante o restio e non fa nulla.</p><p><strong>Fallimento Critico</strong> L'animale si comporta male o fraintende e compie qualche altra azione determinata dal GM.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> L'animale si comporta male o fraintende e compie qualche altra azione determinata dal GM.",
+          "failure": "<strong>Fallimento</strong> L'animale è esitante o restio e non fa nulla.",
+          "success": "<strong>Successo</strong> L'animale fa come comandi nel suo prossimo turno."
+        },
+        "Title": "Comandare un Animale"
+      },
+      "ConcealAnObject": {
+        "Description": "<p>Nascondi un piccolo oggetto sulla tua persona (come un'arma di Ingombro leggero). Quando cerchi di far passare inosservato un oggetto nascosto davanti a qualcuno che potrebbe notarlo, il GM effettua la tua prova di [[/act conceal-an-object]]{Furtività} e la confronta con la CD di Percezione di questo osservatore passivo. Una volta che il GM ha effettuato la tua prova per un oggetto nascosto, lo stesso risultato viene usato indipendentemente da quanti osservatori passivi tenti di superare con esso. Se una creatura ti sta cercando specificamente un oggetto, può tentare una prova di Percezione contro la tua CD di Furtività (trovando l'oggetto in caso di successo).</p><p>Puoi anche nascondere un oggetto in un luogo diverso dalla tua persona, come tra la vegetazione o in uno scomparto segreto dentro un mobile. In questo caso, i personaggi che Cercano in un'area confrontano i risultati delle loro prove di Percezione con la tua CD di Furtività per determinare se trovano l'oggetto.</p><hr /><p><strong>Successo</strong> L'oggetto rimane non individuato.</p><p><strong>Fallimento</strong> Chi cerca trova l'oggetto.</p>",
+        "Notes": {
+          "failure": "<strong>Fallimento</strong> Chi cerca trova l'oggetto.",
+          "success": "<strong>Successo</strong> L'oggetto rimane non individuato."
+        },
+        "Title": "Nascondere un Oggetto"
+      },
+      "CoverTracks": {
+        "Description": "<p>Copri le tue tracce, muovendoti fino a metà della tua Velocità di viaggio, usando le regole della @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.DUOb8QrlC5t0adkL]{Velocità di Viaggio}. Non devi effettuare una prova di Sopravvivenza per coprire le tue tracce, ma chiunque ti segua deve superare una prova di Sopravvivenza contro la tua CD di Sopravvivenza, se è più alta della CD normale per @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Seguire Tracce}.</p><p>In alcuni casi, potresti Coprire Tracce durante un incontro. In questo caso, Coprire Tracce è un'azione singola e non ha il tratto esplorazione.</p>",
+        "Title": "Coprire Tracce"
+      },
+      "Craft": {
+        "Details": {
+          "DaysForNoCost": "Giorni fino a Nessun Costo Aggiuntivo:",
+          "Discount": "Sconto Al Giorno:",
+          "LostMaterials": "Perdi {cost} di Materiali",
+          "PayFull": "Paga {cost} dell'Intero Costo e Fabbrica",
+          "PayMaterials": "Paga {cost} dei Costi Materiali e Fabbrica",
+          "ReceiveItem": "Ricevi Oggetto"
+        },
+        "Error": {
+          "ItemReferenceMismatch": "Per Fabbricare, accetta solo oggetti fisici da un compendio o dalla Cartella Oggetti del mondo."
+        },
+        "Information": {
+          "LoseMaterials": "{actorName} perde {cost} di materiali.",
+          "PayAndReceive": "{actorName} paga {cost} dei costi di fabbricazione e riceve {quantity}x {itemName}.",
+          "ReceiveItem": "{actorName} riceve {quantity}x {itemName}."
+        },
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Non riesci a completare l'oggetto. Rovini il 10% dei materiali grezzi che hai fornito, ma puoi recuperare il resto. Se vuoi tentare di nuovo, devi ricominciare da capo.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Il tuo tentativo ha successo. Ogni giorno aggiuntivo trascorso a Fabbricare riduce i materiali necessari per completare l'oggetto di un importo basato sul tuo livello + 1 e sul tuo grado di competenza in Artigianato.",
+          "failure": "<strong>Fallimento</strong> Non riesci a completare l'oggetto. Puoi recuperare i materiali grezzi forniti per il loro valore pieno. Se vuoi tentare di nuovo, devi ricominciare da capo.",
+          "success": "<strong>Successo</strong> Il tuo tentativo ha successo. Ogni giorno aggiuntivo trascorso a Fabbricare riduce i materiali necessari per completare l'oggetto di un importo basato sul tuo livello e sul tuo grado di competenza."
+        },
+        "SelectItemDialog": {
+          "CancelButtonLabel": "Annulla",
+          "CraftButtonLabel": "Fabbrica",
+          "DropItemZoneLabel": "Trascina qui un oggetto...",
+          "Title": "Seleziona un oggetto da Fabbricare"
+        },
+        "SelectSpellDialog": {
+          "CraftButtonLabel": "Fabbrica",
+          "Title": "Seleziona un Incantesimo"
+        },
+        "Title": "Fabbricare",
+        "Warning": {
+          "CantAddItem": "Impossibile aggiungere gli oggetti",
+          "InsufficientCoins": "Monete insufficienti",
+          "MissingItem": "Impossibile Fabbricare un oggetto sconosciuto con ID {uuid}.",
+          "NotPhysicalItem": "L'oggetto specificato {item} non è un oggetto fisico."
+        }
+      },
+      "Crawl": {
+        "Description": "<p><strong>Requisiti</strong> Sei Prono e la tua Velocità è almeno 3 metri.</p><hr /><p>Ti muovi di 1,5 metri andando carponi e continui a rimanere @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.</p>",
+        "Title": "Andare Carponi"
+      },
+      "CreateADiversion": {
+        "Description": "<p>Con un [[/act create-a-diversion variant=gesture]]{gesto}, un [[/act create-a-diversion variant=trick]]{trucco} o qualche [[/act create-a-diversion variant=distracting-words]]{parola di distrazione}, puoi creare un diversivo che attira altrove l'attenzione delle creature. Se usi un gesto o un trucco, questa azione ottiene il tratto maneggiare. Se usi parole di distrazione, ottiene i tratti uditivo e linguistico.</p><p>Effettua una singola prova di Inganno e confrontala con le CD di Percezione delle creature la cui attenzione stai cercando di distrarre. Che tu riesca o meno, le creature che tenti di distrarre ottengono un bonus di circostanza +4 alle loro CD di Percezione contro i tuoi tentativi di Creare un Diversivo per 1 minuto.</p><hr /><p><strong>Successo</strong> Diventi @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Nascosto} per ogni creatura la cui CD di Percezione è minore o uguale al tuo risultato. (La condizione nascosto ti permette di @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sgattaiolare} via.) Questo dura fino alla fine del tuo turno o finché non fai qualsiasi cosa tranne un Passo o l'uso dell'abilità Furtività per Nasconderti o Sgattaiolare. Se Colpisci una creatura, la creatura rimane @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Impreparata} contro quell'attacco, e poi diventi osservato. Se fai qualsiasi altra cosa, diventi osservato appena prima di agire, a meno che il GM non determini altrimenti.</p><p><strong>Fallimento</strong> Non distogli l'attenzione di nessuna creatura la cui CD di Percezione supera il tuo risultato, e quelle creature si accorgono che stavi cercando di ingannarle.</p>",
+        "DistractingWords": {
+          "Title": "Parole di Distrazione"
+        },
+        "Gesture": {
+          "Title": "Gesto"
+        },
+        "Notes": {
+          "failure": "<strong>Fallimento</strong> Non distogli l'attenzione di nessuna creatura la cui CD di Percezione supera il tuo risultato, e quelle creature si accorgono che stavi cercando di ingannarle.",
+          "success": "<strong>Successo</strong> Diventi @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Nascosto} per ogni creatura la cui CD di Percezione è minore o uguale al tuo risultato. (La condizione nascosto ti permette di @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sgattaiolare} via.) Questo dura fino alla fine del tuo turno o finché non fai qualsiasi cosa tranne un @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Passo} o l'uso dell'abilità Furtività per @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Nasconderti} o Sgattaiolare. Se @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Colpisci} una creatura, la creatura rimane @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Impreparata} contro quell'attacco, e poi diventi @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Osservato}. Se fai qualsiasi altra cosa, diventi osservato appena prima di agire, a meno che il GM non determini altrimenti."
+        },
+        "Title": "Creare un Diversivo",
+        "Trick": {
+          "Title": "Trucco"
+        },
+        "Warning": {
+          "UnknownVariant": "Variante sconosciuta {variant} usata per Creare un Diversivo; usa una di queste: {variants}."
+        }
+      },
+      "CreateForgery": {
+        "Description": "<p><strong>Requisiti</strong> Fornisci i materiali di scrittura adeguati per la tua falsificazione.</p><hr /><p>Crei un documento falso, di solito nel corso di un giorno o una settimana. Il GM effettua una prova segreta di [[/act create-forgery]]{Società} con CD 20. Se devi falsificare la grafia di una persona specifica, ti serve un campione della grafia di quella persona. Altrimenti, ti basta aver visto un documento simile, e ottieni fino a un bonus di circostanza +4 alla prova (il GM determina il bonus).</p><hr /><p><strong>Successo</strong> La falsificazione è di qualità abbastanza buona che gli osservatori passivi non possono notare il falso (ma vedi Esaminare le Falsificazioni).</p><p><strong>Fallimento</strong> La falsificazione presenta alcuni segni evidenti di essere un falso, che potenzialmente permettono agli osservatori passivi di accorgersene. Ogni volta che un osservatore passivo vede il documento, il GM confronta il risultato della tua prova con la CD di Percezione o la CD di Società dell'osservatore, quella più alta tra le due. Se il tuo risultato non supera la CD di un osservatore passivo, quell'osservatore sa che il documento è un falso.</p><hr /><h2>Esaminare le Falsificazioni</h2><p>Una creatura in cerca di falsificazioni, anche se è stata ingannata da una rapida occhiata, può prendersi del tempo per esaminare attentamente un documento per vedere se è un falso. Applicano tecniche e metodi di analisi diversi per guardare oltre gli elementi superficiali e tentano una prova segreta di Percezione o Società contro la CD di Società del falsario; qualsiasi bonus che avevi per creare la falsificazione si applica inizialmente a questa CD. In caso di successo, l'esaminatore sa che il documento è un falso. In caso di fallimento, ritiene che il documento sia autentico e non può tentare di nuovo a meno che non ottenga un nuovo motivo di sospettare del documento. Se un PG esamina un documento autentico, il GM potrebbe comunque fingere di effettuare una prova segreta prima di rivelare che il documento è autentico.</p>",
+        "ForgedDocument": {
+          "Description": "<p>Una creatura in cerca di falsificazioni, anche se è stata ingannata da una rapida occhiata, può prendersi del tempo per esaminare attentamente un documento per vedere se è un falso. Applicano tecniche e metodi di analisi diversi per guardare oltre gli elementi superficiali e tentano una prova segreta di @Check[perception|dc:{societyDC}|traits:secret] o di @Check[society|dc:{societyDC}|traits:secret]; qualsiasi bonus che avevi per creare la falsificazione si applica inizialmente a questa CD. In caso di successo, l'esaminatore sa che il documento è un falso. In caso di fallimento, ritiene che il documento sia autentico e non può tentare di nuovo a meno che non ottenga un nuovo motivo di sospettare del documento. Se un PG esamina un documento autentico, il GM potrebbe comunque fingere di effettuare una prova segreta prima di rivelare che il documento è autentico.</p>",
+          "FailureGmNote": "<p>La falsificazione presenta alcuni segni evidenti di essere un falso, quindi il GM confronta il risultato di {total} con la CD di Percezione o la CD di Società di ciascun osservatore passivo, quella più alta tra le due, usando i risultati di successo o fallimento qui sotto. Lo stesso risultato viene usato contro le CD di tutti gli osservatori passivi, indipendentemente da quante creature osservino passivamente quel documento.</p><p>{success}</p><p>{failure}</p>",
+          "Name": "Documento Falso",
+          "SuccessGmNote": "<p>La falsificazione è di qualità abbastanza buona che gli osservatori passivi non possono notare il falso. Solo chi esamina attentamente il documento e tentai una prova di @Check[perception|dc:{societyDC}|showDC:gm] o di @Check[society|dc:{societyDC}|showDC:gm] contro la tua CD di Società può accorgersene.</p>"
+        },
+        "ForgedDocumentCreatedNotification": "Un documento falso è stato aggiunto all'inventario di {name}.",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento</strong> L'osservatore sa che il tuo documento è un falso.",
+          "criticalSuccess": "<strong>Successo</strong> L'osservatore non rileva la falsificazione.",
+          "failure": "<strong>Fallimento</strong> L'osservatore sa che il tuo documento è un falso.",
+          "success": "<strong>Successo</strong> L'osservatore non rileva la falsificazione."
+        },
+        "Title": "Falsificare",
+        "UnspecificHandwriting": "Grafia Generica"
+      },
+      "DecipherWriting": {
+        "Description": "<p>Tenti di decifrare scritti complicati o testi su un argomento oscuro. Questo richiede di solito 1 minuto per pagina di testo, ma potrebbe richiedere più tempo (in genere un'ora per pagina per decifrare cifrari o simili). Il testo deve essere in una lingua che sai leggere, anche se il GM potrebbe permetterti di tentare di decifrare un testo scritto in una lingua sconosciuta usando [[/act decipher-writing statistic=society]]{Società}.</p><p>La CD è determinata dal GM in base allo stato o alla complessità del documento. Il GM potrebbe farti effettuare una prova per un testo breve o una prova per ciascuna sezione di un testo più ampio.</p><hr /><p><strong>Successo Critico</strong> Comprendi il vero significato del testo.</p><p><strong>Successo</strong> Comprendi il vero significato del testo. Se era un documento in codice, ne conosci il significato generale, ma potresti non avere una traduzione parola per parola.</p><p><strong>Fallimento</strong> Non riesci a comprendere il testo e subisci una penalità di circostanza –2 alle prove successive per decifrarlo.</p><p><strong>Fallimento Critico</strong> Credi di aver compreso il testo su quella pagina, ma in realtà ne hai frainteso il messaggio.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Credi di aver compreso il testo su quella pagina, ma in realtà ne hai frainteso il messaggio.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Comprendi il vero significato del testo.",
+          "failure": "<strong>Fallimento</strong> Non riesci a comprendere il testo e subisci una penalità di circostanza –2 alle prove successive per decifrarlo.",
+          "success": "<strong>Successo</strong> Comprendi il vero significato del testo. Se era un documento in codice, ne conosci il significato generale, ma potresti non avere una traduzione parola per parola."
+        },
+        "SampleTasks": {
+          "Trained": "trattato filosofico di base",
+          "Expert": "codice complesso, come un cifrario",
+          "Master": "codice di un maestro delle spie o appunti di ricerca avanzati",
+          "Legendary": "testo planare esoterico scritto in metafore da un antico celestiale"
+        },
+        "Title": "Decifrare Testi",
+        "Warning": {
+          "NoSkill": "L'azione Decifrare Testi può essere usata con abilità diverse e non è stata specificata alcuna abilità. Le abilità usate per Decifrare Testi e i tipi di testi che di solito decifrano sono: Arcano per gli scritti sulla magia o sulla scienza, Occultismo per i testi esoterici su misteri e filosofia, Religione per le sacre scritture o Società per i messaggi in codice o i documenti arcaici."
+        }
+      },
+      "Delay": {
+        "Description": "<p><strong>Innesco</strong> Il tuo turno inizia.</p><hr /><p>Aspetti il momento giusto per agire. Il resto del tuo turno non avviene ancora. Vieni invece rimosso dall'ordine di iniziativa. Puoi tornare nell'ordine di iniziativa come azione gratuita innescata dalla fine del turno di qualsiasi altra creatura. Ciò cambia in via permanente la tua iniziativa, ponendola nella nuova posizione. Non puoi usare reazioni finché non torni nell'ordine di iniziativa. Se Ritardi per un intero round senza tornare nell'ordine di iniziativa, le azioni del turno ritardato sono perse, la tua iniziativa non cambia e il tuo prossimo turno avviene nella tua posizione originale nell'ordine di iniziativa.</p><p>Quando Ritardi, qualsiasi @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Danno Persistente} o altro effetto negativo che avverrebbe normalmente all'inizio o alla fine del tuo turno avviene appena usi l'azione Ritardare. Anche qualsiasi effetto benefico che terminerebbe in un punto qualsiasi del tuo turno termina. Il GM potrebbe determinare che anche altri effetti terminano quando Ritardi. In sostanza, non puoi Ritardare per evitare conseguenze negative che avverrebbero nel tuo turno o per estendere effetti benefici che terminerebbero nel tuo turno.</p>",
+        "Title": "Ritardare"
+      },
+      "Demoralize": {
+        "Description": "<p>Con un urlo improvviso, uno scherno ben piazzato o un insulto tagliente, puoi minare la determinazione di un nemico. Scegli una creatura entro 9 metri da te di cui sei consapevole. Effettua una prova di [[/act demoralize]]{Intimidazione} contro la CD di Volontà del bersaglio. Se il bersaglio non capisce la lingua che parli, o se non stai parlando una lingua, subisci una penalità di circostanza –4 alla prova. A prescindere dal tuo risultato, il bersaglio è temporaneamente immune ai tuoi tentativi di Demoralizzarlo per 10 minuti.</p><hr /><p><strong>Successo Critico</strong> Il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Spaventato 2}.</p><p><strong>Successo</strong> Il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Spaventato 1}.</p>",
+        "Notes": {
+          "criticalSuccess": "<strong>Successo Critico</strong> Il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Spaventato 2}.",
+          "success": "<strong>Successo</strong> Il bersaglio diventa @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Spaventato 1}."
+        },
+        "Title": "Demoralizzare",
+        "Unintelligible": "Incomprensibile"
+      },
+      "DisableDevice": {
+        "Description": "<p><strong>Requisiti</strong> Alcuni congegni richiedono di indossare o tenere uno @UUID[Compendium.pf2e.equipment-srd.Item.zvLyCVD8g2PdHJAc]{Strumento da Scasso}.</p><hr /><p>Questa azione ti permette di disinnescare una trappola o un altro congegno complesso. Spesso un congegno richiede numerosi successi prima di essere disattivato, a seconda della sua costruzione e complessità. Uno Strumento da Scasso è utile e a volte persino necessario per Disattivare un Congegno, come determinato dal GM, e a volte un congegno richiede un grado di competenza più alto in Furto per essere disattivato.</p><p>Il risultato della tua prova di [[/act disable-device]]{Furto} determina i tuoi progressi.</p><hr /><p><strong>Successo Critico</strong> Disattivi il congegno, oppure ottieni due successi verso la disattivazione di un congegno che ne richiede più di uno. Non lasci tracce delle tue manomissioni e puoi riarmare il congegno in seguito, se quel tipo di congegno può essere riarmato.</p><p><strong>Successo</strong> Disattivi il congegno, oppure ottieni un successo verso la disattivazione di un congegno che ne richiede più di uno.</p><p><strong>Fallimento Critico</strong> Inneschi il congegno.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Inneschi il congegno.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Disattivi il congegno, oppure ottieni due successi verso la disattivazione di un congegno che ne richiede più di uno. Non lasci tracce delle tue manomissioni e puoi riarmare il congegno in seguito, se quel tipo di congegno può essere riarmato.",
+          "success": "<strong>Successo</strong> Disattivi il congegno, oppure ottieni un successo verso la disattivazione di un congegno che ne richiede più di uno."
+        },
+        "Title": "Disattivare un Congegno"
+      },
+      "Disarm": {
+        "Description": "<p><strong>Requisiti</strong> Hai almeno una mano libera. Il bersaglio non può essere più grande di te di più di una taglia.</p><hr /><p>Tenti di far cadere un oggetto dalla presa di una creatura. Effettua una prova di [[/act disarm]]{Atletica} contro la CD di Riflessi del bersaglio.</p><hr /><p><strong>Successo Critico</strong> Fai cadere l'oggetto dalla presa del bersaglio. Cade a terra nello spazio del bersaglio.</p><p><strong>Successo</strong> Indebolisci la presa del bersaglio sull'oggetto. I tentativi successivi di Disarmare il bersaglio di quell'oggetto ottengono un bonus di circostanza +2, e il bersaglio subisce una penalità di circostanza –2 agli attacchi con l'oggetto o alle altre prove che richiedono una salda presa su di esso. La creatura può porre fine all'effetto Interagendo per cambiare la sua presa sull'oggetto; altrimenti, dura finché la creatura tiene l'oggetto.</p><p>@UUID[Compendium.pf2e.other-effects.Item.PuDS0DEq0CnaSIFV]{Effetto: Disarmare (Successo)}</p><p><strong>Fallimento Critico</strong> Perdi l'equilibrio e diventi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Impreparato} fino all'inizio del tuo prossimo turno.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Perdi l'equilibrio e diventi @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Impreparato} fino all'inizio del tuo prossimo turno.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Fai cadere l'oggetto dalla presa del bersaglio. Cade a terra nello spazio del bersaglio.",
+          "success": "<strong>Successo</strong> Indebolisci la presa del bersaglio sull'oggetto. I tentativi successivi di Disarmare il bersaglio di quell'oggetto ottengono un bonus di circostanza +2, e il bersaglio subisce una penalità di circostanza –2 agli attacchi con l'oggetto o alle altre prove che richiedono una salda presa su di esso. La creatura può porre fine all'effetto Interagendo per cambiare la sua presa sull'oggetto; altrimenti, dura finché la creatura tiene l'oggetto.<br>@UUID[Compendium.pf2e.other-effects.Item.PuDS0DEq0CnaSIFV]{Effetto: Disarmare (Successo)}"
+        },
+        "Title": "Disarmare"
+      },
+      "Dismiss": {
+        "Description": "<p>Poni fine a un effetto che dichiara che puoi Interromperlo. Interrompere pone fine all'intero effetto, a meno che non sia indicato diversamente.</p>",
+        "Title": "Interrompere"
+      },
+      "Drive": {
+        "Description": "<p><strong>Requisiti</strong> Stai pilotando un veicolo.</p><p>Piloti il tuo veicolo per muoverlo. Decidi quante azioni hai intenzione di spendere prima di iniziare a Guidare. Gli effetti dipendono dal numero di azioni che spendi. Non puoi Guidare attraverso spazi occupati da creature, anche se sono alleate.</p><p><span class=\"action-glyph\">1</span> Effettua una prova di pilotaggio. In caso di successo, il veicolo si muove fino alla sua Velocità e può girare normalmente. In caso di fallimento, il veicolo si muove della sua Velocità in linea retta. In caso di fallimento critico, il veicolo si muove della sua Velocità in linea retta e diventa senza controllo.</p><p><span class=\"action-glyph\">2</span> (spericolato) Il veicolo si muove fino al doppio della sua Velocità in linea retta, lungo l'orientamento attuale del veicolo.</p><p><span class=\"action-glyph\">3</span> (spericolato) Subisci una penalità di –5 alla tua prova di pilotaggio per mantenere il controllo del veicolo. Il veicolo si muove fino a tre volte la sua Velocità in linea retta, lungo l'orientamento attuale del veicolo.</p>",
+        "Drive1": {
+          "Description": "<p>Effettua una prova di Pilotaggio. In caso di successo, il veicolo si muove fino alla sua Velocità e può girare normalmente. In caso di fallimento, il veicolo si muove della sua Velocità in linea retta. In caso di fallimento critico, il veicolo si muove della sua Velocità in linea retta e diventa senza controllo.</p>",
+          "Notes": {
+            "criticalFailure": "<strong>Fallimento Critico</strong> Il veicolo si muove della sua Velocità in linea retta e diventa senza controllo.",
+            "failure": "<strong>Fallimento</strong> Il veicolo si muove della sua Velocità in linea retta.",
+            "success": "<strong>Successo</strong> Il veicolo si muove fino alla sua Velocità e può girare normalmente."
+          },
+          "Title": "Guidare1"
+        },
+        "Drive2": {
+          "Description": "<p>(spericolato) Il veicolo si muove fino al doppio della sua Velocità in linea retta, lungo l'orientamento attuale del veicolo.</p>",
+          "Notes": {
+            "failure": "<strong>Fallimento</strong> Il veicolo si muove della sua Velocità in linea retta lungo il suo orientamento più recente, deviando fino a 45 gradi a discrezione del GM, e diventa senza controllo.",
+            "success": "<strong>Successo</strong> Il veicolo si muove fino al doppio della sua Velocità in linea retta, lungo l'orientamento attuale del veicolo."
+          },
+          "Title": "Guidare2"
+        },
+        "Drive3": {
+          "Description": "<p>(spericolato) Subisci una penalità di –5 alla tua prova di pilotaggio per mantenere il controllo del veicolo. Il veicolo si muove fino a tre volte la sua Velocità in linea retta, lungo l'orientamento attuale del veicolo.</p>",
+          "Notes": {
+            "failure": "<strong>Fallimento</strong> Il veicolo si muove della sua Velocità in linea retta lungo il suo orientamento più recente, deviando fino a 45 gradi a discrezione del GM, e diventa senza controllo.",
+            "success": "<strong>Successo</strong> Il veicolo si muove fino a tre volte la sua Velocità in linea retta, lungo l'orientamento attuale del veicolo."
+          },
+          "Title": "Guidare3"
+        },
+        "Title": "Guidare"
+      },
+      "DropProne": {
+        "Description": "<p>Cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.</p>",
+        "Title": "Cadere a Terra"
+      },
+      "EarnIncome": {
+        "Description": "<p>Usi una delle tue abilità per guadagnare denaro durante una pausa. Il GM assegna un livello del compito che rappresenta l'impiego più redditizio disponibile. Puoi cercare compiti di livello inferiore, con il GM che determina se ne trovi. A volte puoi tentare di trovare un lavoro migliore delle offerte iniziali, anche se questo richiede tempo e l'uso dell'abilità Diplomazia per Raccogliere Informazioni, fare qualche ricerca o socializzare.</p><p>Quando accetti un lavoro, il GM stabilisce in segreto la CD della tua prova di abilità. Dopo il tuo primo giorno di lavoro, effettui un tiro per determinare i tuoi guadagni. Ottieni una quantità di denaro in base al tuo risultato, al livello del compito e al tuo grado di competenza (come indicato nella tabella Guadagni).</p><p>Puoi continuare a lavorare al compito nei giorni successivi senza dover tirare di nuovo. Per ogni giorno trascorso dopo il primo, guadagni la stessa quantità del primo giorno, fino al completamento del compito. Il GM determina per quanto tempo puoi lavorare al compito. La maggior parte dei compiti dura una o due settimane, anche se alcuni possono richiedere mesi o addirittura anni.</p><hr /><p><strong>Successo Critico</strong> Fai un lavoro eccezionale. Ottieni la quantità di denaro indicata per il livello del compito + 1 e il tuo grado di competenza.</p><p><strong>Successo</strong> Fai un lavoro competente. Ottieni la quantità di denaro indicata per il livello del compito e il tuo grado di competenza.</p><p><strong>Fallimento</strong> Fai un lavoro scadente e vieni pagato il minimo indispensabile per il tuo tempo. Ottieni la quantità di denaro indicata nella colonna del fallimento per il livello del compito. Il GM probabilmente ridurrà il tempo per cui puoi continuare il compito.</p><p><strong>Fallimento Critico</strong> Non guadagni nulla per il tuo lavoro e vieni licenziato immediatamente. Non puoi continuare il compito. La tua reputazione ne risente, rendendoti potenzialmente difficile trovare lavori redditizi in quella comunità in futuro.</p>",
+        "ShortDescription": "Usi una delle tue abilità per guadagnare denaro durante una pausa. Il GM assegna un livello del compito che rappresenta l'impiego più redditizio disponibile. Puoi cercare compiti di livello inferiore, con il GM che determina se ne trovi.",
+        "Result": {
+          "DaysSpent": {
+            "Label": "Giorni Trascorsi",
+            "one": "1 Giorno",
+            "other": "{days} Giorni"
+          },
+          "IncomeEarned": "Reddito Guadagnato",
+          "PerDay": "{income} al giorno",
+          "TaskLevel": "Livello del Compito",
+          "Title": "Risultato di Guadagnare"
+        },
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Non guadagni nulla per il tuo lavoro e vieni licenziato immediatamente. Non puoi continuare il compito. La tua reputazione ne risente, rendendoti potenzialmente difficile trovare lavori redditizi in quella comunità in futuro.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Fai un lavoro eccezionale. Ottieni la quantità di denaro indicata per il livello del compito + 1 e il tuo grado di competenza.",
+          "failure": "<strong>Fallimento</strong> Fai un lavoro scadente e vieni pagato il minimo indispensabile per il tuo tempo. Ottieni la quantità di denaro indicata nella colonna del fallimento per il livello del compito. Il GM probabilmente ridurrà il tempo per cui puoi continuare il compito.",
+          "success": "<strong>Successo</strong> Fai un lavoro competente. Ottieni la quantità di denaro indicata per il livello del compito e il tuo grado di competenza."
+        },
+        "SampleTasks": {
+          "Caption": "Questi esempi usano Conoscenze sull'Alcol per lavorare in un bar o Conoscenze Legali per svolgere lavoro legale.",
+          "Trained": "servire al bancone, fare ricerche in ambito legale",
+          "Expert": "curare una selezione di drink, rappresentare assistiti in processi minori",
+          "Master": "gestire una grande distilleria, rappresentare assistiti in processi importanti",
+          "Legendary": "gestire un marchio internazionale di bevande alcoliche, presentare un caso nelle corti dell'Inferno"
+        },
+        "Submit": "Tira",
+        "Title": "Guadagnare"
+      },
+      "EncouragingWords": {
+        "BadArgs": "Questa azione deve essere eseguita con esattamente un personaggio o PNG.",
+        "Cancel": "Annulla",
+        "ContentLabel1": "CD di Diplomazia:",
+        "ContentLabel2": "Modificatore CD:",
+        "ContentMain": "Seleziona una CD bersaglio. Ricorda che non puoi tentare una guarigione al di sopra del tuo grado di competenza. Tentare di farlo riduce la CD e la quantità di Stamina recuperata al massimo di cui sei capace.",
+        "ContentOption1": "CD Addestrato 15",
+        "ContentOption2": "CD Esperto 20, +5 Stamina",
+        "ContentOption3": "CD Maestro 30, +15 Stamina",
+        "ContentOption4": "CD Leggendario 40, +25 Stamina",
+        "CritFailure": "Fallimento Critico",
+        "CritSuccess": "Successo Critico",
+        "Damage": "Danni",
+        "Failure": "Fallimento",
+        "NotTrained": "{name} non è addestrato in Diplomazia e non sa usare Parole di Incoraggiamento.",
+        "Recovery": "Recupero Stamina",
+        "StaminaNotEnabled": "La variante Stamina non è attivata.",
+        "Success": "Successo",
+        "Title": "Parole di Incoraggiamento"
+      },
+      "EndCover": {
+        "TowerShield": {
+          "Description": "{actor} esce da dietro la sua {weapon}.",
+          "Title": "Terminare la Copertura"
+        },
+        "ShortTitle": "Termina",
+        "Title": "Terminare la Copertura"
+      },
+      "Escape": {
+        "Description": "<p>Tenti di sfuggire mentre sei @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Afferrato}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilizzato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Trattenuto}. Scegli una creatura, un oggetto, un effetto di incantesimo, un pericolo o un altro impedimento che ti impone una di queste condizioni. Tenta una prova usando il tuo [[/act escape statistic=unarmed]]{modificatore di attacco senz'armi} contro la CD dell'effetto. In genere si tratta della CD di Atletica di una creatura che ti afferra, della CD di Furto di una creatura che ti ha legato, della CD di incantesimo di un effetto di incantesimo o della CD di Sfuggire indicata per un oggetto, un pericolo o un altro impedimento. Se lo desideri, puoi tentare una prova di [[/act escape statistic=acrobatics]]{Acrobazia} o di [[/act escape statistic=athletics]]{Atletica} invece di usare il tuo modificatore di attacco (ma questa azione ha comunque il tratto attacco).</p><hr /><p><strong>Successo Critico</strong> Ti liberi e rimuovi le condizioni Afferrato, Immobilizzato e Trattenuto imposte dal bersaglio che hai scelto. Puoi poi Avanzare fino a 1,5 metri.</p><p><strong>Successo</strong> Ti liberi e rimuovi le condizioni Afferrato, Immobilizzato e Trattenuto imposte dal bersaglio che hai scelto.</p><p><strong>Fallimento Critico</strong> Non ti liberi e non puoi tentare di Sfuggire di nuovo fino al tuo prossimo turno.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Non ti liberi e non puoi tentare di Sfuggire di nuovo fino al tuo prossimo turno.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Ti liberi e rimuovi le condizioni Afferrato, Immobilizzato e Trattenuto imposte dal bersaglio che hai scelto. Puoi poi Avanzare fino a 1,5 metri.",
+          "success": "<strong>Successo</strong> Ti liberi e rimuovi le condizioni Afferrato, Immobilizzato e Trattenuto imposte dal bersaglio che hai scelto."
+        },
+        "Title": "Sfuggire"
+      },
+      "Feint": {
+        "Description": "<p><strong>Requisiti</strong> Sei entro la portata in mischia del bersaglio contro cui tenti di Fintare.</p><hr /><p>Con un movimento fuorviante, lasci un avversario impreparato al tuo vero attacco. Effettua una prova di [[/act feint]]{Inganno} contro la CD di Percezione del tuo bersaglio.</p><hr /><p><strong>Successo Critico</strong> Metti completamente fuori gioco le difese del tuo nemico contro di te. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Impreparato} contro gli attacchi in mischia che tenti contro di esso fino alla fine del tuo prossimo turno.</p><p><strong>Successo</strong> Il tuo nemico è ingannato, ma solo momentaneamente. Il bersaglio è impreparato contro il prossimo attacco in mischia che tenti contro di esso prima della fine del tuo turno attuale.</p><p><strong>Fallimento Critico</strong> La tua finta si ritorce contro di te. Sei impreparato contro gli attacchi in mischia che il bersaglio tenta contro di te fino alla fine del tuo prossimo turno.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> La tua finta si ritorce contro di te. Sei @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Impreparato} contro gli attacchi in mischia che il bersaglio tenta contro di te fino alla fine del tuo prossimo turno.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Metti completamente fuori gioco le difese del tuo nemico contro di te. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Impreparato} contro gli attacchi in mischia che tenti contro di esso fino alla fine del tuo prossimo turno.",
+          "success": "<strong>Successo</strong> Il tuo nemico è ingannato, ma solo momentaneamente. Il bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Impreparato} contro il prossimo attacco in mischia che tenti contro di esso prima della fine del tuo turno attuale."
+        },
+        "Title": "Fintare"
+      },
+      "Fly": {
+        "Description": "<p><strong>Requisiti</strong> Hai una Velocità di Volare.</p><hr /><p>Ti muovi nell'aria fino alla tua Velocità di Volare. Muoversi verso l'alto (in verticale o in diagonale) usa le regole del movimento attraverso un terreno difficile. Puoi muoverti in verticale verso il basso di 3 metri per ogni 1,5 metri di movimento che spendi. Se Voli fino a terra, non subisci danni da caduta. Puoi usare un'azione per Volare di 0 metri e restare sospeso sul posto. Se sei in volo alla fine del tuo turno e non hai usato un'azione Volare in questo round, cadi.</p>",
+        "Title": "Volare"
+      },
+      "ForceOpen": {
+        "Description": "<p>Usando il corpo, una leva o un altro strumento, tenti di aprire con la forza una porta, una finestra, un contenitore o un portone pesante. Con un risultato abbastanza alto, puoi persino sfondare i muri. Senza un piede di porco, forzare qualcosa comporta una penalità dell'oggetto –2 alla prova di [[/act force-open]]{Atletica} per Forzare.</p><hr /><p><strong>Successo Critico</strong> Apri la porta, la finestra, il contenitore o il portone e puoi evitare di danneggiarlo durante l'operazione.</p><p><strong>Successo</strong> Sfondi la porta, la finestra, il contenitore o il portone, e ottiene la condizione @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Rotto}. Se è particolarmente resistente, il GM potrebbe decidere che subisca danni senza diventare rotto.</p><p><strong>Fallimento Critico</strong> Il tuo tentativo blocca la porta, la finestra, il contenitore o il portone, imponendo una penalità di circostanza –2 ai futuri tentativi di Forzarlo.</p>",
+        "NoCrowbarPenalty": "Senza Piede di Porco",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Il tuo tentativo blocca la porta, la finestra, il contenitore o il portone, imponendo una penalità di circostanza –2 ai futuri tentativi di Forzarlo.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Apri la porta, la finestra, il contenitore o il portone e puoi evitare di danneggiarlo durante l'operazione.",
+          "success": "<strong>Successo</strong> Sfondi la porta, la finestra, il contenitore o il portone, e ottiene la condizione @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Rotto}. Se è particolarmente resistente, il GM potrebbe decidere che subisca danni senza diventare rotto."
+        },
+        "SampleTasks": {
+          "Untrained": "tessuto, vetro fragile",
+          "Trained": "ghiaccio, vetro resistente",
+          "Expert": "porta di legno fragile, saracinesca di legno",
+          "Master": "porta di legno robusto, saracinesca di ferro, sbarra di metallo",
+          "Legendary": "porta di pietra o ferro"
+        },
+        "Title": "Forzare"
+      },
+      "GatherInformation": {
+        "Description": "<p>Bazzichi mercati, taverne e luoghi di ritrovo locali per cercare di apprendere qualcosa su un individuo o un argomento specifico. Il GM determina la CD della prova di [[/act gather-information]]{Diplomazia} e il tempo necessario (in genere 2 ore, ma a volte di più), oltre a qualsiasi beneficio che potresti ottenere spendendo monete in bustarelle, bevute o regali.</p><p><strong>Successo</strong> Raccogli informazioni sull'individuo o sull'argomento. Il GM determina i dettagli.</p><p><strong>Fallimento Critico</strong> Raccogli informazioni errate sull'individuo o sull'argomento.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Raccogli informazioni errate sull'individuo o sull'argomento.",
+          "success": "<strong>Successo</strong> Raccogli informazioni sull'individuo o sull'argomento. Il GM determina i dettagli."
+        },
+        "SampleTasks": {
+          "Untrained": "chiacchiere di paese",
+          "Trained": "voci comuni",
+          "Expert": "voci poco comuni, segreti di pulcinella",
+          "Master": "informazioni riservate o esoteriche",
+          "Legendary": "informazioni conosciute solo a pochissimi o a esseri straordinari"
+        },
+        "Title": "Raccogliere Informazioni"
+      },
+      "GrabAnEdge": {
+        "Description": "<p><strong>Innesco</strong> Cadi da un bordo o da un appiglio, o li superi durante la caduta.</p><p><strong>Requisiti</strong> Le tue mani non sono legate dietro la schiena o comunque @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Trattenute}.</p><hr /><p>Quando cadi oltre un bordo o un altro appiglio, o lo superi durante la caduta, puoi tentare di afferrarlo, arrestando potenzialmente la caduta. Devi superare a tua scelta una prova di Acrobazia o un tiro salvezza su Riflessi, di solito con la CD di Scalare. Se afferri il bordo o l'appiglio, puoi poi @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Scalare} usando Atletica.</p><hr /><p><strong>Successo Critico</strong> Afferri il bordo o l'appiglio, che tu abbia una mano libera o meno, in genere usando un oggetto adatto che impugni per aggrapparti (ad esempio, agganciando un'ascia da battaglia a un cornicione). Subisci comunque danni per la distanza di cui sei caduto finora, ma consideri la caduta come se fosse più corta di 9 metri.</p><p><strong>Successo</strong> Se hai almeno una mano libera, afferri il bordo o l'appiglio, arrestando la caduta. Subisci comunque danni per la distanza di cui sei caduto finora, ma consideri la caduta come se fosse più corta di 6 metri. Se non hai mani libere, continui a cadere come se avessi fallito la prova.</p><p><strong>Fallimento Critico</strong> Continui a cadere e, se sei caduto per 6 metri o più prima di usare questa reazione, subisci @Damage[10[bludgeoning]|options:fall-damage] danni per l'impatto per ogni 6 metri di caduta.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Continui a cadere e, se sei caduto per 6 metri o più prima di usare questa reazione, subisci @Damage[10[bludgeoning]|options:fall-damage] danni per l'impatto per ogni 6 metri di caduta.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Afferri il bordo o l'appiglio, che tu abbia una mano libera o meno, in genere usando un oggetto adatto che impugni per aggrapparti (ad esempio, agganciando un'ascia da battaglia a un cornicione). Subisci comunque danni per la distanza di cui sei caduto finora, ma consideri la caduta come se fosse più corta di 9 metri.",
+          "success": "<strong>Successo</strong> Se hai almeno una mano libera, afferri il bordo o l'appiglio, arrestando la caduta. Subisci comunque danni per la distanza di cui sei caduto finora, ma consideri la caduta come se fosse più corta di 6 metri. Se non hai mani libere, continui a cadere come se avessi fallito la prova."
+        },
+        "Title": "Afferrare un Bordo"
+      },
+      "Grapple": {
+        "Description": "<p><strong>Requisiti</strong> Hai almeno una mano libera e il tuo bersaglio non è più grande di te di più di una taglia.</p><hr /><p>Tenti di afferrare una creatura o un oggetto con la mano libera. Effettua una prova di [[/act grapple]]{Atletica} contro la CD di Tempra del bersaglio. Puoi Afferrare un bersaglio che hai già @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Trattenuto} senza avere una mano libera.</p><hr /><p><strong>Successo Critico</strong> Il tuo bersaglio è trattenuto fino alla fine del tuo prossimo turno, a meno che tu non ti muova o il bersaglio Sfugga.</p><p><strong>Successo</strong> Il tuo bersaglio è afferrato fino alla fine del tuo prossimo turno, a meno che tu non ti muova o il bersaglio Sfugga.</p><p><strong>Fallimento</strong> Non riesci ad afferrare il bersaglio. Se avevi già afferrato o trattenuto il bersaglio usando Afferrare, quelle condizioni sul bersaglio terminano.</p><p><strong>Fallimento Critico</strong> Se avevi già afferrato o trattenuto il bersaglio, esso si libera. Il bersaglio può sia afferrarti, come se avesse avuto successo usando l'azione Afferrare contro di te, sia costringerti a cadere e atterrare @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Se avevi già @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Trattenuto} il bersaglio, esso si libera. Il bersaglio può sia afferrarti, come se avesse avuto successo usando l'azione Afferrare contro di te, sia costringerti a cadere e atterrare @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Il tuo bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Trattenuto} fino alla fine del tuo prossimo turno, a meno che tu non ti muova o il bersaglio @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Sfugga}.",
+          "failure": "<strong>Fallimento</strong> Non riesci ad afferrare il bersaglio. Se avevi già @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Afferrato} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Trattenuto} il bersaglio usando Afferrare, quelle condizioni sul bersaglio terminano.",
+          "success": "<strong>Successo</strong> Il tuo bersaglio è @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Afferrato} fino alla fine del tuo prossimo turno, a meno che tu non ti muova o il bersaglio @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Sfugga}."
+        },
+        "Title": "Afferrare"
+      },
+      "Hide": {
+        "Description": "<p>Ti accovacci dietro una copertura o una copertura maggiore o ti addentri maggiormente in un occultamento per diventare @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Nascosto}, anziché @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Osservato}. Il GM effettua in segreto la tua prova di [[/act hide]]{Furtività} e confronta il risultato con la CD di Percezione di ogni creatura da cui sei osservato, ma contro cui hai una copertura o una copertura maggiore, o da cui sei @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Occultato}. Ottieni un bonus di circostanza +2 alla prova se hai una copertura standard (o +4 per una copertura maggiore).</p><hr /><p><strong>Successo</strong> Se la creatura poteva vederti, ora sei @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Nascosto} da essa anziché osservato. Se eri nascosto da o @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Inosservato} dalla creatura, mantieni quella condizione.</p><p>Se riesci a diventare nascosto da una creatura, ma poi cessi di avere una copertura o una copertura maggiore contro di essa o di essere occultato da essa, diventi di nuovo osservato. Cessi di essere nascosto se fai qualsiasi cosa tranne Nasconderti, @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sgattaiolare} o fare un @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Passo}. Se tenti di Colpire una creatura, la creatura rimane impreparata contro quell'attacco, e poi diventi osservato. Se fai qualsiasi altra cosa, diventi osservato appena prima di agire, a meno che il GM non determini altrimenti. Il GM potrebbe permetterti di compiere un'azione particolarmente poco appariscente senza essere notato, richiedendo possibilmente un'altra prova di Furtività.</p><p>Se una creatura usa @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Cercare} per farti diventare osservato da essa, devi Nasconderti con successo per diventare di nuovo nascosto da essa.</p>",
+        "Notes": {
+          "success": "<strong>Successo</strong> Se la creatura poteva vederti, ora sei @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Nascosto} da essa anziché osservato. Se eri nascosto da o @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Inosservato} dalla creatura, mantieni quella condizione."
+        },
+        "Title": "Nascondersi"
+      },
+      "HighJump": {
+        "Description": "<p>Avanzi, poi tenti una prova di [[/act high-jump]]{Atletica} con CD 30 per saltare in verticale. Se non sei Avanzato di almeno 3 metri, fallisci automaticamente. Questa CD potrebbe essere aumentata o ridotta a causa della situazione, come determinato dal GM.</p><hr /><p><strong>Successo Critico</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salti} fino a 2,4 metri in verticale e 3 metri in orizzontale.</p><p><strong>Successo</strong> Salti fino a 1,5 metri in verticale e 1,5 metri in orizzontale.</p><p><strong>Fallimento</strong> Salti normalmente.</p><p><strong>Fallimento Critico</strong> Cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono} nel tuo spazio.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono} nel tuo spazio.",
+          "criticalSuccess": "<strong>Successo Critico</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salti} fino a 2,4 metri in verticale e 3 metri in orizzontale.",
+          "failure": "<strong>Fallimento</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salti} normalmente.",
+          "success": "<strong>Successo</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salti} fino a 1,5 metri in verticale e 1,5 metri in orizzontale."
+        },
+        "Title": "Salto in Alto"
+      },
+      "IdentifyAlchemy": {
+        "Description": "<p><strong>Requisiti</strong> Tieni in mano o indossi uno @UUID[Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH]{Strumento da Alchimista}.</p><hr /><p>Puoi identificare la natura di un oggetto alchemico con 10 minuti di esperimenti usando lo strumento da alchimista. Se il tuo tentativo viene interrotto in qualsiasi modo, devi ricominciare da capo.</p><hr /><p><strong>Successo</strong> Identifichi l'oggetto e il modo di attivarlo.</p><p><strong>Fallimento</strong> Non riesci a identificare l'oggetto, ma puoi tentare di nuovo.</p><p><strong>Fallimento Critico</strong> Identifichi erroneamente l'oggetto come un altro oggetto a scelta del GM.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Identifichi erroneamente l'oggetto come un altro oggetto a scelta del GM.",
+          "failure": "<strong>Fallimento</strong> Non riesci a identificare l'oggetto, ma puoi tentare di nuovo.",
+          "success": "<strong>Successo</strong> Identifichi l'oggetto e il modo di attivarlo."
+        },
+        "Title": "Identificare Alchimia"
+      },
+      "IdentifyMagic": {
+        "Description": "<p>Una volta scoperto che un oggetto, un luogo o un effetto in corso è magico, puoi spendere 10 minuti per cercare di identificare i particolari della sua magia. Se il tuo tentativo viene interrotto, devi ricominciare da capo. Il GM stabilisce la CD per la tua prova. La magia maledetta o gli argomenti esoterici hanno di solito CD più alte, o potrebbero persino essere impossibili da identificare usando solo questa attività. Intensificare un incantesimo non aumenta la CD per identificarlo.</p><hr /><p><strong>Successo Critico</strong> Apprendi tutti gli attributi della magia, inclusi il suo nome (per un effetto), ciò che fa, qualsiasi mezzo per attivarla (per un oggetto o un luogo) e se è maledetta.</p><p><strong>Successo</strong> Per un oggetto o un luogo, ne intuisci lo scopo e apprendi qualsiasi mezzo per attivarlo. Per un effetto in corso (come un incantesimo con una durata), apprendi il nome dell'effetto e ciò che fa. Non puoi tentare di nuovo sperando di ottenere un successo critico.</p><p><strong>Fallimento</strong> Non riesci a identificare la magia e non puoi tentare di nuovo per 1 giorno.</p><p><strong>Fallimento Critico</strong> Identifichi erroneamente la magia come qualcos'altro a scelta del GM.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Identifichi erroneamente la magia come qualcos'altro a scelta del GM.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Apprendi tutti gli attributi della magia, inclusi il suo nome (per un effetto), ciò che fa, qualsiasi mezzo per attivarla (per un oggetto o un luogo) e se è maledetta.",
+          "failure": "<strong>Fallimento</strong> Non riesci a identificare la magia e non puoi tentare di nuovo per 1 giorno.",
+          "success": "<strong>Successo</strong> Per un oggetto o un luogo, ne intuisci lo scopo e apprendi qualsiasi mezzo per attivarlo. Per un effetto in corso (come un incantesimo con una durata), apprendi il nome dell'effetto e ciò che fa. Non puoi tentare di nuovo sperando di ottenere un successo critico."
+        },
+        "Title": "Identificare Magia",
+        "Warning": {
+          "NoStatistic": "L'azione Identificare Magia può essere usata con statistiche diverse e non è stata specificata alcuna statistica."
+        }
+      },
+      "Impersonate": {
+        "Description": "<p>Crei un travestimento per spacciarti per qualcuno o qualcosa che non sei. Mettere insieme un travestimento convincente richiede 10 minuti e un @UUID[Compendium.pf2e.equipment-srd.Item.Jvp0x2Sc82WVpExT]{Kit per il Camuffamento}, ma un travestimento più semplice e rapido potrebbe bastare se non stai cercando di imitare un individuo specifico, a discrezione del GM.</p><p>Nella maggior parte dei casi, le creature hanno una possibilità di scoprire il tuo inganno solo se usano l'azione @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Cercare} per tentare prove di Percezione contro la tua CD di Inganno. Se tenti di interagire direttamente con qualcuno mentre sei travestito, il GM effettua invece in segreto una prova di [[/act impersonate]]{Inganno} per te contro la CD di Percezione di quella creatura.</p><p>Se sei travestito da un individuo specifico, il GM potrebbe concedere alle creature con cui interagisci un bonus di circostanza in base a quanto bene conoscono la persona che stai imitando, oppure il GM potrebbe effettuare una prova segreta di Inganno anche se non stai interagendo direttamente con altri.</p><hr /><p><strong>Successo</strong> Inganni la creatura facendole credere che sei la persona di cui indossi i panni. Potresti dover tentare una nuova prova se il tuo comportamento cambia.</p><p><strong>Fallimento</strong> La creatura capisce che non sei chi sostieni di essere.</p><p><strong>Fallimento Critico</strong> La creatura capisce che non sei chi sostieni di essere, e ti riconosce se saprebbe chi sei senza travestimento.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> La creatura capisce che non sei chi sostieni di essere, e ti riconosce se saprebbe chi sei senza travestimento.",
+          "failure": "<strong>Fallimento</strong> La creatura capisce che non sei chi sostieni di essere.",
+          "success": "<strong>Successo</strong> Inganni la creatura facendole credere che sei la persona di cui indossi i panni. Potresti dover tentare una nuova prova se il tuo comportamento cambia."
+        },
+        "Title": "Impersonare"
+      },
+      "Interact": {
+        "Description": "<p>Usi la mano o le mani per manipolare un oggetto o il terreno. Puoi afferrare un oggetto incustodito o riposto, estrarre un'arma, scambiare un oggetto impugnato con un altro, aprire una porta o ottenere un effetto simile. In rare occasioni potresti dover tentare una prova di abilità per determinare se la tua azione Interagire ha avuto successo.</p>",
+        "Draw": {
+          "Title": "Estrai"
+        },
+        "Draw1H": {
+          "Description": "{actor} estrae la sua {weapon}.",
+          "Title": "Estrai (1M)"
+        },
+        "Draw2H": {
+          "Description": "{actor} estrae la sua {weapon}.",
+          "Title": "Estrai (2M)"
+        },
+        "ExchangeItems": {
+          "Description": "{actor} e {other} si scambiano oggetti.",
+          "Title": "Scambia Oggetti"
+        },
+        "GiveItem": {
+          "AnItem": "un oggetto",
+          "Description": "{actor} dà {item} a {other}.",
+          "Title": "Dai un Oggetto"
+        },
+        "Grip": {
+          "Description": "{actor} impugna la sua {weapon} con due mani.",
+          "Title": "Cambia Impugnatura (2M)"
+        },
+        "Modular": {
+          "Description": "{actor} regola la sua {weapon} su {modularConfig}.",
+          "Title": "Modulare"
+        },
+        "Parenthetical": "Interagire: {purpose}",
+        "PickUp1H": {
+          "Description": "{actor} raccoglie {weapon} da terra.",
+          "Title": "Raccogli (1M)"
+        },
+        "PickUp2H": {
+          "Description": "{actor} raccoglie {weapon} da terra.",
+          "Title": "Raccogli (2M)"
+        },
+        "Reload": {
+          "Description": "{actor} carica {weapon} con {ammo}.",
+          "Title": "Ricarica"
+        },
+        "Retrieve1H": {
+          "Description": "{actor} tira fuori la sua {weapon}.",
+          "Title": "Tira Fuori (1M)"
+        },
+        "Retrieve2H": {
+          "Description": "{actor} tira fuori la sua {weapon}.",
+          "Title": "Tira Fuori (1M)"
+        },
+        "Sheathe": {
+          "Description": "{actor} ripone la sua {weapon}.",
+          "Title": "Rinfodera"
+        },
+        "Boost": {
+          "Description": "{actor} potenzia il suo {weapon}.",
+          "Title": "Potenzia"
+        },
+        "Title": "Interagire"
+      },
+      "Leap": {
+        "Description": "<p>Fai un breve salto in orizzontale o in verticale. Per saltare su una distanza maggiore devi usare l'abilità Atletica con un @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{Salto in Alto} o un @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Salto in Lungo}.</p><ul><li><strong>Orizzontale</strong> Salta fino a 3 metri in orizzontale se la tua Velocità è almeno 4,5 metri, o fino a 4,5 metri in orizzontale se la tua Velocità è almeno 9 metri. Atterri nello spazio in cui termina il tuo Salto (il che significa che in genere puoi superare un vuoto di 1,5 metri, o di 3 metri se la tua Velocità è 9 metri o più). Non puoi effettuare un Salto orizzontale se la tua Velocità è inferiore a 4,5 metri.</li><li><strong>Verticale</strong> Salta fino a 0,9 metri in verticale e 1,5 metri in orizzontale su una superficie sopraelevata.</li></ul>",
+        "Title": "Saltare"
+      },
+      "LearnASpell": {
+        "Description": "<p><strong>Requisiti</strong> Hai un privilegio di classe per lanciare incantesimi e l'incantesimo che vuoi imparare è nella lista degli incantesimi della tua tradizione magica.</p><hr /><p>Puoi ottenere accesso a un nuovo incantesimo della tua tradizione da qualcuno che conosce quell'incantesimo o da scritti magici come un libro di incantesimi o una pergamena. Se puoi lanciare incantesimi di più tradizioni, puoi Imparare un Incantesimo di una qualsiasi di quelle tradizioni, ma devi usare l'abilità corrispondente per farlo. Per esempio, se fossi un chierico con l'archetipo di multiclasse da bardo, non potresti usare Religione per aggiungere un incantesimo occulto al tuo repertorio di incantesimi da bardo.</p><p>Per imparare l'incantesimo, devi fare quanto segue:</p><ul><li>Spendere 1 ora per rango dell'incantesimo, durante la quale devi rimanere in conversazione con una persona che conosce l'incantesimo o avere gli scritti magici in tuo possesso.</li><li>Avere materiali con il Prezzo indicato nella tabella Imparare un Incantesimo.</li><li>Effettuare una prova di abilità per l'abilità corrispondente alla tua tradizione (CD determinata dal GM, spesso vicina alla CD della tabella Imparare un Incantesimo). Gli incantesimi non comuni o rari hanno CD più alte; le linee guida complete per il GM si trovano a pagina 52 di GM Core.</li></ul><hr /><p><strong>Successo Critico</strong> Spendi metà dei materiali e impari l'incantesimo.</p><p><strong>Successo</strong> Spendi i materiali e impari l'incantesimo.</p><p><strong>Fallimento</strong> Non riesci a imparare l'incantesimo, ma puoi tentare di nuovo dopo aver guadagnato un livello. I materiali non vengono spesi.</p><p><strong>Fallimento Critico</strong> Come il fallimento, ma spendi metà dei materiali.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Come il fallimento, ma spendi metà dei materiali.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Spendi metà dei materiali e impari l'incantesimo.",
+          "failure": "<strong>Fallimento</strong> Non riesci a imparare l'incantesimo, ma puoi tentare di nuovo dopo aver guadagnato un livello. I materiali non vengono spesi.",
+          "success": "<strong>Successo</strong> Spendi i materiali e impari l'incantesimo."
+        },
+        "Title": "Imparare un Incantesimo",
+        "Warning": {
+          "NoSkill": "L'azione Imparare un Incantesimo può essere usata con abilità diverse e non è stata specificata alcuna abilità. Ogni tradizione magica ha un'abilità corrispondente: Arcano per la tradizione arcana, Natura per la tradizione primeva, Occultismo per la tradizione occulta e Religione per la tradizione divina."
+        }
+      },
+      "Lie": {
+        "Description": "<p>Cerchi di ingannare qualcuno con una bugia. Per farlo serve almeno 1 round, o di più se la bugia è elaborata. Effettui una singola prova di [[/act lie]]{Inganno} e la confronti con la CD di Percezione di ogni creatura che stai cercando di ingannare. Il GM potrebbe concedere loro un bonus di circostanza in base alla situazione e alla natura della bugia che stai cercando di raccontare. Le bugie elaborate o difficilmente credibili sono molto più difficili da far credere a una creatura rispetto a quelle più semplici e credibili, e alcune bugie sono così grosse che è impossibile farle credere a chiunque.</p><p>A discrezione del GM, se una creatura crede inizialmente alla tua bugia, potrebbe tentare in seguito una prova di Percezione per @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Intuire} contro la tua CD di Inganno per rendersi conto che si tratta di una bugia. Questo avviene di solito se la creatura scopre abbastanza prove per contrastare le tue affermazioni.</p><hr /><p><strong>Successo</strong> Il bersaglio crede alla tua bugia.</p><p><strong>Fallimento</strong> Il bersaglio non crede alla tua bugia e ottiene un bonus di circostanza +4 contro i tuoi tentativi di Mentire per la durata della vostra conversazione. Il bersaglio è anche più propenso a sospettare di te in futuro.</p>",
+        "Notes": {
+          "failure": "<strong>Fallimento</strong> Il bersaglio non crede alla tua bugia e ottiene un bonus di circostanza +4 contro i tuoi tentativi di Mentire per la durata della vostra conversazione. Il bersaglio è anche più propenso a sospettare di te in futuro.",
+          "success": "<strong>Successo</strong> Il bersaglio crede alla tua bugia."
+        },
+        "Title": "Mentire"
+      },
+      "LongJump": {
+        "Description": "<p>Avanzi, poi tenti una prova di [[/act long-jump]]{Atletica} con CD 15 per effettuare un salto in lungo nella direzione in cui stavi Avanzando. Se non sei Avanzato di almeno 3 metri, fallisci automaticamente la prova. Il GM potrebbe aumentare o ridurre questa CD a seconda della situazione.</p><hr /><p><strong>Successo</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salti} fino a una distanza pari al tuo risultato della prova arrotondato per difetto a 1,5 metri. Non puoi saltare più lontano della tua Velocità sul Terreno.</p><p><strong>Fallimento</strong> Effettui un Salto orizzontale normale.</p><p><strong>Fallimento Critico</strong> Effettui un Salto orizzontale normale, poi cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Effettui un @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salto} orizzontale normale, poi cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.",
+          "failure": "<strong>Fallimento</strong> Effettui un @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salto} orizzontale normale.",
+          "success": "<strong>Successo</strong> @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Salti} fino a una distanza pari al tuo risultato della prova arrotondato per difetto a 1,5 metri. Non puoi saltare più lontano della tua Velocità sul Terreno."
+        },
+        "Title": "Salto in Lungo"
+      },
+      "LowerShield": {
+        "Content": "{actor} abbassa il suo {shield}.",
+        "ShortTitle": "Abbassa",
+        "Title": "Abbassare lo Scudo"
+      },
+      "MakeAnImpression": {
+        "Description": "<p>Con almeno 1 minuto di conversazione, durante il quale fai aperture carismatiche, adulazioni e altri atti di buona volontà, cerchi di fare una buona impressione su qualcuno per renderlo temporaneamente compiacente. Alla fine della conversazione, effettua una prova di [[/act make-an-impression]]{Diplomazia} contro la CD di Volontà di un bersaglio. Puoi invece scegliere fino a cinque bersagli se subisci una penalità di –2. Il GM potrebbe aggiungere altri bonus o penalità in base alla situazione. Qualsiasi impressione che fai dura solo per l'attuale interazione sociale, a meno che il GM non decida altrimenti.</p><hr /><p><strong>Successo Critico</strong> L'atteggiamento del bersaglio nei tuoi confronti migliora di due gradi.</p><p><strong>Successo</strong> L'atteggiamento del bersaglio nei tuoi confronti migliora di un grado.</p><p><strong>Fallimento Critico</strong> L'atteggiamento del bersaglio nei tuoi confronti peggiora di un grado.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> L'atteggiamento del bersaglio nei tuoi confronti peggiora di un grado.",
+          "criticalSuccess": "<strong>Successo Critico</strong> L'atteggiamento del bersaglio nei tuoi confronti migliora di due gradi.",
+          "success": "<strong>Successo</strong> L'atteggiamento del bersaglio nei tuoi confronti migliora di un grado."
+        },
+        "Title": "Impressionare"
+      },
+      "ManeuverInFlight": {
+        "Description": "<p><strong>Requisiti</strong> Hai una Velocità di Volare.</p><hr /><p>Provi una manovra difficile mentre voli. Effettua una prova di [[/act maneuver-in-flight]]{Acrobazia}. Il GM determina quali manovre sono possibili, ma raramente ti permetterà di muoverti più lontano della tua Velocità di Volare.</p><hr /><p><strong>Successo</strong> La manovra riesce.</p><p><strong>Fallimento</strong> La tua manovra fallisce. Il GM sceglie se semplicemente non puoi muoverti o se si verifica qualche altro effetto dannoso. L'esito dovrebbe essere appropriato per la manovra tentata (per esempio, essere sospinto fuori rotta se stavi cercando di volare contro un forte vento).</p><p><strong>Fallimento Critico</strong> Come fallimento, ma la conseguenza è più grave.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Come fallimento, ma la conseguenza è più grave.",
+          "failure": "<strong>Fallimento</strong> La tua manovra fallisce. Il GM sceglie se semplicemente non puoi muoverti o se si verifica qualche altro effetto dannoso. L'esito dovrebbe essere appropriato per la manovra tentata (per esempio, essere sospinto fuori rotta se stavi cercando di volare contro un forte vento).",
+          "success": "<strong>Successo</strong> La manovra riesce."
+        },
+        "SampleTasks": {
+          "Trained": "ascesa ripida o discesa in picchiata",
+          "Expert": "volare controvento, librarsi a mezz'aria",
+          "Master": "invertire la direzione",
+          "Legendary": "volare con vento di burrasca"
+        },
+        "Title": "Manovrare in Volo"
+      },
+      "Mount": {
+        "Description": "<p><strong>Requisiti</strong> Sei adiacente a una creatura che è più grande di te di almeno una taglia ed è disposta a essere la tua cavalcatura.</p><hr /><p>Ti sposti sulla creatura e la cavalchi. Se sei già a cavallo, puoi invece usare questa azione per smontare, scendendo dalla cavalcatura in uno spazio adiacente a essa.</p>",
+        "Title": "Montare"
+      },
+      "PalmAnObject": {
+        "Description": "<p>Raccogli un piccolo oggetto incustodito e cerchi di non farti notare. Effettua una singola prova di [[/act palm-an-object]]{Furto} contro le CD di Percezione di tutte le creature che ti stanno osservando. In genere puoi Agguantare solo oggetti di Ingombro trascurabile, anche se il GM potrebbe determinare altrimenti a seconda della situazione.</p><hr /><p><strong>Successo</strong> La creatura non si accorge che Agguanti l'Oggetto.</p><p><strong>Fallimento</strong> La creatura si accorge che Agguanti l'Oggetto.</p>",
+        "Notes": {
+          "failure": "<strong>Fallimento</strong> La creatura si accorge che Agguanti l'Oggetto, e il GM determina la reazione della creatura.",
+          "success": "<strong>Successo</strong> La creatura non si accorge che Agguanti l'Oggetto."
+        },
+        "Title": "Agguantare un Oggetto"
+      },
+      "Parry": {
+        "ShortTitle": "Parata",
+        "Content": "{actor} inizia a parare.",
+        "Title": "Parata"
+      },
+      "Perform": {
+        "Description": "<p>Quando esegui una breve performance (una canzone, un ballo rapido o qualche battuta), usi l'azione Esibirsi. Quest'azione è più utile quando vuoi dimostrare la tua capacità o impressionare velocemente qualcuno. Esibirsi raramente ha un impatto da solo, ma potrebbe influenzare le CD delle successive prove di Diplomazia contro gli osservatori, o persino cambiare il loro atteggiamento, se il GM lo ritiene opportuno.</p><hr /><p><strong>Successo Critico</strong> La tua performance impressiona gli osservatori, ed è probabile che racconteranno storie sulla tua abilità.</p><p><strong>Successo</strong> Dai prova delle tue capacità e gli osservatori apprezzano la qualità della tua performance.</p><p><strong>Fallimento</strong> La tua performance fa flop.</p><p><strong>Fallimento Critico</strong> Dimostri solo incompetenza.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Dimostri solo incompetenza.",
+          "criticalSuccess": "<strong>Successo Critico</strong> La tua performance impressiona gli osservatori, ed è probabile che racconteranno storie sulla tua abilità.",
+          "failure": "<strong>Fallimento</strong> La tua performance fa flop.",
+          "success": "<strong>Successo</strong> Dai prova delle tue capacità e gli osservatori apprezzano la qualità della tua performance."
+        },
+        "SampleTasks": {
+          "Untrained": "pubblico di popolani",
+          "Trained": "pubblico di artigiani",
+          "Expert": "pubblico di mercanti o nobili minori",
+          "Master": "pubblico dell'alta nobiltà o di re minori",
+          "Legendary": "pubblico di re maggiori o esseri ultramondani"
+        },
+        "Acting": {
+          "Title": "Recitazione"
+        },
+        "Comedy": {
+          "Title": "Commedia"
+        },
+        "Dance": {
+          "Title": "Ballo"
+        },
+        "Keyboards": {
+          "Title": "Suonare uno strumento a tastiera"
+        },
+        "Oratory": {
+          "Title": "Oratoria"
+        },
+        "Percussion": {
+          "Title": "Suonare uno strumento a percussione"
+        },
+        "Singing": {
+          "Title": "Canto"
+        },
+        "Strings": {
+          "Title": "Suonare uno strumento a corde"
+        },
+        "Winds": {
+          "Title": "Suonare uno strumento a fiato"
+        },
+        "Title": "Esibirsi",
+        "Warning": {
+          "UnknownVariant": "Variante sconosciuta '{variant}' usata per Esibirsi; usa recitazione, commedia, ballo, tastiera, oratoria, percussioni, canto, corde o fiati."
+        }
+      },
+      "PickALock": {
+        "Description": "<p><strong>Requisiti</strong> Tieni in mano o indossi uno @UUID[Compendium.pf2e.equipment-srd.Item.zvLyCVD8g2PdHJAc]{Strumento da Scasso}.</p><hr /><p>Aprire una serratura senza chiave è molto simile a @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disattivare un Congegno}, ma la CD della prova è determinata dalla complessità e dalla costruzione della serratura che stai tentando di scassinare. Le serrature di qualità superiore potrebbero richiedere più successi per essere aperte. Se non hai gli strumenti adatti, il GM potrebbe lasciarti usare grimaldelli improvvisati, che sono considerati uno strumento scadente.</p><hr /><p><strong>Successo Critico</strong> Apri la serratura, oppure ottieni due successi verso l'apertura di una serratura che ne richiede più di uno. Non lasci tracce delle tue manomissioni.</p><p><strong>Successo</strong> Apri la serratura, oppure ottieni un successo verso l'apertura di una serratura che ne richiede più di uno. Lasci dietro di te danni che indicano, a un esame attento, che la serratura è stata scassinata.</p><p><strong>Fallimento Critico</strong> Rompi il tuo strumento e lasci dietro di te danni evidenti. Riparare uno strumento rotto richiede di usare Artigianato per @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Ripararlo} oppure di sostituire i @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{grimaldelli di ricambio} (che costano 3 mr, o 3 mo per uno @UUID[Compendium.pf2e.equipment-srd.Item.BznmPaRjI4Orb0IH]{strumento da scasso da infiltrato}).</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Rompi il tuo strumento e lasci dietro di te danni evidenti. Riparare uno strumento rotto richiede di usare Artigianato per @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Ripararlo} oppure di sostituire i @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{grimaldelli di ricambio}.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Apri la serratura, oppure ottieni due successi verso l'apertura di una serratura che ne richiede più di uno. Non lasci tracce delle tue manomissioni.",
+          "success": "<strong>Successo</strong> Apri la serratura, oppure ottieni un successo verso l'apertura di una serratura che ne richiede più di uno. Lasci dietro di te danni che indicano, a un esame attento, che la serratura è stata scassinata."
+        },
+        "Title": "Scassinare una Serratura"
+      },
+      "PointOut": {
+        "Description": "<p><strong>Requisiti</strong> Una creatura è inosservata da uno o più dei tuoi alleati, ma non è inosservata da te.</p><hr /><p>Indichi a uno o più alleati una creatura che puoi vedere, gesticolando in una direzione e descrivendone verbalmente la distanza. Quella creatura è @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Nascosta} ai tuoi alleati, anziché @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Inosservata}. Questo funziona solo per gli alleati che possono vederti e che si trovano in una posizione dalla quale potrebbero potenzialmente individuare il bersaglio. Se i tuoi alleati non possono sentirti o comprenderti, devono superare una prova di @Check[perception|defense:stealth]{Percezione} contro la CD di Furtività della creatura, altrimenti fraintendono e credono che il bersaglio si trovi in un'ubicazione diversa.</p>",
+        "Title": "Indicare"
+      },
+      "RaiseAShield": {
+        "BadArgs": "Questa azione deve essere eseguita con esattamente un personaggio o PNG.",
+        "Content": "{actor} alza il suo {shield}.",
+        "Description": "<p><strong>Requisiti</strong> Impugni uno scudo.</p><hr /><p>Posizioni lo scudo per proteggerti. Quando hai Alzato lo Scudo, ottieni il bonus di circostanza indicato alla CA. Lo scudo rimane alzato fino all'inizio del tuo prossimo turno.</p>",
+        "NoShieldEquipped": "{actor} deve avere uno scudo equipaggiato.",
+        "ReactionTitle": "Scudo Reattivo",
+        "ShieldIsBroken": "Lo {shield} di {actor} è rotto.",
+        "ShieldIsDestroyed": "Lo {shield} di {actor} è distrutto.",
+        "ShortTitle": "Alza",
+        "SingleActionTitle": "Alzare lo Scudo",
+        "Title": "Alzare lo Scudo"
+      },
+      "Ready": {
+        "Description": "<p>Ti prepari a usare un'azione che avverrà al di fuori del tuo turno. Scegli una singola azione o azione gratuita che puoi usare e designa un innesco. Poi il tuo turno termina. Se l'innesco designato avviene prima dell'inizio del tuo prossimo turno, puoi usare l'azione scelta come reazione (a condizione che tu soddisfi ancora i requisiti per usarla). Non puoi Preparare un'azione gratuita che ha già un innesco.</p><p>Se hai una penalità da attacchi multipli e la tua azione preparata è un'azione di attacco, il tuo attacco preparato subisce la penalità da attacchi multipli che avevi quando hai usato Preparare. Questa è una delle poche volte in cui la penalità da attacchi multipli si applica quando non è il tuo turno.</p>",
+        "Title": "Preparare"
+      },
+      "RecallKnowledge": {
+        "Description": "<p>Effettui una prova di abilità per cercare di ricordare un frammento di conoscenza riguardante un argomento legato a quella abilità. Suggerisci quale abilità vorresti usare e poni una domanda al GM. Il GM determina la CD. Potresti doverti coordinare con il GM per restringere la domanda o le abilità, e puoi decidere di non Ricordare Informazioni prima di impegnarti nell'azione se non ti piacciono le tue opzioni.</p><p><strong>Successo Critico</strong> Ricordi accuratamente le informazioni. Il GM risponde con verità alla tua domanda e ti fornisce informazioni o contesto aggiuntivi, oppure risponde a una domanda di approfondimento.</p><p><strong>Successo</strong> Ricordi accuratamente le informazioni. Il GM risponde con verità alla tua domanda.</p><p><strong>Fallimento Critico</strong> Ricordi informazioni errate. Il GM risponde con falsità alla tua domanda (oppure decide di non fornirti alcuna informazione, come in caso di fallimento).</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Ricordi informazioni errate. Il GM risponde con falsità alla tua domanda (oppure decide di non fornirti alcuna informazione, come in caso di fallimento).",
+          "criticalSuccess": "<strong>Successo Critico</strong> Ricordi accuratamente le informazioni. Il GM risponde con verità alla tua domanda e ti fornisce informazioni o contesto aggiuntivi, oppure risponde a una domanda di approfondimento.",
+          "success": "<strong>Successo</strong> Ricordi accuratamente le informazioni. Il GM risponde con verità alla tua domanda."
+        },
+        "SampleTasks": {
+          "Caption": "Gli esempi seguenti usano Società o Religione.",
+          "Untrained": "nome di un sovrano, un capo di stato, un nobile importante o una divinità maggiore",
+          "Trained": "linea di successione di una grande famiglia nobile, dottrine fondamentali di una divinità maggiore",
+          "Expert": "genealogia di un nobile minore, insegnamenti di un antico sacerdote",
+          "Master": "gerarchia della corte di un nobile genio, grandi templi extraplanari di una divinità",
+          "Legendary": "esistenza di un erede nobile perduto da tempo, dottrine segrete di una religione"
+        },
+        "Title": "Ricordare Informazioni",
+        "Warning": {
+          "NoSkill": "L'azione Ricordare Informazioni può essere usata con abilità diverse e non è stata specificata alcuna abilità."
+        }
+      },
+      "Release": {
+        "Description": "<p>Lasci qualcosa che tieni in una mano o in entrambe le mani. Questo può significare lasciare cadere un oggetto, togliere una mano dalla tua arma continuando a tenerla con l'altra, lasciare andare una corda che regge un lampadario o compiere un'azione simile. A differenza della maggior parte delle azioni di maneggiare, Lasciare non innesca reazioni che possono essere innescate da azioni con il tratto maneggiare (come il Colpo Reattivo).</p><p>Se vuoi prepararti a Lasciare qualcosa al di fuori del tuo turno, usa l'attività @UUID[Compendium.pf2e.actionspf2e.Item.dLgAMt3TbkmLkUqE]{Preparare}.</p>",
+        "Drop": {
+          "Description": "{actor} fa cadere a terra la sua {weapon}.",
+          "Title": "Fai Cadere"
+        },
+        "Grip": {
+          "Description": "{actor} toglie una mano dalla sua {weapon}.",
+          "Title": "Cambia Impugnatura (1M)"
+        },
+        "Title": "Lasciare"
+      },
+      "Repair": {
+        "Chat": {
+          "ItemDamaged": "{itemName} ha subito {damageDealt} punti di danno per un totale di {afterDamageHitPoints} su {maximumHitPoints} punti ferita.",
+          "ItemRepaired": "{itemName} è stato riparato per {repairedDamage} punti di danno, per un totale di {afterRepairHitPoints} su {maximumHitPoints} punti ferita."
+        },
+        "Error": {
+          "ItemReferenceMismatch": "Per Riparare, accetta solo oggetti fisici da un attore."
+        },
+        "Labels": {
+          "DamageMitigatedByHardness": "Il tentativo di Riparare con fallimento critico non ha causato danni all'oggetto grazie alla Durezza.",
+          "DealItemDamage": "Infliggi {value} danni all'oggetto",
+          "Hardness": "Durezza",
+          "ItemLevelRepairDC": "CD di riparazione del livello {level} dell'oggetto",
+          "RestoreItemHitPoints": "Ripristina {value} Punti Ferita all'oggetto",
+          "RollItemDamage": "Tira {value} danni"
+        },
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Infliggi 2d6 danni all'oggetto. Applica la Durezza dell'oggetto a questi danni.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Ripristini 10 Punti Ferita all'oggetto, più 10 Punti Ferita aggiuntivi per ogni grado di competenza che hai in Artigianato (un totale di 20 PF se sei addestrato, 30 PF se sei esperto, 40 PF se sei un maestro o 50 PF se sei leggendario).",
+          "success": "<strong>Successo</strong> Ripristini 5 Punti Ferita all'oggetto, più 5 aggiuntivi per ogni grado di competenza che hai in Artigianato (per un totale di 10 PF se sei addestrato, 15 PF se sei esperto, 20 PF se sei un maestro o 25 PF se sei leggendario)."
+        },
+        "SelectItemDialog": {
+          "CancelButtonLabel": "Annulla",
+          "DropItemZoneLabel": "Trascina qui un oggetto...",
+          "RepairButtonLabel": "Ripari",
+          "Title": "Seleziona oggetto da Riparare"
+        },
+        "Title": "Riparare",
+        "Warning": {
+          "NotPhysicalItem": "L'oggetto specificato {item} non è un oggetto fisico."
+        }
+      },
+      "Reposition": {
+        "Description": "<p><strong>Requisiti</strong> O hai almeno una mano libera, o stai afferrando o trattenendo il bersaglio. Il bersaglio non può essere più di una taglia più grande di te.</p><hr /><p>Sping una creatura o oggetto in giro. Tenta una prova di [[/act reposition]]{Atletica} contro la CD di Tempra del bersaglio.</p><hr /><p><strong>Successo Critico</strong> Muovi la creatura fino a 3 metri. Deve rimanere entro la tua portata per tutto il movimento, e non puoi muoverla dentro o attraverso ostacoli.</p>\n<p><strong>Successo</strong> Muovi la creatura fino a 1,5 metri. Deve rimanere entro la tua portata per tutto il movimento, e non puoi muoverla dentro o attraverso ostacoli.</p>\n<p><strong>Fallimento Critico</strong> Il bersaglio può muovere di te fino a 1,5 metri come se ti avessere Riposizionato con successo.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Il bersaglio può muovere di te fino a 1,5 metri come se ti avessere Riposizionato con successo.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Muovi la creatura fino a 3 metri. Deve rimanere entro la tua portata per tutto il movimento, e non puoi muoverla dentro o attraverso ostacoli.",
+          "success": "<strong>Successo</strong> Muovi la creatura fino a 1,5 metri. Deve rimanere entro la tua portata per tutto il movimento, e non puoi muoverla dentro o attraverso ostacoli."
+        },
+        "Title": "Riposizionare"
+      },
+      "Request": {
+        "Description": "<p>Puoi fare una richiesta a una creatura che è amichevole o collaborativa nei tuoi confronti. Devi formulare la richiesta in termini che il bersaglio accetterebbe, dato il suo atteggiamento attuale verso di te. Il GM stabilisce la CD della prova di [[/act request]]{Diplomazia} in base alla difficoltà della richiesta. Alcune richieste sono sgradevoli o impossibili, e anche un PNG collaborativo non le accetterebbe mai.</p><hr /><p><strong>Successo Critico</strong> Il bersaglio accetta la tua richiesta senza condizioni.</p><p><strong>Successo</strong> Il bersaglio accetta la tua richiesta, ma potrebbe pretendere ulteriori condizioni o modifiche alla richiesta.</p><p><strong>Fallimento</strong> Il bersaglio rifiuta la richiesta, anche se potrebbe proporre un'alternativa meno estrema.</p><p><strong>Fallimento Critico</strong> Non solo il bersaglio rifiuta la richiesta, ma il suo atteggiamento nei tuoi confronti peggiora di un grado a causa della sfrontatezza della richiesta.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Non solo il bersaglio rifiuta la richiesta, ma il suo atteggiamento nei tuoi confronti peggiora di un grado a causa della sfrontatezza della richiesta.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Il bersaglio accetta la tua richiesta senza condizioni.",
+          "failure": "<strong>Fallimento</strong> Il bersaglio rifiuta la richiesta, anche se potrebbe proporre un'alternativa meno estrema.",
+          "success": "<strong>Successo</strong> Il bersaglio accetta la tua richiesta, ma potrebbe pretendere ulteriori condizioni o modifiche alla richiesta."
+        },
+        "Title": "Richiedere"
+      },
+      "RunOver": {
+        "Description": "<p><strong>Requisiti</strong> Stai pilotando un veicolo.</p><p>(spericolato) Tenti di investire delle creature con il tuo veicolo, possibilmente speronando anche una creatura o un oggetto più grande. Se mantieni il controllo del tuo veicolo, il veicolo si muove fino al doppio della sua Velocità in linea retta, lungo l'orientamento attuale del veicolo. Tenti di investire qualsiasi creatura sul tuo percorso che sia più piccola del veicolo di due taglie o più, e puoi tentare di speronare una creatura o un oggetto bersaglio sul tuo percorso che sia più piccolo di una taglia rispetto al veicolo o più grande.</p><p>Ogni creatura sul tuo percorso, incluso un bersaglio speronato, subisce i danni da collisione del veicolo (tiro salvezza base su Riflessi con la CD di collisione del veicolo). Se il bersaglio speronato è un veicolo, il suo pilota può tentare una prova di pilotaggio al posto di questo tiro salvezza su Riflessi, con gli stessi risultati. Se il bersaglio del tuo speronamento subisce danni, sia tu che il tuo veicolo subite danni da collisione (senza tiro salvezza) e il tuo movimento termina.</p>",
+        "Notes": {
+          "failure": "<strong>Fallimento</strong> Il veicolo si muove della sua Velocità in linea retta lungo il suo orientamento più recente, deviando fino a 45 gradi a discrezione del GM, e diventa senza controllo."
+        },
+        "Title": "Investire"
+      },
+      "Seek": {
+        "Description": "<p>Analizzi un'area alla ricerca di segni di creature o oggetti, inclusi possibili porte segrete o pericoli. Scegli un'area da analizzare. Il GM determina l'area che puoi analizzare con un'azione Cercare, quasi sempre 9 metri o meno in qualsiasi dimensione. Il GM potrebbe imporre una penalità se cerchi lontano da te, oppure modificare il numero di azioni necessarie per Cercare in un'area particolarmente ingombra.</p><p>Il GM effettua per te una singola prova segreta di [[/act seek]]{Percezione} e confronta il risultato con le CD di Furtività di qualsiasi creatura @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Inosservata} o @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Nascosta} nell'area, o con la CD per individuare ciascun oggetto nell'area (determinata dal GM o da chi @UUID[Compendium.pf2e.actionspf2e.Item.qVNVSmsgpKFGk9hV]{Nasconde l'Oggetto}). Una creatura che individui potrebbe rimanere nascosta, anziché diventare @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Osservata}, se stai usando un senso impreciso o se un effetto (come @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibilità}) impedisce al soggetto di essere osservato.</p><hr /><p><strong>Successo Critico</strong> Qualsiasi creatura inosservata o nascosta contro cui hai ottenuto un successo critico diventa osservata da te. Apprendi l'ubicazione degli oggetti nell'area contro cui hai ottenuto un successo critico.</p><p><strong>Successo</strong> Qualsiasi creatura inosservata contro cui hai ottenuto un successo diventa nascosta da te anziché inosservata, e qualsiasi creatura nascosta contro cui hai ottenuto un successo diventa osservata da te. Apprendi l'ubicazione di qualsiasi oggetto o ottieni un indizio su dove si trovi, come determinato dal GM.</p>",
+        "Notes": {
+          "criticalSuccess": "<strong>Successo Critico</strong> Qualsiasi creatura @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Inosservata} o @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Nascosta} contro cui hai ottenuto un successo critico diventa @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Osservata} da te. Apprendi l'ubicazione degli oggetti nell'area contro cui hai ottenuto un successo critico.",
+          "success": "<strong>Successo</strong> Qualsiasi creatura @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Inosservata} contro cui hai ottenuto un successo diventa @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Nascosta} da te anziché inosservata, e qualsiasi creatura nascosta contro cui hai ottenuto un successo diventa @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Osservata} da te. Apprendi l'ubicazione di qualsiasi oggetto o ottieni un indizio su dove si trovi, come determinato dal GM."
+        },
+        "Title": "Cercare"
+      },
+      "SenseDirection": {
+        "Description": "<p>Usando le stelle, la posizione del sole, le caratteristiche della geografia o della flora, o il comportamento della fauna, puoi rimanere orientato in natura. In genere tenti una prova di [[/act sense-direction]]{Sopravvivenza} solo una volta al giorno, ma alcuni ambienti o cambiamenti potrebbero richiedere di tirare più spesso. Il GM determina la CD e quanto tempo richiede questa attività (di solito solo un minuto circa). Località più insolite o quelle che non conosci potrebbero richiedere un grado di competenza minimo per Trovare la Direzione. Senza una @UUID[Compendium.pf2e.equipment-srd.Item.wob6DB1FFdWs0mbp]{Bussola}, subisci una penalità dell'oggetto –2 alle prove per Trovare la Direzione.</p><hr /><p><strong>Successo Critico</strong> Ottieni un'ottima cognizione di dove ti trovi. Se ti trovi in un ambiente con direzioni cardinali, le conosci esattamente.</p><p><strong>Successo</strong> Ottieni abbastanza orientamento da evitare di perderti irrimediabilmente. Se ti trovi in un ambiente con direzioni cardinali, ne hai un senso.</p>",
+        "Modifier": {
+          "NoCompass": "Senza Bussola"
+        },
+        "Notes": {
+          "criticalSuccess": "<strong>Successo Critico</strong> Ottieni un'ottima cognizione di dove ti trovi. Se ti trovi in un ambiente con direzioni cardinali, le conosci esattamente.",
+          "success": "<strong>Successo</strong> Ottieni abbastanza orientamento da evitare di perderti irrimediabilmente. Se ti trovi in un ambiente con direzioni cardinali, ne hai un senso."
+        },
+        "SampleTasks": {
+          "Untrained": "determinare una direzione cardinale usando il sole",
+          "Trained": "trovare un sentiero invaso dalla vegetazione in una foresta",
+          "Expert": "attraversare un labirinto di siepi",
+          "Master": "attraversare un labirinto bisantino o un deserto relativamente privo di elementi distintivi",
+          "Legendary": "attraversare un regno onirico in continuo mutamento"
+        },
+        "Title": "Trovare la Direzione"
+      },
+      "SenseMotive": {
+        "Description": "<p>Cerchi di capire se il comportamento di una creatura è anormale. Scegli una creatura e la esamini alla ricerca di un linguaggio del corpo insolito, segni di nervosismo e altri indicatori che potrebbe stare cercando di ingannare qualcuno. Il GM effettua per te una singola prova segreta di [[/act sense-motive]]{Percezione} e confronta il risultato con la CD di Inganno della creatura, la CD di un incantesimo che influenza lo stato mentale della creatura o un'altra CD appropriata determinata dal GM. In genere non puoi tentare di Intuire le intenzioni della stessa creatura di nuovo finché la situazione non cambia in modo significativo.</p><hr /><p><strong>Successo Critico</strong> Determini le vere intenzioni della creatura e ti fai un'idea precisa di qualsiasi magia mentale che la influenza.</p><p><strong>Successo</strong> Puoi capire se la creatura si sta comportando normalmente, ma non conosci le sue intenzioni esatte o quale magia potrebbe influenzarla.</p><p><strong>Fallimento</strong> Rilevi ciò che una creatura ingannevole vuole che tu creda. Se non sta cercando di ingannarti, credi che si stia comportando normalmente.</p><p><strong>Fallimento Critico</strong> Ti fai un'idea falsa delle intenzioni della creatura.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Ti fai un'idea falsa delle intenzioni della creatura.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Determini le vere intenzioni della creatura e ti fai un'idea precisa di qualsiasi magia mentale che la influenza.",
+          "failure": "<strong>Fallimento</strong> Rilevi ciò che una creatura ingannevole vuole che tu creda. Se non sta cercando di ingannarti, credi che si stia comportando normalmente.",
+          "success": "<strong>Successo</strong> Puoi capire se la creatura si sta comportando normalmente, ma non conosci le sue intenzioni esatte o quale magia potrebbe influenzarla."
+        },
+        "Title": "Intuire"
+      },
+      "ShieldBlock": {
+        "SelectAShield": "Seleziona uno scudo"
+      },
+      "Shove": {
+        "Description": "<p><strong>Requisiti</strong> Hai almeno una mano libera. Il bersaglio non può essere più grande di te di più di una taglia.</p><hr /><p>Allontani da te una creatura. Effettua una prova di [[/act shove]]{Atletica} contro la CD di Tempra del tuo bersaglio.</p><hr /><p><strong>Successo Critico</strong> Spingi il tuo bersaglio fino a 3 metri lontano da te. Puoi Avanzare dietro di esso, ma devi muoverti della stessa distanza e nella stessa direzione.</p><p><strong>Successo</strong> Spingi il tuo bersaglio indietro di 1,5 metri. Puoi Avanzare dietro di esso, ma devi muoverti della stessa distanza e nella stessa direzione.</p><p><strong>Fallimento Critico</strong> Perdi l'equilibrio, cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Perdi l'equilibrio, cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Spingi il tuo bersaglio fino a 3 metri lontano da te. Puoi Avanzare dietro di esso, ma devi muoverti della stessa distanza e nella stessa direzione.",
+          "success": "<strong>Successo</strong> Spingi il tuo bersaglio indietro di 1,5 metri. Puoi Avanzare dietro di esso, ma devi muoverti della stessa distanza e nella stessa direzione."
+        },
+        "Title": "Spingere"
+      },
+      "Sneak": {
+        "Description": "<p>Tenti di spostarti in un altro luogo mentre diventi o rimani inosservato. Avanza fino a metà della tua Velocità. (Puoi usare Sgattaiolare mentre Scavi, Scali, Voli o Nuoti invece di Avanzare, se hai il corrispondente tipo di movimento; devi muoverti a metà di quella Velocità.)</p><p>Alla fine del tuo movimento, il GM effettua in segreto la tua prova di [[/act sneak]]{Furtività} e confronta il risultato con la CD di Percezione di ogni creatura da cui eri @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Nascosto} o @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Inosservato} all'inizio del tuo movimento. Se hai una copertura o una copertura maggiore da quella creatura per tutto il tuo Avanzare, ottieni il bonus di circostanza +2 dalla copertura (o +4 dalla copertura maggiore) alla tua prova di Furtività. Poiché ti stai muovendo, l'aumento di bonus dell'Andare in Copertura non si applica. Non devi effettuare una prova contro una creatura se, alla fine del tuo movimento, non sei né @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Occultato} da essa né hai una copertura o una copertura maggiore contro di essa. Diventi automaticamente osservato da una tale creatura.</p><hr /><p><strong>Successo</strong> Sei inosservato dalla creatura durante il tuo movimento e rimani inosservato da essa alla sua fine.</p><p>Diventi osservato appena fai qualsiasi cosa tranne Nasconderti, Sgattaiolare o fare un Passo. Se tenti di Colpire una creatura, la creatura rimane @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Impreparata} contro quell'attacco, e poi diventi osservato. Se fai qualsiasi altra cosa, diventi osservato appena prima di agire, a meno che il GM non determini altrimenti. Il GM potrebbe permetterti di compiere un'azione particolarmente poco appariscente senza essere notato, richiedendo possibilmente un'altra prova di Furtività. Se parli o fai deliberatamente un rumore forte, diventi nascosto invece che inosservato.</p><p>Se una creatura usa @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Cercare} e, come risultato, diventi nascosto da essa, devi Sgattaiolare se vuoi tornare a essere inosservato da quella creatura.</p><p><strong>Fallimento</strong> Un suono rivelatore o un altro segno tradisce la tua posizione, anche se rimani comunque non visto. Sei nascosto dalla creatura durante tutto il tuo movimento e rimani tale.</p><p><strong>Fallimento Critico</strong> Sei stato individuato! Sei osservato dalla creatura per tutto il tuo movimento e rimani tale. Se sei @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisibile} ed eri nascosto dalla creatura, anziché essere osservato sei nascosto per tutto il tuo movimento e rimani tale.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Sei stato individuato! Sei osservato dalla creatura per tutto il tuo movimento e rimani tale. Se sei invisibile ed eri nascosto dalla creatura, anziché essere osservato sei nascosto per tutto il tuo movimento e rimani tale.",
+          "failure": "<strong>Fallimento</strong> Un suono rivelatore o un altro segno tradisce la tua posizione, anche se rimani comunque non visto. Sei nascosto dalla creatura durante tutto il tuo movimento e rimani tale.",
+          "success": "<strong>Successo</strong> Sei inosservato dalla creatura durante il tuo movimento e rimani inosservato da essa alla sua fine."
+        },
+        "Title": "Sgattaiolare"
+      },
+      "Squeeze": {
+        "Description": "<p>Ti contorci per [[/act squeeze]]{stringerti} attraverso uno spazio così piccolo che riesci a malapena a passarci. Questa azione è per spazi eccezionalmente piccoli; molti spazi stretti sono terreni difficili che puoi attraversare più rapidamente e senza una prova.</p><hr /><p><strong>Successo Critico</strong> Attraversi lo spazio stretto in 1 minuto per ogni 3 metri di avanzamento stringendoti.</p><p><strong>Successo</strong> Attraversi lo spazio in 1 minuto per ogni 1,5 metri.</p><p><strong>Fallimento Critico</strong> Rimani incastrato nello spazio stretto. Mentre sei incastrato, puoi spendere 1 minuto tentando un'altra prova di Acrobazia con la stessa CD. Qualsiasi risultato in quella prova diverso da un fallimento critico ti fa liberare.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Rimani incastrato nello spazio stretto. Mentre sei incastrato, puoi spendere 1 minuto tentando un'altra prova di Acrobazia con la stessa CD. Qualsiasi risultato in quella prova diverso da un fallimento critico ti fa liberare.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Attraversi lo spazio stretto in 1 minuto per ogni 3 metri di avanzamento stringendoti.",
+          "success": "<strong>Successo</strong> Attraversi lo spazio in 1 minuto per ogni 1,5 metri."
+        },
+        "SampleTasks": {
+          "Trained": "spazio in cui passi a malapena con le spalle",
+          "Master": "spazio in cui passi a malapena con la testa"
+        },
+        "Title": "Stringersi"
+      },
+      "Stand": {
+        "Description": "<p>Ti alzi dalla condizione @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.</p>",
+        "Title": "Alzarsi"
+      },
+      "Steal": {
+        "Description": "<p>Tenti di prendere un piccolo oggetto da un'altra creatura senza essere notato. In genere puoi Rubare solo un oggetto di Ingombro trascurabile, devi avere una mano libera e fallisci automaticamente se la creatura che possiede l'oggetto è in combattimento o in guardia.</p><p>Effettua una prova di [[/act steal]]{Furto} per determinare se riesci a Rubare l'oggetto. La CD è di solito la CD di Percezione della creatura che indossa l'oggetto. È più facile rubare un oggetto che è indossato ma non attentamente custodito (come una borsa piena di monete tenuta senza troppa cura, o un oggetto dentro una tale borsa). Il GM potrebbe aumentare la CD se l'oggetto è protetto o se la natura dell'oggetto lo rende più difficile da rubare (come un oggetto molto piccolo in un grande zaino, o un foglio di pergamena mescolato ad altri documenti). Per esempio, la CD è in genere di 5 più alta se l'oggetto è in una tasca, è tenuto nella mano di una creatura o è protetto in modo simile.</p><p>Potresti anche dover confrontare il risultato della tua prova di Furto con le CD di Percezione di osservatori diversi dalla persona che indossa l'oggetto. Il GM potrebbe imporre una penalità di circostanza alle CD degli osservatori distratti.</p><hr /><p><strong>Successo</strong> Rubi l'oggetto senza che il portatore se ne accorga, oppure un osservatore non ti vede prendere o tentare di prendere l'oggetto.</p><p><strong>Fallimento</strong> Il portatore si accorge del tuo tentativo prima che tu possa prendere l'oggetto, oppure un osservatore ti vede prendere o tentare di prendere l'oggetto. Il GM determina la reazione di qualsiasi creatura che si accorge del tuo furto.</p>",
+        "Notes": {
+          "failure": "<strong>Fallimento</strong> Il portatore si accorge del tuo tentativo prima che tu possa prendere l'oggetto, oppure un osservatore ti vede prendere o tentare di prendere l'oggetto. Il GM determina la reazione di qualsiasi creatura che si accorge del tuo furto.",
+          "success": "<strong>Successo</strong> Rubi l'oggetto senza che il portatore se ne accorga, oppure un osservatore non ti vede prendere o tentare di prendere l'oggetto."
+        },
+        "Pocketed": "Oggetto in tasca o protetto",
+        "Title": "Rubare"
+      },
+      "SteelYourResolve": {
+        "BadArgs": "Questa azione deve essere eseguita con esattamente un personaggio o PNG.",
+        "Content": "Vuoi spendere un punto risolutezza e recuperare Stamina?",
+        "NoStamina": "{name} è stanco e ha bisogno di andare a letto! Non ci sono punti risolutezza rimasti.",
+        "RecoverStamina": "{name} ha {ratio} PS e spende un punto risolutezza, recuperando metà della sua Stamina massima.",
+        "StaminaNotEnabled": "La variante Stamina non è attivata.",
+        "Title": "Rafforzare la Determinazione"
+      },
+      "Step": {
+        "Description": "<p><strong>Requisiti</strong> La tua Velocità è almeno 3 metri.</p><hr /><p>Ti muovi con cautela di 1,5 metri. A differenza della maggior parte dei tipi di movimento, il Passo non innesca reazioni, come @UUID[Compendium.pf2e.actionspf2e.Item.KAVf7AmRnbCAHrkT]{Colpo Reattivo}, che possono essere innescate da azioni di movimento o dall'uscita o dall'ingresso in un quadretto.</p><p>Non puoi fare un Passo in un terreno difficile, e non puoi fare un Passo usando una Velocità diversa dalla tua Velocità sul Terreno.</p>",
+        "Title": "Passo"
+      },
+      "Stop": {
+        "Description": "<p><strong>Requisiti</strong> Stai pilotando un veicolo in movimento.</p><p>Porti il veicolo ad arrestarsi.</p>",
+        "Title": "Fermarsi"
+      },
+      "Stride": {
+        "Description": "<p>Ti muovi fino alla tua Velocità.</p>",
+        "Title": "Avanzare"
+      },
+      "Strike": {
+        "Description": "<p>Attacchi con un'arma che impugni o con un attacco senz'armi, prendendo a bersaglio una singola creatura entro la tua portata (per un attacco in mischia) o entro la gittata (per un attacco a distanza). Effettua un tiro per colpire usando il modificatore di attacco dell'arma o dell'attacco senz'armi che stai usando e confronta il risultato con la CA della creatura bersaglio per determinare l'effetto.</p><hr /><p><strong>Successo Critico</strong> Effettui un tiro per i danni secondo l'arma o l'attacco senz'armi e infliggi il doppio dei danni.</p><p><strong>Successo</strong> Effettui un tiro per i danni secondo l'arma o l'attacco senz'armi e infliggi danni.</p>",
+        "Notes": {
+          "criticalSuccess": "<strong>Successo Critico</strong> Effettui un tiro per i danni secondo l'arma o l'attacco senz'armi e infliggi il doppio dei danni.",
+          "success": "<strong>Successo</strong> Effettui un tiro per i danni secondo l'arma o l'attacco senz'armi e infliggi danni."
+        },
+        "Title": "Colpire"
+      },
+      "Subsist": {
+        "AfterExplorationPenalty": "Dopo l'Esplorazione",
+        "Description": "<p>Cerchi di procurarti cibo e riparo per te stesso e, possibilmente, anche per altri, con uno standard di vita. Questo usa in genere [[/act subsist statistic=society]]{Società} se ti trovi in un insediamento o [[/act subsist statistic=survival]]{Sopravvivenza} se sei in natura. Il GM determina la CD in base alla natura del luogo in cui stai cercando di Sostentarti. Potresti aver bisogno di un grado di competenza minimo per Sostentarti in ambienti particolarmente strani. A differenza della maggior parte delle attività di pausa, puoi Sostentarti dopo 8 ore o meno di esplorazione, ma, se lo fai, subisci una penalità di –5.</p><hr /><p><strong>Successo Critico</strong> Fornisci uno stile di vita di sussistenza a te stesso e a un'altra creatura, oppure migliori il tuo cibo e il tuo riparo, concedendoti uno stile di vita confortevole.</p><p><strong>Successo</strong> Trovi abbastanza cibo e riparo con una protezione di base dagli elementi per concederti uno stile di vita di sussistenza.</p><p><strong>Fallimento</strong> Sei esposto agli elementi e non ricevi abbastanza cibo, diventando @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Affaticato} finché non ottieni cibo e riparo sufficienti.</p><p><strong>Fallimento Critico</strong> Attiri guai, mangi qualcosa che non avresti dovuto o peggiori in altro modo la tua situazione. Subisci una penalità di circostanza –2 alle prove per Sostentarti per 1 settimana. Non trovi nessun cibo; se non ne hai conservato, rischi di morire di fame o di sete se continui a fallire.</p><p>@UUID[Compendium.pf2e.other-effects.Item.wHWWHkjDXmJl4Ia6]{Effetto: Situazione Avversa di Sostentamento}</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Attiri guai, mangi qualcosa che non avresti dovuto o peggiori in altro modo la tua situazione. Subisci una penalità di circostanza –2 alle prove per Sostentarti per 1 settimana. Non trovi nessun cibo; se non ne hai conservato, rischi di morire di fame o di sete se continui a fallire. @UUID[Compendium.pf2e.other-effects.Item.wHWWHkjDXmJl4Ia6]{Effetto: Situazione Avversa di Sostentamento}",
+          "criticalSuccess": "<strong>Successo Critico</strong> Fornisci uno stile di vita di sussistenza a te stesso e a un'altra creatura, oppure migliori il tuo cibo e il tuo riparo, concedendoti uno stile di vita confortevole.",
+          "failure": "<strong>Fallimento</strong> Sei esposto agli elementi e non ricevi abbastanza cibo, diventando @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Affaticato} finché non ottieni cibo e riparo sufficienti.",
+          "success": "<strong>Successo</strong> Trovi abbastanza cibo e riparo con una protezione di base dagli elementi per concederti uno stile di vita di sussistenza."
+        },
+        "SampleTasks": {
+          "Untrained": "foresta rigogliosa con clima temperato o grande città con molte risorse",
+          "Trained": "collina tipica o paese",
+          "Expert": "montagna tipica o villaggio isolato",
+          "Master": "deserto tipico o città sotto assedio",
+          "Legendary": "desolazione arida o città di non morti"
+        },
+        "Title": "Sostentarsi",
+        "Warning": {
+          "NoSkill": "L'azione Sostentarsi può essere usata con abilità diverse e non è stata specificata alcuna abilità. Questo usa in genere Società se ti trovi in un insediamento o Sopravvivenza se sei in natura."
+        }
+      },
+      "Sustain": {
+        "Description": "<p>Scegli uno dei tuoi effetti che ha una durata sostenuta o che elenca un beneficio speciale quando lo Sostieni. La maggior parte di questi effetti proviene da incantesimi o attivazioni di oggetti magici. Se l'effetto ha una durata sostenuta, la sua durata si estende fino alla fine del tuo prossimo turno. (Mantenere più di una volta nello stesso turno non estende la durata ai turni successivi.) Se una capacità può essere sostenuta ma non elenca per quanto tempo, può essere sostenuta fino a 10 minuti.</p><p>Un effetto potrebbe elencare un beneficio aggiuntivo che avviene se lo Sostieni, e questo può persino comparire su effetti che non hanno una durata sostenuta. Se l'effetto ha sia un beneficio speciale sia una durata sostenuta, la tua azione Mantenere estende la durata oltre ad avere il beneficio speciale.</p><p>Se la tua azione Mantenere viene interrotta, la capacità termina.</p>",
+        "Title": "Mantenere"
+      },
+      "Swim": {
+        "Description": "<p>Effettui una prova di [[/act swim]]{Atletica} per muoverti di una distanza massima di 3 metri attraverso l'acqua. Il GM determina la CD in base alla turbolenza o al pericolo dell'acqua; nella maggior parte dei casi di acqua calma, ottieni un successo critico automatico. Se la tua Velocità sul Terreno è di 12 metri o più, la distanza massima possibile aumenta di 1,5 metri per ogni 6 metri di Velocità oltre i 6 metri.</p><p>Se termini il tuo turno in acqua e in quel turno non hai avuto successo in un'azione Nuotare, affondi di 3 metri o vieni spostato dalla corrente, come determinato dal GM. Questo non si applica se la tua ultima azione nel tuo turno è stata entrare in acqua.</p><hr /><p><strong>Successo Critico</strong> Ti muovi attraverso l'acqua, incrementando la distanza massima di 1,5 metri.</p><p><strong>Successo</strong> Ti muovi attraverso l'acqua.</p><p><strong>Fallimento Critico</strong> Non fai progressi. Se stai trattenendo il respiro, perdi 1 round di aria.</p>",
+        "Modifier": {
+          "SwimSpeed": "Velocità di Nuotare"
+        },
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Non fai progressi. Se stai trattenendo il respiro, perdi 1 round di aria.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Ti muovi attraverso l'acqua, incrementando la distanza massima di 1,5 metri.",
+          "success": "<strong>Successo</strong> Ti muovi attraverso l'acqua."
+        },
+        "SampleTasks": {
+          "Untrained": "lago o altre acque quiete",
+          "Trained": "acqua che scorre, come un fiume",
+          "Expert": "fiume dalla corrente rapida",
+          "Master": "mare tempestoso",
+          "Legendary": "maelstrom, cascata"
+        },
+        "Title": "Nuotare"
+      },
+      "TakeControl": {
+        "Description": "<p><strong>Requisiti</strong> Sei a bordo del veicolo e adiacente ai suoi comandi.</p><p>Afferri le redini, il volante o qualche altro meccanismo per controllare il veicolo. Effettua una prova di pilotaggio; in caso di successo, diventi il pilota del veicolo, oppure riprendi il controllo del veicolo se era senza controllo. Alcuni veicoli hanno comandi complicati che rendono questa azione un'attività multi-azione.</p>",
+        "Notes": {
+          "success": "<strong>Successo</strong> Diventi il pilota del veicolo, oppure riprendi il controllo del veicolo se era senza controllo."
+        },
+        "Title": "Prendere il Controllo"
+      },
+      "TakeCover": {
+        "Description": "<p><strong>Requisiti</strong> Stai beneficiando di una copertura, sei vicino a un elemento che ti permette di andare in copertura, o sei @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.</p><hr /><p>Ti schiacci contro un muro o ti abbassi dietro un ostacolo per sfruttare al meglio la copertura. Se avresti una copertura standard, ottieni invece una copertura maggiore, che fornisce un bonus di circostanza +4 alla CA, ai tiri salvezza su Riflessi contro gli effetti ad area e alle prove di Furtività per @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Nasconderti}, @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sgattaiolare} o evitare in altro modo di essere individuato. Altrimenti ottieni i benefici della copertura standard (un bonus di circostanza +2). Questo dura finché non ti muovi dal tuo spazio attuale, non usi un'azione di attacco, non diventi @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Svenuto} o non poni fine a questo effetto come azione gratuita.</p>",
+        "TowerShield": {
+          "Description": "{actor} si mette in copertura dietro il suo {shield}."
+        },
+        "ShortTitle": "Copertura",
+        "Title": "Andare in Copertura"
+      },
+      "Tamper": {
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> La tua manomissione si ritorce in modo drammatico, creando una piccola esplosione dai tuoi stessi strumenti o attrezzatura. Subisci [[/r (@actor.level)[fire] #Tamper Backfire]]{danni da fuoco pari al tuo livello}.",
+          "criticalSuccess": "<strong>Successo Critico</strong> La tua manomissione è incredibilmente efficace. Se hai manomesso un'arma, il nemico subisce una penalità di circostanza -2 ai tiri per colpire e ai tiri per i danni con quell'arma. Se hai manomesso un'armatura, essa ostacola il movimento del nemico, rendendolo impreparato e infliggendogli una penalità di -3 metri alle sue Velocità. L'effetto dura finché il nemico non Interagisce per rimuoverlo, a prescindere da quale tu abbia usato. @UUID[Compendium.pf2e.feat-effects.Item.rzcpTJU9MvW1x1gz]{Effetto: Armatura Manomessa (Successo Critico)} @UUID[Compendium.pf2e.feat-effects.Item.o7qm13OmaYOMwgib]{Effetto: Arma Manomessa (Successo Critico)}",
+          "success": "<strong>Successo</strong> La tua manomissione è efficace temporaneamente. Come il successo critico, ma l'effetto termina all'inizio del tuo prossimo turno, anche se il nemico non Interagisce per porvi fine. @UUID[Compendium.pf2e.feat-effects.Item.IfRkgjyh0JzGalIy]{Effetto: Armatura Manomessa (Successo)} @UUID[Compendium.pf2e.feat-effects.Item.4QWayYR3JSL9bk2T]{Effetto: Arma Manomessa (Successo)}"
+        },
+        "Title": "Manomissione"
+      },
+      "Track": {
+        "Description": "<p>Segui delle tracce, muovendoti fino a metà della tua Velocità di viaggio, usando le regole della @UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.DUOb8QrlC5t0adkL]{Velocità di Viaggio}. Dopo una prova riuscita per Seguire Tracce, puoi continuare a seguire le tracce a metà della tua Velocità senza tentare ulteriori prove per un massimo di 1 ora.</p><p>In alcuni casi, potresti Seguire Tracce durante un incontro. In questo caso, Seguire Tracce è un'azione singola e non ha il tratto esplorazione, ma potresti dover tirare più spesso perché sei in una situazione di tensione. Il GM determina quanto spesso devi tentare questa prova.</p><p>Effettui la tua prova di [[/act track]]{Sopravvivenza} quando inizi a Seguire Tracce, una volta ogni ora in cui continui a seguirle, e ogni volta che qualcosa di significativo cambia nella pista. Il GM determina le CD per tali prove, a seconda di quanto è fresca la pista, del tempo atmosferico e del tipo di terreno.</p><hr /><p><strong>Successo</strong> Trovi la pista o continui a seguire quella che stai già seguendo.</p><p><strong>Fallimento</strong> Perdi la pista, ma puoi tentare di nuovo dopo un ritardo di 1 ora.</p><p><strong>Fallimento Critico</strong> Perdi la pista e non puoi tentare di nuovo per 24 ore.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Perdi la pista e non puoi tentare di nuovo per 24 ore.",
+          "failure": "<strong>Fallimento</strong> Perdi la pista, ma puoi tentare di nuovo dopo un ritardo di 1 ora.",
+          "success": "<strong>Successo</strong> Trovi la pista o continui a seguire quella che stai già seguendo."
+        },
+        "SampleTasks": {
+          "Untrained": "la pista di un grande esercito che segue una strada",
+          "Trained": "tracce abbastanza fresche di un orso che imperversa nella pianura",
+          "Expert": "tracce di un'agile pantera nella giungla, tracce oscurate dalla pioggia",
+          "Master": "tracce oscurate dalla neve invernale, tracce di un topo o di una creatura più piccola, tracce lasciate su superfici che non mantengono impronte come la roccia nuda",
+          "Legendary": "vecchie tracce sulle sabbie di un deserto ventoso, tracce oscurate da una grande bufera o da un uragano"
+        },
+        "Title": "Seguire Tracce"
+      },
+      "TreatDisease": {
+        "Description": "<p><strong>Requisiti</strong> Indossi o tieni in mano uno @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]{Strumento da Guaritore}.</p><hr /><p>Trascorri almeno 8 ore prendendoti cura di una creatura malata. Effettua una prova di [[/act treat-disease]]{Medicina} contro la CD della malattia. Dopo aver tentato di Curare una Malattia per una creatura, non puoi tentare di nuovo finché quella creatura non effettua il suo prossimo tiro salvezza contro la malattia.</p><hr /><p><strong>Successo Critico</strong> Concedi alla creatura un bonus di circostanza +4 al suo prossimo tiro salvezza contro la malattia.</p><p><strong>Successo</strong> Concedi alla creatura un bonus di circostanza +2 al suo prossimo tiro salvezza contro la malattia.</p><p><strong>Fallimento Critico</strong> I tuoi sforzi impongono alla creatura una penalità di circostanza –2 al suo prossimo tiro salvezza contro la malattia.</p><p>@UUID[Compendium.pf2e.other-effects.Item.TGGdM7XnjQkkijK7]{Effetto: Curare Malattia}</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> I tuoi sforzi impongono alla creatura una penalità di circostanza –2 al suo prossimo tiro salvezza contro la malattia.<br/>@UUID[Compendium.pf2e.other-effects.Item.TGGdM7XnjQkkijK7]{Effetto: Curare Malattia}",
+          "criticalSuccess": "<strong>Successo Critico</strong> Concedi alla creatura un bonus di circostanza +4 al suo prossimo tiro salvezza contro la malattia.<br/>@UUID[Compendium.pf2e.other-effects.Item.TGGdM7XnjQkkijK7]{Effetto: Curare Malattia}",
+          "success": "<strong>Successo</strong> Concedi alla creatura un bonus di circostanza +2 al suo prossimo tiro salvezza contro la malattia.<br/>@UUID[Compendium.pf2e.other-effects.Item.TGGdM7XnjQkkijK7]{Effetto: Curare Malattia}"
+        },
+        "Title": "Curare Malattia"
+      },
+      "TreatPoison": {
+        "Description": "<p><strong>Requisiti</strong> Indossi o tieni in mano uno @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]{Strumento da Guaritore}.</p><hr /><p>Curi un paziente per prevenire la diffusione del veleno. Effettua una prova di [[/act treat-poison]]{Medicina} contro la CD del veleno. Dopo aver tentato di Curare un Veleno per una creatura, non puoi tentare di nuovo fino alla prossima volta che quella creatura effettua un tiro salvezza contro il veleno.</p><hr /><p><strong>Successo Critico</strong> Concedi alla creatura un bonus di circostanza +4 al suo prossimo tiro salvezza contro il veleno.</p><p><strong>Successo</strong> Concedi alla creatura un bonus di circostanza +2 al suo prossimo tiro salvezza contro il veleno.</p><p><strong>Fallimento Critico</strong> I tuoi sforzi impongono alla creatura una penalità di circostanza –2 al suo prossimo tiro salvezza contro il veleno.</p><p>@UUID[Compendium.pf2e.other-effects.Item.1FrAlPeNseApVrX3]{Effetto: Curare Veleno}</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> I tuoi sforzi impongono alla creatura una penalità di circostanza –2 al suo prossimo tiro salvezza contro il veleno.<br/>@UUID[Compendium.pf2e.other-effects.Item.1FrAlPeNseApVrX3]{Effetto: Curare Veleno}",
+          "criticalSuccess": "<strong>Successo Critico</strong> Concedi alla creatura un bonus di circostanza +4 al suo prossimo tiro salvezza contro il veleno.<br/>@UUID[Compendium.pf2e.other-effects.Item.1FrAlPeNseApVrX3]{Effetto: Curare Veleno}",
+          "success": "<strong>Successo</strong> Concedi alla creatura un bonus di circostanza +2 al suo prossimo tiro salvezza contro il veleno.<br/>@UUID[Compendium.pf2e.other-effects.Item.1FrAlPeNseApVrX3]{Effetto: Curare Veleno}"
+        },
+        "Title": "Curare Veleno"
+      },
+      "TreatWounds": {
+        "Content": "Seleziona una CD bersaglio. Ricorda che non puoi tentare una guarigione al di sopra del tuo grado di competenza. Tentare di farlo riduce la CD e la quantità di guarigione al massimo di cui sei capace.",
+        "DC": {
+          "Expert": "CD Esperto 20, +10 Guarigione",
+          "Legendary": "CD Leggendario 40, +50 Guarigione",
+          "Master": "CD Maestro 30, +30 Guarigione",
+          "Mod": "Modificatore CD",
+          "Trained": "CD Addestrato 15"
+        },
+        "Error": "{name} non è addestrato in {skill}.",
+        "Feats": {
+          "MortalHealing": "Guarigione Mortale",
+          "RiskySurgery": "Chirurgia Rischiosa"
+        },
+        "Label": "Curare Ferite",
+        "Rolls": {
+          "RiskySurgery": "Tiro dei Danni: Chirurgia Rischiosa",
+          "TreatWounds": "Tiro delle Cure: Curare Ferite",
+          "TreatWoundsCriticalFailure": "Tiro dei Danni: Curare Ferite"
+        },
+        "SkillSelect": "Abilità per Curare Ferite"
+      },
+      "Trip": {
+        "Description": "<p><strong>Requisiti</strong> Hai almeno una mano libera. Il tuo bersaglio non può essere più grande di te di più di una taglia.</p><hr /><p>Tenti di far cadere a terra una creatura. Effettua una prova di [[/act trip]]{Atletica} contro la CD di Riflessi del bersaglio.</p><hr /><p><strong>Successo Critico</strong> Il bersaglio cade, atterra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono} e subisce @Damage[1d6[bludgeoning]] danni.</p><p><strong>Successo</strong> Il bersaglio cade e atterra Prono.</p><p><strong>Fallimento Critico</strong> Perdi l'equilibrio, cadi e atterri Prono.</p>",
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Perdi l'equilibrio e cadi e atterri @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Il bersaglio cade e atterra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono} e subisce @Damage[1d6[bludgeoning]] danni.",
+          "success": "<strong>Successo</strong> Il bersaglio cade e atterra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prono}."
+        },
+        "Title": "Inciampare"
+      },
+      "TumbleThrough": {
+        "Description": "<p>Avanzi fino alla tua Velocità. Durante questo movimento, puoi tentare di attraversare lo spazio di un nemico. Effettua una prova di [[/act tumble-through]]{Acrobazia} contro la CD di Riflessi del nemico appena tenti di entrare nel suo spazio. Puoi Destreggiarti usando Scalare, Volare, Nuotare o un'altra azione invece di Avanzare nell'ambiente appropriato.</p><p><strong>Successo</strong> Attraversi lo spazio del nemico, trattando i quadretti del suo spazio come terreno difficile (ogni 1,5 metri costano 3 metri di movimento). Se non hai abbastanza Velocità per attraversare completamente il suo spazio, ottieni lo stesso effetto di un fallimento.</p><p><strong>Fallimento</strong> Il tuo movimento termina e inneschi reazioni come se ti fossi mosso fuori dal quadretto in cui hai iniziato.</p>",
+        "Notes": {
+          "failure": "<strong>Fallimento</strong> Il tuo movimento termina e inneschi reazioni come se ti fossi mosso fuori dal quadretto in cui hai iniziato.",
+          "success": "<strong>Successo</strong> Attraversi lo spazio del nemico, trattando i quadretti del suo spazio come terreno difficile (ogni 1,5 metri costano 3 metri di movimento). Se non hai abbastanza Velocità per attraversare completamente il suo spazio, ottieni lo stesso effetto di un fallimento."
+        },
+        "Title": "Destreggiarsi"
+      },
+      "WhirlingThrow": {
+        "Notes": {
+          "criticalFailure": "<strong>Fallimento Critico</strong> Non lanci la creatura, che non è più @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Afferrata} o @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Trattenuta} da te.",
+          "criticalSuccess": "<strong>Successo Critico</strong> Lanci la creatura fino a [[/r 10+(5*@actor.abilities.str.mod)]] piedi, infliggendo @Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]] danni, ed essa atterra @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prona}.",
+          "failure": "<strong>Fallimento</strong> Non lanci la creatura.",
+          "success": "<strong>Successo</strong> Lanci la creatura fino a [[/r 10+(5*@actor.abilities.str.mod)]] piedi e infliggi @Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]] danni."
+        },
+        "Title": "Lancio Turbinante"
+      }
+    },
     "ActionsCheck": {
       "acrobatics": "Prova di Acrobazia",
       "arcana": "Prova di Arcano",
