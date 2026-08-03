@@ -1109,7 +1109,7 @@
       "Title": "Esempi di Compiti di {action}"
     },
     "ActionsWarning": {
-      "NoActor": "Seleziona almeno un tokne prima di tirare, o assegna un personaggio di default.",
+      "NoActor": "Seleziona almeno un token prima di tirare, o assegna un personaggio di default.",
       "NoStatistic": "L'attore {name} ({id}) non ha una statistica per {statistic}.",
       "Variants": {
         "None": "L'azione '{action}' non ha varianti, ma la variante '{variant}' è stata richiesta.",
