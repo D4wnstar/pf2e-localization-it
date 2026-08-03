@@ -1,0 +1,445 @@
+{
+  "PF2E.Kingmaker": {
+    "Abilities": {
+      "culture": "Cultura",
+      "economy": "Economia",
+      "loyalty": "Lealtà",
+      "stability": "Stabilità"
+    },
+    "AbilityScores": "Punteggi di Caratteristica",
+    "Army": {
+      "Adjustment": "Modifiche",
+      "Alliance": {
+        "Enemy": "Nemica",
+        "Kingdom": "Regno",
+        "Info": "L'attuale alleanza di questo esercito. Questo è determinato dall'appartenenza o meno di questo esercito ad un giocatore.",
+        "Linked": "I token di questo esercito sono attualmente collegati e gli aggiornamenti dovrebbero persistere correttamente.",
+        "LinkError": "Questo esercito non essere collegato da un token. Fallo dalla barra laterale degli attori e poi trascinane una nuova copia.",
+        "UnlinkedError": "Gli eserciti del regno dovrebbero avere dati di attore collegati per funzionare correttamente. Clicca qui per abilitarlo."
+      },
+      "Ammunition": "Munizioni",
+      "Armor": "Armatura",
+      "BasicWarActions": "Azioni di Guerra Base",
+      "Condition": {
+        "concealed": {
+          "name": "Occultato"
+        }
+      },
+      "Description": "Descrizione",
+      "Error": {
+        "InvalidTacticType": "La tattica {name} non è supportata da armate del tipo {type}"
+      },
+      "Gear": {
+        "GearInfo": "Mostra Informazioni Equipaggiamento",
+        "ItemLevel": "Oggetto {level}",
+        "Label": "Equipaggiamento",
+        "LevelLabel": "Livello {level}",
+        "AdditionalWeapon": {
+          "Name": "Arma Aggiuntiva",
+          "Description": "La maggior parte degli eserciti ha solo un'arma, da mischia o a distanza. Questo equipaggiamento dota un esercito di un'arma aggiuntiva dell'altro tipo. L'esercito guadagna un Colpo in mischia o a distanza (a seconda dei casi) con il modificatore base del suo livello."
+        },
+        "MagicWeapons": {
+          "Name": "Armi Magiche ({type})",
+          "Description": "Le armi dell'esercito sono magiche. Se l'esercito ha armi da mischia e a distanza, quando acquisti questo equipaggiamento puoi scegliere quale delle due è resa Magica. È possibile acquistare questo equipaggiamento due volte: una volta per le armi da mischia e una volta per le armi a distanza. Se si acquista una versione più potente, questa sostituisce la versione precedente e il costo in PR della versione più potente è ridotto del costo in PR delle armi sostituite.",
+          "rank1": {
+            "Name": "Armi Magiche",
+            "Description": "Queste armi aumentano il Colpo dell'esercito con quell'arma di 1."
+          },
+          "rank2": {
+            "Name": "Armi Magiche Superiore",
+            "Description": "Queste armi aumentano il Colpo dell'esercito con quell'arma di 2."
+          },
+          "rank3": {
+            "Name": "Armi Magiche Maggiore",
+            "Description": "Queste armi aumentano il Colpo dell'esercito con quell'arma di 3."
+          }
+        },
+        "Potions": {
+          "Name": "Pozioni Curative",
+          "Description": "Un esercito equipaggiato con pozioni curative (queste regole sono le stesse se si forniscono all'esercito elisir curativi alchemici) può usare una singola dose come parte di qualsiasi azione Manovrare. Quando un esercito usa una dose di pozioni curative, recupera 1 PF. Un esercito può essere equipaggiato con un massimo di 3 dosi di pozioni curative alla volta; a differenza dei Colpi a distanza, le dosi di pozioni curative non si ricaricano automaticamente dopo un incontro di guerra, ma devono essere riacquistate."
+        },
+        "Armor": {
+          "Name": "Armature Magiche",
+          "Description": "Magic armor is magically enchanted to bolster the protection it affords to the soldiers.",
+          "rank1": {
+            "Name": "Armature Magiche",
+            "Description": "Questa armatura aumenta la CA dell'esercito di 1."
+          },
+          "rank2": {
+            "Name": "Armature Magiche Superiore",
+            "Description": "Questa armatura aumenta la CA dell'esercito di 2."
+          },
+          "rank3": {
+            "Name": "Armature Magiche Maggiore",
+            "Description": "Questa armatura aumenta la CA dell'esercito di 3."
+          }
+        }
+      },
+      "Label": "Esercito",
+      "NamePlaceholder": "Nome Esercito",
+      "Potency": "Potenziamento",
+      "Potions": {
+        "FullHP": "PF esercito già pieni",
+        "Label": "Pozioni",
+        "OutOfPotions": "Pozioni finite",
+        "UsePotion": "Usa Pozione (+1 PF)",
+        "UsedPotionHeader": "Pozione Consumata",
+        "UsedPotionContent": "L'esercito ha guadagnato +1 PF. Può essere nuovamente usata durante le azioni Manovrare."
+      },
+      "RecruitmentDC": "CD Reclutamento",
+      "RoutedDescription": "I PF dell'esercito sono sotto la Soglia di Ritirata!",
+      "RoutThreshold": "Soglia di Ritirata",
+      "Save": {
+        "maneuver": "Manovrare",
+        "morale": "Morale"
+      },
+      "Scouting": "Perlustrazione",
+      "SendToChat": "Manda in Chat",
+      "Stats": "Statistiche",
+      "Strikes": {
+        "CurrentAmmo": "{current} / {max} Colpi<br/>Rigenerati alla fine dell'incontro di guerra",
+        "None": "Questo esercito non ha armi: aggiungine una nella sezione equipaggiamento.",
+        "Label": "Colpi",
+        "OutOfAmmo": "Non rimangono colpi per questo incontro di guerra",
+        "RestoreAmmunition": "Rigenera Munizioni",
+        "proficiency": "Competenza",
+        "melee": "Mischia",
+        "ranged": "Distanza"
+      },
+      "Tactics": "Tattiche",
+      "TacticsFree": "Tattiche (Gratuite)",
+      "Toggles": {
+        "LiveOffTheLand": "In esagono senza insediamento",
+        "KeepUpThePressure": "Attaccando stesso bersaglio"
+      },
+      "TacticalWarActions": "Azioni di Guerra Tattiche"
+    },
+    "Confirm": "Conferma",
+    "Consumption": {
+      "Base": "Base",
+      "Label": "Consumo",
+      "Reduction": "Riduzione"
+    },
+    "Event": {
+      "Details": "Dettagli Evento in Corso",
+      "Random": "Evento Casuale"
+    },
+    "GrantedBy": "Questa carattersitica è data da {granter} e non può essere cancellata",
+    "KingdomBuilder": {
+      "ActivationMessage": "Inizia il processo di Creazione Regno? Assicurati che i tuoi giocatori siano pronti prima di procedere.",
+      "Aspiration": "Aspirazione",
+      "AssignBoostsHeader": "Assegna i tuoi aumenti",
+      "Boost": "Aumento",
+      "BoostsLabel": "Aumenti di Caratteristica",
+      "Builder": "Costruttore",
+      "CancelCreation": "Annulla Creazione",
+      "Complete": "Completa",
+      "Feat": "Talento di Regno",
+      "FinalizeHeader": "Finalizza Regno",
+      "Flaw": "Difetto",
+      "FlawLabel": "Difetto di Caratteristica",
+      "Free": "Libero",
+      "Skills": "Abilità di Regno",
+      "ManualToggle": "Usa Modificatori Manuali",
+      "Missing": {
+        "Charter": "Scegli una concessione per scegliere gli aumenti.",
+        "Heartland": "Scegli il territorio centrale per scegliere gli aumenti.",
+        "Government": "Scegli il governo per scegliere gli aumenti."
+      },
+      "None": "Nessuno",
+      "NotSelected": "Non Selezionato",
+      "SaveAndContinue": "Salva e Continua",
+      "Tabs": {
+        "Charter": "Concessione",
+        "Heartland": "Territorio Centrale",
+        "Government": "Governo",
+        "AbilityScores": "Punteggi di Caratteristica"
+      },
+      "Title": "Inizia Creazione Regno"
+    },
+    "Kingdom": {
+      "Activities": "Attività del Regno",
+      "ArmyConsumption": "Consumo dell'Esercito",
+      "Aspiration": {
+        "fame": "Fama",
+        "infamy": "Infamia"
+      },
+      "BuildHeader": "Statistiche Regno",
+      "BuildElement": {
+        "Charter": "Concessione",
+        "Heartland": "Territorio Centrale",
+        "Government": "Governo"
+      },
+      "Capital": "Capitale",
+      "CapitalPlaceholder": "Nome Città",
+      "CollectDialog": {
+        "Title": "Raccogli Risorse",
+        "Header": "Gestione: Raccogli Risorse",
+        "Description": "Tira {dice} dadi risorsa e in più genera il seguente?",
+        "Disclaimer": "Questo rimpiazzerà i tuoi attuali punti risorsa (che dovrebbero essere stati convertiti in punti esperienza). I Prodotti in eccesso saranno perduti. Solo il game master può raccogliere risorse.",
+        "NewResourcePoints": "Nuovi Punti Risorsa"
+      },
+      "Commodity": {
+        "food": "Cibo",
+        "lumber": "Legname",
+        "luxuries": "Prodotti di Lusso",
+        "ore": "Minerali",
+        "stone": "Pietra"
+      },
+      "ControlDC": "CD di Controllo",
+      "Invested": "Investitura",
+      "InvestedBonus": "Bonus di Stato a {ability}",
+      "ImportDialog": {
+        "Title": "Importa Attività",
+        "Content": "{added} attività saranno aggiunte e {updated} attività saranno aggiornate: va bene?"
+      },
+      "FeatSlot": {
+        "Features": "Privilegi del Regno",
+        "Feats": "Talenti del Regno",
+        "Bonus": "Talenti Bonus"
+      },
+      "Leaders": "Leader",
+      "LeaderMissing": "Nessuno (Trascina un nuovo attore)",
+      "LeadershipRole": {
+        "ruler": "Governante",
+        "counselor": "Consigliere",
+        "general": "Generale",
+        "emissary": "Emissario",
+        "magister": "Maestro",
+        "treasurer": "Tesoriere",
+        "viceroy": "Vicerè",
+        "warden": "Guardiano"
+      },
+      "NamePlaceholder": "Nome Regno",
+      "NationType": {
+        "territory": "Territorio",
+        "province": "Provincia",
+        "state": "Stato",
+        "country": "Paese",
+        "dominion": "Dominio"
+      },
+      "Phases": {
+        "commerce": {
+          "Header": "Fase di Commercio",
+          "Description": "Quando il regno genera entrate o stringe accordi commerciali. .",
+          "Step1": "<strong>Riscuotere le Tasse:</strong> Puoi farlo una volta per turno di Regno. Se non tenti di Riscuotere Tasse, puoi invece tentare una prova semplice con CD 11; in caso di successo, riduci il Malcontento di 1.",
+          "Step2": "<strong>Approvare le spese:</strong> Puoi attingere ai fondi del regno per migliorare il tenore di vita dei cittadini tentando l'attività Migliorare Stile di Vita o puoi tentare un prelievo dai fondi del regno utilizzando l'attività Attingere alla Tesoreria.",
+          "Step3": "<strong>Attingere ai Prodotti:</strong> Se il regno ha scorte di Prodotti, puoi tentare l'attività Commerciare Prodotti per aumentare i PR per il turno.",
+          "Step4": "<strong>Gestire gli Accordi Commerciali:</strong> Se hai stabilito accordi commerciali, puoi utilizzare l'attività Gestire gli Accordi Commerciali."
+        },
+        "leadership": {
+          "Header": "Fase di Attività: Attività di Governo",
+          "Description": "Se la capitale del tuo regno ha un Castello, un Palazzo, o un Municipio, ogni PG con un ruolo di governo può tentare fino a tre attività di Governo. Se la tua capitale non ha nessuna di queste strutture, ogni PG non può tentare più di due attività di Governo durante questa fase. Il tuo gruppo sceglie l'ordine in cui svolgere le attività di Governo. A meno che un'attività non preveda diversamente, un leader non può tentare la stessa attività di Governo più di una volta per turno di Regno."
+        },
+        "region": {
+          "Header": "Fase di Attività: Attività di Regione",
+          "Description": "I PG leader possono ora tentare collettivamente fino a tre attività di Regione."
+        },
+        "civic": {
+          "Header": "Fase di Attività: Attività Civiche",
+          "Description": "Il gruppo può tentare un'attività Civica per ogni insediamento del regno."
+        },
+        "army": {
+          "Header": "Attività dell'Esercito",
+          "Description": "Dopo che i PG hanno completato il passo Attività Civiche di un Turno di Regno, possono effettuare un passo Attività dell'Esercito, in cui ogni esercito attualmente mantenuto dal Regno può effettuare una singola attività Esercito."
+        }
+      },
+      "Resources": {
+        "Collect": "Raccogli",
+        "Dice": "Dadi Risorsa",
+        "Header": "Risorse e Prodotti",
+        "Points": "Punti Risorse",
+        "RP": "PR"
+      },
+      "Ruin": {
+        "corruption": "Corruzione",
+        "crime": "Crimine",
+        "decay": "Decadenza",
+        "strife": "Conflitto"
+      },
+      "Size": "Dimensione",
+      "Storage": "Immagazzinamento",
+      "Tabs": {
+        "Main": "Principale",
+        "Activities": "Attività",
+        "World": "Mondo",
+        "Features": "Privilegi",
+        "Ongoing": "In corso"
+      },
+      "Unrest": "Malcontento",
+      "VacancyPenalty": {
+        "ruler": "-1 a tutte le prove (è cumulativo con qualsiasi altra penalità di assenza); ottiene 1d4 Malcontento all'inizio del Turno di Regno; la CD di Controllo incrementa di 2",
+        "counselor": "-1 a tutte le prove basate su Cultura",
+        "general": "-4 alle attività dell'Esercito",
+        "emissary": "-1 a tutte le prove basate su Lealtà",
+        "magister": "-4 alle attività dell'Esercito",
+        "treasurer": "-1 alle prove basate su Economia",
+        "viceroy": "-1 alle prove basate su Stabilità",
+        "warden": "-4 alle Attività di Regione"
+      },
+      "Vacant": "Assenza",
+      "VacantRole": "Assenza ({role})"
+    },
+    "Feature": {
+      "Categories": {
+        "army-tactic": "Tattica dell'Esercito",
+        "army-war-action": "Azione di Guerra dell'Esercito",
+        "kingdom-activity": "Attività di Regno",
+        "kingdom-feat": "Talento di Regno",
+        "kingdom-feature": "Privilegio di Regno"
+      },
+      "Tactic": "Tattica"
+    },
+    "Penalty": "Penalità",
+    "Settlement": {
+      "Blocks": "Isolati",
+      "Details": "Dettagli Insediamento",
+      "Header": "Insediamenti Regno",
+      "Label": "Insediamento",
+      "LevelRange": "Intervallo di Livelli",
+      "Name": "Nome Insediamento",
+      "Overcrowded": "Sovrappopolato",
+      "Population": "Popolazione",
+      "Type": {
+        "village": "Villaggio",
+        "town": "Paese",
+        "city": "Città",
+        "metropolis": "Metropoli"
+      },
+      "TypeLabel": "Tipo"
+    },
+    "Skills": {
+      "agriculture": "Agricoltura",
+      "arts": "Arti",
+      "boating": "Nautica",
+      "defense": "Difesa",
+      "engineering": "Ingegneria",
+      "exploration": "Esplorazione",
+      "folklore": "Folklore",
+      "industry": "Industria",
+      "intrigue": "Intrigo",
+      "magic": "Magia",
+      "politics": "Politica",
+      "scholarship": "Studio",
+      "statecraft": "Governare",
+      "trade": "Commercio",
+      "warfare": "Guerra",
+      "wilderness": "Terre Selvagge"
+    },
+    "WorkSites": {
+      "food": {
+        "Name": "Terreno Agricolo",
+        "Description": "Riduce il consumo durante la fase di Gestione. Il Cibo deve essere raccolto durante la fase di regione tramite Fare il Raccolto, Andare a Pesca o Radunare il Bestiame. Creato usando Stabilire Terreno Agricolo."
+      },
+      "lumber": {
+        "Name": "Segherie",
+        "Description": "Aumentano il Legname ottenuto durante la fase di Gestione. Create usando Stabilire un Sito di Lavoro."
+      },
+      "luxuries": {
+        "Name": "Miniere (Gemme)",
+        "Description": "Siti di lavoro molto rari. Conferiscono Prodotti di Lusso durante la fase di Gestione."
+      },
+      "ore": {
+        "Name": "Miniere",
+        "Description": "Aumentano i Minerali ottenuti durante la fase di Gestione. Create usando Stabilire un Sito di Lavoro."
+      },
+      "stone": {
+        "Name": "Cave",
+        "Description": "Aumentano la Pietra ottenuta durante la fase di Gestione. Create usando Stabilire un Sito di Lavoro."
+      },
+      "Label": "Siti di Lavoro",
+      "Resource": "Se un sito di lavoro è stato costruito su una fonte densa o lucrativa di quel materiale, segnalo qui. Questi producono il doppio del normale."
+    },
+    "Charter": {
+      "conquest": {
+        "Name": "Conquista",
+        "Description": "Il tuo finanziatore ha conquistato un territorio e i suoi precedenti capi sono stati sconfitti o addirittura uccisi. Questa concessione ti pone a capo di una parte di questo territorio conquistato (o abbandonato dal nemico sconfitto) e ti ordina di tenerlo e pacificarlo in nome del tuo finanziatore. Il popolo è particolarmente devoto e favorevole al tuo governo (anche se in parte per paura), ma la costante minaccia di una potenziale guerra ostacola le arti e rende difficile per i cittadini rilassarsi. Se scegli questa concessione, ti è richiesto di costruire il tuo regno contro quello di Pitax."
+      },
+      "expansion": {
+        "Name": "Espansione",
+        "Description": "Il tuo finanziatore ti affida un dominio adiacente a terre già colonizzate, con l'aspettativa che la tua nazione rimanga un forte alleato. Il grande sostegno della nazione del tuo finanziatore aiuta a sostenere la società del tuo regno, ma questa maggiore dipendenza significa che le fluttuazioni nelle fortune del tuo alleato possono ostacolare la sicurezza del tuo regno. Se scegli questa concessione, Lady Jamandi si aspetta che tu rimanga un forte alleato di Restov."
+      },
+      "exploration": {
+        "Name": "Esplorazione",
+        "Description": "Il tuo finanziatore vuole che esplori, sgomberi e stabilizzi un'area selvaggia lungo il confine del suo territorio. La concessione contribuisce a garantire le strutture iniziali (o le forniture per crearle), a costo di contrarre un debito finanziario."
+      },
+      "grant": {
+        "Name": "Grant",
+        "Description": "Il tuo finanziatore ti concede una grande quantità di fondi e altre risorse senza restrizioni sulla natura dello sviluppo del tuo regno, ma ti chiede di impiegare molti dei suoi cittadini e alleati. Le ricchezze e le forniture della tua nazione sono sicure, ma una parte dei residenti del tuo regno ha diviso la propria fedeltà tra la tua nazione e quella del tuo finanziatore."
+      },
+      "open": {
+        "Name": "Libera",
+        "Description": "Se preferisci essere un vero e proprio agente libero e pioniere, puoi semplicemente scegliere una concessione libera senza restrizioni e senza sostegno diretto. In tal caso, Lady Jamandi loda il vostro coraggio e fiducia, ma vi avverte che fondare un regno non un'inezia. Una concessione libera concede un singolo aumento a qualsiasi punteggio di caratteristica, e la nuova nazione non ha alcun difetto di caratteristica innato."
+      }
+    },
+    "Heartland": {
+      "forestOrSwamp": {
+        "Name": "Foresta o Palude",
+        "Description": "La tua nazione inizia nei boschi o nelle paludi, quindi non mancano le risorse naturali o le meraviglie per sostenere l'immaginazione e l'umore dei suoi cittadini.."
+      },
+      "hillOrPlain": {
+        "Name": "Collina o Pianura",
+        "Description": "La tua nazione inizia in un'area facile da attraversare. Questo si riflette nel temperamento dei cittadini, che apprezzano il fatto che la tua scelta renda la loro vita più facile."
+      },
+      "lakeOrRiver": {
+        "Name": "Lago o Fiume",
+        "Description": "Stabilendo la tua nazione sulle rive di un lago o di un fiume, ti assicuri un meccanismo integrato per il commercio. Anche prima della costruzione di una strada, i mercanti e i viaggiatori possono raggiungere il tuo insediamento con relativa facilità in barca."
+      },
+      "mountainOrRuins": {
+        "Name": "Montagne o Rovine",
+        "Description": "La tua nazione è fondata sulle montagne o comprende un'importante località in rovina e utilizza questi elementi naturali o artificiali per rafforzare le difese. I suoi cittadini tendono a essere robusti e resistenti, se non addirittura testardi."
+      }
+    },
+    "Government": {
+      "despotism": {
+        "Name": "Dispotismo",
+        "Description": "Il governo della nazione è incentrato su un singolo individuo che ha preso o ereditato il comando e la cui autorità è assoluta. Il sovrano di questo regno ha ancora consiglieri e assistenti, ma solo quando obbediscono ai suoi capricci."
+      },
+      "feudalism": {
+        "Name": "Feudalesimo",
+        "Description": "Il governo della nazione è affidato a una famiglia reale dinastica, anche se gran parte del potere reale è distribuito tra i suoi vassalli e feudi."
+      },
+      "oligarchy": {
+        "Name": "Oligarchia",
+        "Description": "Il governo della nazione è determinato da un consiglio di leader influenti che prendono decisioni per tutti gli altri."
+      },
+      "republic": {
+        "Name": "Repubblica",
+        "Description": "La nazione trae la sua leadership dai suoi stessi cittadini. Gli eletti si riuniscono in organi parlamentari per guidare la nazione."
+      },
+      "thaumocracy": {
+        "Name": "Taumocrazia",
+        "Description": "La nazione è governata dai più abili nella magia, che usano la loro conoscenza e il loro potere per determinare i modi migliori per governare. Sebbene il tipo di magia esercitata dai sovrani della nazione possa modificarne i temi (o persino il nome: una taumocrazia gestita da incantatori divini sarebbe una teocrazia, per esempio), i dettagli seguenti rimangono gli stessi sia che si tratti di magia arcana, divina, occulta, primeva, o di una qualsiasi combinazione delle quattro."
+      },
+      "yeomanry": {
+        "Name": "Yeomanry",
+        "Description": "La nazione è decentralizzata e si affida ai leader locali e ai cittadini per gestire le questioni governative, inviando i rappresentanti locali se necessario per affrontare questioni che riguardano più di una località."
+      }
+    },
+    "SIDEBAR": {
+      "CreateKingdom": "Crea Regno",
+      "OpenSheet": "Apri Scheda del Regno"
+    },
+    "Trait": {
+      "army": "Esercito",
+      "cavalry": "Cavalleria",
+      "civic": "Civica",
+      "commerce": "Commercio",
+      "infantry": "Fanteria",
+      "kingdom": "Regno",
+      "leadership": "Governo",
+      "maneuver": "Manovrare",
+      "morale": "Morale",
+      "region": "Regione",
+      "siege": "Assedio",
+      "skirmisher": "Schermagliatori",
+      "upkeep": "Gestione"
+    },
+    "TraitDescription": {
+      "cavalry": "La cavalleria consistà di unità di combattimento in sella.",
+      "infantry": "La fanteria consiste di soldati o creature che si muovono a piedi.",
+      "siege": "Gli eserciti assedio si concentrano sul disporre macchinari d'assedio anziché sul combattimento personale.",
+      "skirmisher": "Gli schermagliatori sono composti da un piccolo numero di unità molto mobili."
+    }
+  }
+}
