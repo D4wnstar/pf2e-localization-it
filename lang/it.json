@@ -256,12 +256,12 @@
         "EmptyMultipleLabel": "{value} Vuoti",
         "FeatSlot": {
           "AncestryHeader": "Talenti di Stirpe",
-          "AncestryFeaturesHeader": "Caratteristiche di Stirpe",
+          "AncestryFeaturesHeader": "Privilegi di Stirpe",
           "ArchetypeHeader": "Talenti di Archetipo",
           "BonusHeader": "Talenti Bonus",
           "CampaignHeader": "Talenti di Campagna",
           "ClassHeader": "Talenti di Classe",
-          "ClassFeaturesHeader": "Caratteristiche di Classe",
+          "ClassFeaturesHeader": "Privilegi di Classe",
           "DivineIntercessions": "Intercessioni Divine",
           "GeneralHeader": "Talenti Generali",
           "MythicCallingPlaceholder": "Vocazione Mitica",
@@ -831,7 +831,7 @@
     "Age": "Età",
     "AllSavesLabel": "Tutti i Tiri Salvezza",
     "AncestryFeatLevels": "Livelli Talenti di Stirpe",
-    "AncestryFeatures": "Caratteristiche di Stirpe",
+    "AncestryFeatures": "Privilegi di Stirpe",
     "AncestryHP": "PF di Stirpe",
     "Area": {
       "InFeet": "Area (Piedi)",
@@ -1083,7 +1083,7 @@
     "CircumstanceBonusShortLabel": "Circostanza",
     "CircumstanceBonusTitle": "Bonus di Circostanza",
     "ClassFeatLevels": "Livelli Talenti di Classe",
-    "ClassFeatures": "Caratteristiche di Classe",
+    "ClassFeatures": "Privilegi di Classe",
     "ClassHP": "PF di Classe",
     "ClipboardNotification": "Copiato \"{clipText}\" negli appunti.",
     "CompendiumBrowser": {
@@ -1143,7 +1143,7 @@
       "TabBestiary": "Bestiari",
       "TabCampaign": "Campagna",
       "TabEquipment": "Equipaggiamento",
-      "TabFeat": "Talenti/Caratteristiche",
+      "TabFeat": "Talenti/Privilegi",
       "TabHazard": "Pericoli",
       "TabSpell": "Incantesimi",
       "TakeLabel": "Prendi Oggetto",
@@ -1682,7 +1682,7 @@
       "CantMoveItemSource": "Non ti è permesso muovere oggetti da questo personaggio.",
       "CantPurchaseContainerWithItems": "Non puoi acquistare contenitori con oggetti dentro.",
       "ItemNotFoundByUUID": "Impossibile trovare un oggetto con UUID \"{uuid}\".",
-      "MinimumProfLevelSetByFeatures": "La competenza selezionata è al di sotto della competenza impostata dalle caratteristiche.",
+      "MinimumProfLevelSetByFeatures": "La competenza selezionata è al di sotto della competenza impostata dai privilegi.",
       "NoCreatureTokenSelected": "Seleziona almeno un token associato ad una creatura.",
       "NoPCTokenSelected": "Seleziona almeno un token associato ad un PG.",
       "NoTokenSelected": "Seleziona almeno un token.",
@@ -2063,7 +2063,7 @@
       },
       "CampaignFeature": {
         "CampaignLabel": "Campagna",
-        "Plural": "Caratteristiche di Campagna"
+        "Plural": "Privilegi di Campagna"
       },
       "CannotAddType": "Oggetti {type} non possono essere aggiunti a questo attore.",
       "Class": {
@@ -2639,7 +2639,7 @@
             "NoOptionSelected": "Scegli una statistica al quale l'aumento verrà applicato."
           },
           "SuppressedFeatures": {
-            "Label": "Caratteristiche di Classe Soppresse",
+            "Label": "Privilegi di Classe Soppressi",
             "Hint": "Per rimuovere una caratteristica dalla preparazione dei dati e dalla scheda dei talenti, trascinalo su questa scheda."
           },
           "Senses": {
@@ -3793,7 +3793,7 @@
       },
       "CampaignType": {
         "Hint": "Supporto esteso per campagne quali Kingmaker",
-        "Name": "Caratteristiche per Campagne Specifiche",
+        "Name": "Privilegi per Campagne Specifiche",
         "Choices": {
           "none": "Nessuna",
           "kingmaker": "Kingmaker"
