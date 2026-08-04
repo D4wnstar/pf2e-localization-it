@@ -4,7 +4,7 @@
     "CombatantNotInScene": "Il partecipante {name} non è presente nella scena attualmente visualizzata.",
     "CombatantRemove": "Rimuovi Partecipante",
     "CombatantStatus": "Status Partecipante",
-    "CombatantUpdate": "Aggiorna Participante",
+    "CombatantUpdate": "Aggiorna Partecipante",
     "End": "Termina Incontro",
     "EndConfirmation": "Termina questo incontro e svuota il contaturni?",
     "EndTitle": "Termina Incontro?",
@@ -18,7 +18,7 @@
     "SkipDefeatedHint": "Salta automaticamente i partecipanti segnati come sconfitti?",
     "TargetedBy": "Bersagliato da {list}",
     "ToggleTargeting": "Attiva/disattiva Bersagliamento",
-    "UnknownCombatant": "Participante Sconosciuto"
+    "UnknownCombatant": "Partecipante Sconosciuto"
   },
   "COMPENDIUM": {
     "MigrationStatus": "Stato di Migrazione"
@@ -39,7 +39,7 @@
   },
   "PF2E": {
     "AbilityBoost": "Aumento Attributo",
-    "AbilityBoostLevels": "Livelli dei Aumenti Attributo",
+    "AbilityBoostLevels": "Livelli degli Aumenti Attributo",
     "AbilityCha": "Carisma",
     "AbilityCheck": {
       "cha": "Tiro di Carisma",
@@ -4048,7 +4048,7 @@
             "variant-tiers": "Progressione Mitica Alternativa"
           }
         },
-        "Name": "Regole Varianti",
+        "Name": "Regole Alternative",
         "Proficiency": {
           "Hint": "Gioca con la variante Competenza Senza Livello del GM Core p. 85. Se attiva, è possibile impostare bonus di competenza alternativi (i valori preimpostati sono consigliati dal GM Core).",
           "Legend": "Competenza Senza Livello",
@@ -4066,7 +4066,7 @@
           "Hint": "Gioca con la variante tenacia della Gamemastery Guide p. 200.",
           "Name": "Tenacia"
         },
-        "Title": "Regole Varianti"
+        "Title": "Regole Alternative"
       },
       "WorldClock": {
         "DateThemes": {
