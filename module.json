@@ -1,7 +1,7 @@
 {
   "id": "pf2e-localization-it",
   "title": "PF2e Localization (Italian)",
-  "version": "0.1.0",
+  "version": "8.3.0",
   "compatibility": {
     "verified": "14"
   },
@@ -18,6 +18,11 @@
       "lang": "it",
       "name": "Actions (Italian)",
       "path": "lang/action-it.json"
+    },
+    {
+      "lang": "It",
+      "name": "Kingmaker (Italian)",
+      "path": "lang/kingmaker-it.json"
     }
   ],
   "flags": {
