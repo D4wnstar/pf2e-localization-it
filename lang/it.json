@@ -1005,8 +1005,8 @@
     "CarryType": {
       "attached": "Unito",
       "dropped": "A terra",
-      "held1": "In mano (Una)",
-      "held2": "In mano (Entrambe)",
+      "held1": "In mano (1M)",
+      "held2": "In mano (2M)",
       "implanted": "Impiantato",
       "stowed": "Riposto",
       "worn": "Indossato",
