@@ -78,9 +78,12 @@ La versione maggiore e minore di questo pacchetto rappresentano la versione magg
 
 ## Meccaniche generali
 
-| Originale | Ufficiale | Variazione | Ragione                                                                                          |
-| --------- | --------- | ---------- | ------------------------------------------------------------------------------------------------ |
-| Bulk      | Volume    | *Ingombro* | L'intero scopo della meccanica è combinare e astrarre volume e peso, non ha senso chiamarla Volume |
+
+| Originale  | Ufficiale  | Variazione | Ragione                                                                                            |
+| ---------- | ---------- | ---------- | -------------------------------------------------------------------------------------------------- |
+| Bulk       | Volume     | *Ingombro* | L'intero scopo della meccanica è combinare e astrarre volume e peso, non ha senso chiamarla Volume |
+| Background | Background | *Origini*  | Usiamolo sto italiano, dai                                                                         |
+
 
 ## Condizioni
 
