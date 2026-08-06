@@ -28,7 +28,9 @@ The lack of compendium content (Foundry items and journals) is why you will noti
 
 ## Legal
 
-Italian localization that is ported as-is is licensed under the OGL v1.0a. Italian localization that has been updated to match remaster terminology is dual-licensed under both the OGL v1.0a and the ORC License, as it is Derived Content under both.
+Game system information and mechanics in this localization are licensed under the Open Game License v1.0a.
+
+This localization uses trademarks and/or copyrights owned by Paizo Inc., used under Paizo's Community Use Policy (paizo.com/licenses/communityuse). I am expressly prohibited from charging you to use or access this content. This localization is not published, endorsed, or specifically approved by Paizo. For more information about Paizo Inc. and Paizo products, visit paizo.com.
 
 ## Versioning
 
@@ -64,7 +66,9 @@ La mancanza di contenuto dei compendi (*items* e *journals* di Foundry) è la ra
 
 ## Legale
 
-La localizzazione italiana copiata così com'è è autorizzata sotto la OGL v1.0a. La localizzazione italiana adattata alla terminologia remaster è autorizzata simultaneamente sotto la OGL v1.0a e la Licenza ORC, poiché è Derived Content secondo entrambe.
+Informazioni e mecchaniche del sistema di gioco in questa localizzazione sono autorizzate secondo la Open Game License v1.0a.
+
+This localization uses trademarks and/or copyrights owned by Paizo Inc., used under Paizo's Community Use Policy (paizo.com/licenses/communityuse). I am expressly prohibited from charging you to use or access this content. This localization is not published, endorsed, or specifically approved by Paizo. For more information about Paizo Inc. and Paizo products, visit paizo.com.
 
 ## Versionamento
 
