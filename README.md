@@ -1,6 +1,6 @@
 # Pathfinder 2e Italian Localization
 
-> (Italian version below)
+> Italian version below
 
 This package provides partial Italian localization data for the FoundryVTT [Pathfinder 2e system](https://github.com/foundryvtt/pf2e). The localization was, where possible, ported from official book localizations, the public OGL parts of which are uploaded by the Italian Pathfinder community on the [Golarion Insider wiki](https://pf2.altervista.org/wiki/Pagina_principale). Remaining content that has either not been added to Golarion Insider or has yet to receive an Italian localization at the time of writing has either been hand-translated or not translated at all.
 
@@ -11,6 +11,8 @@ The text was ported as identically to the source as possible, with typo fixes an
 Localizing Starfinder 2e content is not a goal of this package as there is no official Italian localization yet. However, since SF2e uses the same Foundry system as PF2e, much of Pathfinder's translation should be automatically applied to Starfinder. Further, a small part of Starfinder's unique content was translated on a best-effort basis. Note that none of these were tested in practice.
 
 Some wording changes have been applied to the official translation for a variety of reasons, mostly clarity, consistency and/or correctness. The full list is at the bottom of this page.
+
+![Screenshot of the localized character sheet](/assets/sheet_example.png)
 
 ## Contents
 
@@ -49,6 +51,8 @@ Per "contenuti" qui s'intende "le stringhe di localizzazione del sistema `foundr
 Localizzare Starfinder 2e è fuori ambito per questo pacchetto, dato che non c'è ancora una localizzazione ufficiale. Tuttavia, dato che SF2e usa lo stesso sistema Foundry di PF2e, molte delle traduzioni di Pathfinder dovrebbero essere applicate in automaticato anche a Starfinder. In più, una piccola parte di contenuti specifici a Starfinder è stata tradotta laddove la traduzione fosse piuttosto ovvia. Nessuna di queste traduzioni è però stata testa in pratica.
 
 Alcuni cambiamenti ai termini rispetto alla traduzione ufficiale sono stati compiuti per un misto di ragioni, perlopiù chiarezza, coerenza e/o correttezza. La lista intera è in calce alla pagina.
+
+![Screenshot della scheda del personaggio localizzata](/assets/sheet_example.png)
 
 ## Contenuti
 
