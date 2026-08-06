@@ -10,7 +10,7 @@ The text was ported as identically to the source as possible, with typo fixes an
 
 Localizing Starfinder 2e content is not a goal of this package as there is no official Italian localization yet. However, since SF2e uses the same Foundry system as PF2e, much of Pathfinder's translation should be automatically applied to Starfinder. Further, a small part of Starfinder's unique content was translated on a best-effort basis. Note that none of these were tested in practice.
 
-Some wording changes have been applied to the official translation for a variety of reasons, mostly clarity and consistency. The full list is at the bottom of this page.
+Some wording changes have been applied to the official translation for a variety of reasons, mostly clarity, consistency and/or correctness. The full list is at the bottom of this page.
 
 ## Contents
 
@@ -28,7 +28,7 @@ The lack of compendium content (Foundry items and journals) is why you will noti
 
 ## Legal
 
-Both the OGL and ORC licenses permit translation as Derived Content. Italian localization that is ported as-is is licensed under the OGL. Italian localization that has been updated to match remaster terminology and wording is Derived Content under both licenses and is therefore dual-licensed.
+Italian localization that is ported as-is is licensed under the OGL v1.0a. Italian localization that has been updated to match remaster terminology is dual-licensed under both the OGL v1.0a and the ORC License, as it is Derived Content under both.
 
 ## Versioning
 
@@ -46,7 +46,7 @@ Per "contenuti" qui s'intende "le stringhe di localizzazione del sistema `foundr
 
 Localizzare Starfinder 2e è fuori ambito per questo pacchetto, dato che non c'è ancora una localizzazione ufficiale. Tuttavia, dato che SF2e usa lo stesso sistema Foundry di PF2e, molte delle traduzioni di Pathfinder dovrebbero essere applicate in automaticato anche a Starfinder. In più, una piccola parte di contenuti specifici a Starfinder è stata tradotta laddove la traduzione fosse piuttosto ovvia. Nessuna di queste traduzioni è però stata testa in pratica.
 
-Alcuni cambiamenti ai termini rispetto alla traduzione ufficiale sono stati compiuti per un misto di ragioni, perlopiù chiarezza e coerenza. La lista intera è in calce alla pagina.
+Alcuni cambiamenti ai termini rispetto alla traduzione ufficiale sono stati compiuti per un misto di ragioni, perlopiù chiarezza, coerenza e/o correttezza. La lista intera è in calce alla pagina.
 
 ## Contenuti
 
@@ -64,7 +64,7 @@ La mancanza di contenuto dei compendi (*items* e *journals* di Foundry) è la ra
 
 ## Legale
 
-Entrambe le licenze OGL e ORC permettono la traduzione come Derived Content. La localizzazione italiana copiata così com'è è sotto la OGL. La localizzazione italiana adattata alla terminologia e formulazione remaster è Derived Content sotto entrambe le licenze ed è dunque sotto entrambe le licenze (dual-licensed).
+La localizzazione italiana copiata così com'è è autorizzata sotto la OGL v1.0a. La localizzazione italiana adattata alla terminologia remaster è autorizzata simultaneamente sotto la OGL v1.0a e la Licenza ORC, poiché è Derived Content secondo entrambe.
 
 ## Versionamento
 
@@ -76,13 +76,13 @@ La versione maggiore e minore di questo pacchetto rappresentano la versione magg
 
 | Originale | Ufficiale | Variazione | Ragione                                                                                          |
 | --------- | --------- | ---------- | ------------------------------------------------------------------------------------------------ |
-| Bulk      | Volume    | *Ingombro* | L'intero scopo della meccanica è combinare e astrarre volume/peso, non ha senso chiamarlo Volume |
+| Bulk      | Volume    | *Ingombro* | L'intero scopo della meccanica è combinare e astrarre volume e peso, non ha senso chiamarla Volume |
 
 ## Condizioni
 
 | Originale   | Ufficiale       | Variazione    | Ragione                                                                                                          |
 | ----------- | --------------- | ------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Drained     | Risucchiato     | *Prosciugato* | Più chiaro                                                                                                       |
+| Drained     | Risucchiato     | *Prosciugato* | Più naturale                                                                                                       |
 | Unconscious | Privo di Sensi  | *Svenuto*     | Più conciso e funge anche da verbo ("A 0 PF, svieni")                                                            |
 | Undetected  | Non Individuato | *Inosservato* | Questi termini sono molto confusi anche in inglese, questo è un tentativo a renderli leggermente meno spiacevoli |
 | Unnoticed   | Inosservato     | *Inavvertito* | Come sopra                                                                                                       |
